@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="790" viewBox="0 0 1280 790" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#6D4AFF"/>
+    </marker>
+    <linearGradient id="srv" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B1433"/><stop offset="1" stop-color="#2A1D57"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="790" rx="24" fill="#FBF8F3"/>
+  <text x="40" y="58" font-size="28" font-weight="800" fill="#1A1530">How RAKSHA runs</text>
+  <text x="40" y="86" font-size="15" fill="#5B5670">One click in the browser, one web service on Render, eleven agents behind it.</text>
+
+  <!-- Band 1: clients -->
+  <text x="40" y="126" font-size="12" font-weight="700" letter-spacing="1.5" fill="#8A84A3">IN THE BROWSER</text>
+  <g>
+    <rect x="40" y="138" width="385" height="126" rx="16" fill="#FFFFFF" stroke="#E6DFF7" stroke-width="1.5"/>
+    <rect x="40" y="138" width="6" height="126" rx="3" fill="#F5B21B"/>
+    <text x="64" y="168" font-size="17" font-weight="700" fill="#1A1530">Chrome extension <tspan font-weight="500" fill="#8A84A3" font-size="13">Manifest V3</tspan></text>
+    <text x="64" y="194" font-size="13" fill="#4A4560">Click the shield (or Alt+Shift+R), then the ad</text>
+    <text x="64" y="216" font-size="13" fill="#4A4560">Crops it, reads its real links and UPI / WhatsApp</text>
+    <text x="64" y="238" font-size="13" fill="#4A4560">Side panel: live agents, verdict, read aloud</text>
+  </g>
+  <g>
+    <rect x="447" y="138" width="385" height="126" rx="16" fill="#FFFFFF" stroke="#E6DFF7" stroke-width="1.5"/>
+    <rect x="447" y="138" width="6" height="126" rx="3" fill="#6D4AFF"/>
+    <text x="471" y="168" font-size="17" font-weight="700" fill="#1A1530">Website checker <tspan font-weight="500" fill="#8A84A3" font-size="13">/</tspan></text>
+    <text x="471" y="194" font-size="13" fill="#4A4560">Paste text, upload a screenshot, or pick one</text>
+    <text x="471" y="216" font-size="13" fill="#4A4560">of 15 sample ads: same agents, same server</text>
+    <text x="471" y="238" font-size="13" fill="#4A4560">Extension download, pre-pointed at this server</text>
+  </g>
+  <g>
+    <rect x="854" y="138" width="386" height="126" rx="16" fill="#FFFFFF" stroke="#E6DFF7" stroke-width="1.5"/>
+    <rect x="854" y="138" width="6" height="126" rx="3" fill="#16A34A"/>
+    <text x="878" y="168" font-size="17" font-weight="700" fill="#1A1530">Practice feed <tspan font-weight="500" fill="#8A84A3" font-size="13">/demo</tspan></text>
+    <text x="878" y="194" font-size="13" fill="#4A4560">A pretend social feed with ads rebuilt</text>
+    <text x="878" y="216" font-size="13" fill="#4A4560">from real Indian scam cases (and genuine ones)</text>
+    <text x="878" y="238" font-size="13" fill="#4A4560">Safe to demo: its buttons never leave the page</text>
+  </g>
+
+  <!-- arrow 1 -->
+  <line x1="640" y1="272" x2="640" y2="330" stroke="#6D4AFF" stroke-width="2.5" marker-end="url(#ah)" marker-start="url(#ah)"/>
+  <rect x="672" y="286" width="520" height="30" rx="15" fill="#EFEAFF"/>
+  <text x="690" y="306" font-size="13" fill="#3B2A9A"><tspan font-family="SFMono-Regular, Menlo, Consolas, monospace" font-weight="700">POST /v2/scan</tspan>  ad crop + text + links  →  live NDJSON stream back</text>
+
+  <!-- Band 2: server -->
+  <text x="40" y="358" font-size="12" font-weight="700" letter-spacing="1.5" fill="#8A84A3">ON RENDER · ONE PYTHON FASTAPI WEB SERVICE · SINGAPORE</text>
+  <rect x="40" y="370" width="1200" height="248" rx="20" fill="url(#srv)"/>
+
+  <text x="68" y="404" font-size="12" font-weight="700" letter-spacing="1.2" fill="#B7A8FF">API</text>
+  <g font-size="13">
+    <text x="68" y="432" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#EDE9FF">/v2/scan</text><text x="262" y="432" fill="#A89BD9" font-size="12">stream a check</text>
+    <text x="68" y="458" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#EDE9FF">/v2/report</text><text x="262" y="458" fill="#A89BD9" font-size="12">family reports</text>
+    <text x="68" y="484" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#EDE9FF">/v2/indicators</text><text x="262" y="484" fill="#A89BD9" font-size="12">memory lookup</text>
+    <text x="68" y="510" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#EDE9FF">/v2/tts</text><text x="262" y="510" fill="#A89BD9" font-size="12">read aloud</text>
+    <text x="68" y="536" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#EDE9FF">/v2/health</text><text x="262" y="536" fill="#A89BD9" font-size="12">AI + memory</text>
+    <text x="68" y="562" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#EDE9FF">/download/…zip</text><text x="262" y="562" fill="#A89BD9" font-size="12">ready extension</text>
+    <text x="68" y="588" font-family="SFMono-Regular, Menlo, Consolas, monospace" fill="#EDE9FF">/  ·  /demo</text><text x="262" y="588" fill="#A89BD9" font-size="12">website, feed</text>
+  </g>
+
+  <rect x="392" y="392" width="360" height="98" rx="14" fill="#6D4AFF"/>
+  <text x="414" y="424" font-size="18" font-weight="800" fill="#FFFFFF">Orchestrator</text>
+  <text x="414" y="448" font-size="13" fill="#E6E0FF">queue of hand-offs · step limit · 50 s budget</text>
+  <text x="414" y="470" font-size="13" fill="#E6E0FF">streams every agent message as it happens</text>
+  <rect x="392" y="502" width="360" height="48" rx="12" fill="#2F2466" stroke="#5B4AB8"/>
+  <text x="414" y="531" font-size="14" font-weight="700" fill="#FFFFFF">Blackboard <tspan font-weight="400" fill="#C9C0FF">findings with evidence IDs E1 … En</tspan></text>
+  <rect x="392" y="560" width="360" height="40" rx="12" fill="#2F2466" stroke="#5B4AB8"/>
+  <text x="414" y="585" font-size="13" fill="#C9C0FF">rate limits · SSRF guard · injection detector</text>
+
+  <text x="790" y="404" font-size="12" font-weight="700" letter-spacing="1.2" fill="#B7A8FF">THE AGENTS</text>
+  <g font-size="13" font-weight="600" fill="#FFFFFF">
+    <rect x="790" y="416" width="210" height="30" rx="15" fill="#3A2C78"/><text x="808" y="436">Extractor · reads</text>
+    <rect x="1010" y="416" width="206" height="30" rx="15" fill="#3A2C78"/><text x="1028" y="436">Router · plans</text>
+    <rect x="790" y="454" width="210" height="30" rx="15" fill="#0E5E57"/><text x="808" y="474">Registry · SEBI / RBI</text>
+    <rect x="1010" y="454" width="206" height="30" rx="15" fill="#0E5E57"/><text x="1028" y="474">Web &amp; contact</text>
+    <rect x="790" y="492" width="210" height="30" rx="15" fill="#0E5E57"/><text x="808" y="512">Link · real destination</text>
+    <rect x="1010" y="492" width="206" height="30" rx="15" fill="#0E5E57"/><text x="1028" y="512">Community memory</text>
+    <rect x="790" y="530" width="210" height="30" rx="15" fill="#0E5E57"/><text x="808" y="550">Scam-pattern · maths</text>
+    <rect x="1010" y="530" width="206" height="30" rx="15" fill="#7A1636"/><text x="1028" y="550">Prosecutor</text>
+    <rect x="790" y="568" width="210" height="30" rx="15" fill="#155E2E"/><text x="808" y="588">Defender</text>
+    <rect x="1010" y="568" width="206" height="30" rx="15" fill="#8A5A00"/><text x="1028" y="588">Arbiter · decides</text>
+  </g>
+  <line x1="752" y1="441" x2="786" y2="441" stroke="#B7A8FF" stroke-width="2" marker-end="url(#ah)"/>
+
+  <!-- arrows 2 -->
+  <g stroke="#6D4AFF" stroke-width="2.2" marker-end="url(#ah)">
+    <line x1="240" y1="622" x2="240" y2="676"/>
+    <line x1="398" y1="622" x2="398" y2="676"/>
+    <line x1="640" y1="622" x2="640" y2="676"/>
+    <line x1="882" y1="622" x2="882" y2="676"/>
+    <line x1="1126" y1="622" x2="1126" y2="676"/>
+  </g>
+
+  <!-- Band 3: resources -->
+  <text x="40" y="668" font-size="12" font-weight="700" letter-spacing="1.5" fill="#8A84A3">WHAT THE AGENTS USE</text>
+  <g>
+    <rect x="40" y="680" width="228" height="86" rx="14" fill="#FFFFFF" stroke="#E6DFF7" stroke-width="1.5"/>
+    <text x="58" y="708" font-size="15" font-weight="700" fill="#1A1530">Google Gemini</text>
+    <text x="58" y="730" font-size="12.5" fill="#4A4560">vision + JSON, fastest-model</text>
+    <text x="58" y="750" font-size="12.5" fill="#4A4560">routing, DeepSeek backup</text>
+
+    <rect x="283" y="680" width="228" height="86" rx="14" fill="#FFFFFF" stroke="#E6DFF7" stroke-width="1.5"/>
+    <text x="301" y="708" font-size="15" font-weight="700" fill="#1A1530">SEBI and RBI data</text>
+    <text x="301" y="730" font-size="12.5" fill="#4A4560">3,251 advisers and analysts</text>
+    <text x="301" y="750" font-size="12.5" fill="#4A4560">95 RBI Alert List platforms</text>
+
+    <rect x="526" y="680" width="228" height="86" rx="14" fill="#FFFFFF" stroke="#E6DFF7" stroke-width="1.5"/>
+    <text x="544" y="708" font-size="15" font-weight="700" fill="#1A1530">Community memory</text>
+    <text x="544" y="730" font-size="12.5" fill="#4A4560">Supabase Postgres (shared)</text>
+    <text x="544" y="750" font-size="12.5" fill="#4A4560">or SQLite on one machine</text>
+
+    <rect x="769" y="680" width="228" height="86" rx="14" fill="#FFFFFF" stroke="#E6DFF7" stroke-width="1.5"/>
+    <text x="787" y="708" font-size="15" font-weight="700" fill="#1A1530">The open web</text>
+    <text x="787" y="730" font-size="12.5" fill="#4A4560">HEAD-only link following,</text>
+    <text x="787" y="750" font-size="12.5" fill="#4A4560">DNS and domain checks</text>
+
+    <rect x="1012" y="680" width="228" height="86" rx="14" fill="#FFFFFF" stroke="#E6DFF7" stroke-width="1.5"/>
+    <text x="1030" y="708" font-size="15" font-weight="700" fill="#1A1530">Voice</text>
+    <text x="1030" y="730" font-size="12.5" fill="#4A4560">neural voices: EN · HI · TE</text>
+    <text x="1030" y="750" font-size="12.5" fill="#4A4560">ElevenLabs optional</text>
+  </g>
+</svg>

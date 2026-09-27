@@ -1,5 +1,9 @@
 # RAKSHA · architecture, stack choices and the jury audit
 
+![How RAKSHA runs](images/architecture.svg)
+
+![The 11 agents](images/agents.svg)
+
 ## Flow
 
 ```

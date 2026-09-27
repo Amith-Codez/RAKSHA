@@ -1,5 +1,10 @@
 # Deploy RAKSHA (about 15 minutes)
 
+> **Live now:** https://raksha-8mok.onrender.com (Render web service `raksha`, free plan, Singapore), deployed from
+> [github.com/Amith-Codez/RAKSHA](https://github.com/Amith-Codez/RAKSHA) `main`. Every push to `main` redeploys it.
+> Check it any time at [`/v2/health`](https://raksha-8mok.onrender.com/v2/health). The steps below are for a fresh
+> copy on your own account.
+
 One web service runs everything, on one address such as `https://raksha-xxxx.onrender.com`:
 
 | Address | What it is |
