@@ -60,9 +60,9 @@ know about them, and 1930 helps only after the money is gone. Nothing stands at 
 
 <table>
 <tr>
-<td width="33%" align="center"><img src="docs/images/panel-home.png" alt="RAKSHA side panel home screen" width="260"/><br/><b>1 · Click the shield</b><br/><sub>or press <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd></sub></td>
-<td width="33%" align="center"><img src="docs/images/panel-scanning.png" alt="Agents working in the side panel" width="260"/><br/><b>2 · Click the ad</b><br/><sub>picture or text, on any website: agents go to work, live</sub></td>
-<td width="33%" align="center"><img src="docs/images/panel-verdict.png" alt="SCAM verdict in the side panel" width="260"/><br/><b>3 · One clear answer</b><br/><sub>in about 15 seconds, with reasons, voice and next steps</sub></td>
+<td width="33%" align="center" valign="top"><img src="docs/images/panel-home.png" alt="RAKSHA side panel home screen" width="260"/><br/><b>1 · Click the shield</b><br/><sub>or press <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd></sub></td>
+<td width="33%" align="center" valign="top"><img src="docs/images/panel-scanning.png" alt="Agents working in the side panel" width="260"/><br/><b>2 · Click the ad</b><br/><sub>picture or text, on any website: agents go to work, live</sub></td>
+<td width="33%" align="center" valign="top"><img src="docs/images/panel-verdict.png" alt="SCAM verdict in the side panel" width="260"/><br/><b>3 · One clear answer</b><br/><sub>in about 15 seconds, with reasons, voice and next steps</sub></td>
 </tr>
 </table>
 
