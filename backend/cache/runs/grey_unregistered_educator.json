@@ -1,0 +1,541 @@
+{
+ "ad_text": "Pension Pathshala — a free Sunday webinar for retired people in Hyderabad. Learn the difference between SCSS, bank FDs and debt mutual funds, and how to spot investment scams. We do not sell any product and never ask for money. Hosted with the local senior citizens' association.",
+ "claims": {
+  "advertiser": "Pension Pathshala",
+  "product": "free Sunday webinar on retirement investments",
+  "promised_return": null,
+  "guaranteed": false,
+  "people_shown": [],
+  "authority_claims": [
+   "Hosted with the local senior citizens' association"
+  ],
+  "reg_numbers": [],
+  "links": [],
+  "phones": [],
+  "emails": [],
+  "payment_asks": [],
+  "retiree_hooks": [
+   "retired people in Hyderabad",
+   "SCSS, bank FDs and debt mutual funds"
+  ],
+  "urgency": [],
+  "channel_shift": [],
+  "disclaimers": [],
+  "upi_ids": [],
+  "retiree_targeting": 40
+ },
+ "evidence": [
+  {
+   "id": "E1",
+   "agent": "registry",
+   "finding": "'Pension Pathshala' is not a SEBI-registered adviser or analyst (not required if it only sells bank or government schemes)",
+   "supports": "NEUTRAL",
+   "strength": 1,
+   "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+  },
+  {
+   "id": "E2",
+   "agent": "pattern",
+   "finding": "The ad explicitly states 'We do not sell any product and never ask for money', which runs counter to typical financial scam patterns that demand immediate payment or deposits.",
+   "supports": "LEGIT",
+   "strength": 3,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E3",
+   "agent": "pattern",
+   "finding": "The promised topics focus on educational awareness ('Learn the difference between SCSS, bank FDs and debt mutual funds, and how to spot investment scams') rather than offering unrealistic returns.",
+   "supports": "LEGIT",
+   "strength": 2,
+   "source": "known scam patterns + published govt rates"
+  }
+ ],
+ "turns": [
+  {
+   "agent": "prosecutor",
+   "stage": "OPEN",
+   "round": 1,
+   "fraud_probability": 5,
+   "message": "Even though this appears to be a free educational webinar, we must remain cautious about unverified event organizers targeting seniors. Let us confirm if there are any hidden pitches or unexpected fees during the session."
+  },
+  {
+   "agent": "defender",
+   "stage": "RESPOND",
+   "round": 1,
+   "fraud_probability": 5,
+   "message": "This ad is purely educational, explicitly promising no product sales or money requests. It helps seniors understand legitimate options like SCSS and bank fixed deposits, making it a safe awareness session."
+  },
+  {
+   "agent": "prosecutor",
+   "stage": "REBUT",
+   "round": 2,
+   "fraud_probability": 2,
+   "message": "The defender is right that there are no financial demands or scam patterns here. I am withdrawing the charge regarding unverified details, as this is simply a free educational webinar."
+  }
+ ],
+ "charges": [
+  {
+   "id": "C1",
+   "charge": "The webinar organizers have not provided verifiable contact details or proof of partnership with the local senior citizens' association.",
+   "severity": 1,
+   "evidence_ids": [
+    "E1"
+   ],
+   "status": "WITHDRAWN",
+   "history": [
+    [
+     "Defender",
+     "disputed: The ad explicitly states they do not sell any product or ask for money, and focuses entirely on financial education rather than soliciting funds."
+    ],
+    [
+     "Prosecutor",
+     "withdrawn: The ad explicitly states they do not sell products or ask for money, and the evidence shows the focus is purely educational."
+    ]
+   ],
+   "ruling": null
+  }
+ ],
+ "trace": [
+  {
+   "step": 1,
+   "t": 0.0,
+   "from": "orchestrator",
+   "to": "extractor",
+   "type": "handoff",
+   "text": "New ad received. Extractor: read it and list every checkable claim.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 2,
+   "t": 0.0,
+   "from": "extractor",
+   "to": "blackboard",
+   "type": "claims",
+   "text": "Found advertiser 'Pension Pathshala'; aimed at retirees: 'retired people in Hyderabad'.",
+   "evidence_ids": [],
+   "data": {
+    "advertiser": "Pension Pathshala",
+    "product": "free Sunday webinar on retirement investments",
+    "promised_return": null,
+    "guaranteed": false,
+    "people_shown": [],
+    "authority_claims": [
+     "Hosted with the local senior citizens' association"
+    ],
+    "reg_numbers": [],
+    "links": [],
+    "phones": [],
+    "emails": [],
+    "payment_asks": [],
+    "retiree_hooks": [
+     "retired people in Hyderabad",
+     "SCSS, bank FDs and debt mutual funds"
+    ],
+    "urgency": [],
+    "channel_shift": [],
+    "disclaimers": [],
+    "upi_ids": [],
+    "retiree_targeting": 40
+   }
+  },
+  {
+   "step": 3,
+   "t": 0.0,
+   "from": "router",
+   "to": "orchestrator",
+   "type": "plan",
+   "text": "Plan: Registry → Scam-pattern",
+   "evidence_ids": [],
+   "data": [
+    {
+     "agent": "registry",
+     "why": "(rule) the ad names a company or quotes a registration number"
+    },
+    {
+     "agent": "pattern",
+     "why": "(safety rule) every ad gets a scam-pattern check"
+    }
+   ]
+  },
+  {
+   "step": 4,
+   "t": 0.0,
+   "from": "router",
+   "to": "registry",
+   "type": "handoff",
+   "text": "(rule) the ad names a company or quotes a registration number",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 5,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "'Pension Pathshala' is not a SEBI-registered adviser or analyst (not required if it only sells bank or government schemes)",
+   "evidence_ids": [
+    "E1"
+   ],
+   "data": {
+    "id": "E1",
+    "agent": "registry",
+    "finding": "'Pension Pathshala' is not a SEBI-registered adviser or analyst (not required if it only sells bank or government schemes)",
+    "supports": "NEUTRAL",
+    "strength": 1,
+    "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+   }
+  },
+  {
+   "step": 6,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Checked 1 number(s)/name(s) against 3,251 SEBI records and 95 RBI alert entries.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 7,
+   "t": 0.0,
+   "from": "router",
+   "to": "pattern",
+   "type": "handoff",
+   "text": "(safety rule) every ad gets a scam-pattern check",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 8,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "The ad explicitly states 'We do not sell any product and never ask for money', which runs counter to typical financial scam patterns that demand immediate payment or deposits.",
+   "evidence_ids": [
+    "E2"
+   ],
+   "data": {
+    "id": "E2",
+    "agent": "pattern",
+    "finding": "The ad explicitly states 'We do not sell any product and never ask for money', which runs counter to typical financial scam patterns that demand immediate payment or deposits.",
+    "supports": "LEGIT",
+    "strength": 3,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 9,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "The promised topics focus on educational awareness ('Learn the difference between SCSS, bank FDs and debt mutual funds, and how to spot investment scams') rather than offering unrealistic returns.",
+   "evidence_ids": [
+    "E3"
+   ],
+   "data": {
+    "id": "E3",
+    "agent": "pattern",
+    "finding": "The promised topics focus on educational awareness ('Learn the difference between SCSS, bank FDs and debt mutual funds, and how to spot investment scams') rather than offering unrealistic returns.",
+    "supports": "LEGIT",
+    "strength": 2,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 10,
+   "t": 0.0,
+   "from": "orchestrator",
+   "to": "prosecutor",
+   "type": "handoff",
+   "text": "3 pieces of evidence collected. Prosecutor: file your charges. Defender: answer each one.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 11,
+   "t": 2.0,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "argument",
+   "text": "Even though this appears to be a free educational webinar, we must remain cautious about unverified event organizers targeting seniors. Let us confirm if there are any hidden pitches or unexpected fees during the session.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 5,
+    "stage": "OPEN",
+    "round": 1
+   }
+  },
+  {
+   "step": 12,
+   "t": 2.0,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "The webinar organizers have not provided verifiable contact details or proof of partnership with the local senior citizens' association.",
+   "evidence_ids": [
+    "E1"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "severity": 1
+   }
+  },
+  {
+   "step": 13,
+   "t": 2.0,
+   "from": "prosecutor",
+   "to": "web",
+   "type": "handoff",
+   "text": "To check if this webinar has a legitimate online presence or history of consumer complaints. — checking \"Pension Pathshala Hyderabad webinar\"",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 14,
+   "t": 2.0,
+   "from": "web",
+   "to": "blackboard",
+   "type": "note",
+   "text": "No links or phone numbers to check.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 15,
+   "t": 2.9,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "argument",
+   "text": "This ad is purely educational, explicitly promising no product sales or money requests. It helps seniors understand legitimate options like SCSS and bank fixed deposits, making it a safe awareness session.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 5,
+    "stage": "RESPOND",
+    "round": 1
+   }
+  },
+  {
+   "step": 16,
+   "t": 2.9,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "The ad explicitly states they do not sell any product or ask for money, and focuses entirely on financial education rather than soliciting funds.",
+   "evidence_ids": [
+    "E2",
+    "E3"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "stance": "DISPUTED"
+   }
+  },
+  {
+   "step": 17,
+   "t": 2.9,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "round",
+   "text": "Round 1: Prosecutor 5% vs Defender 5% — 0 points apart",
+   "evidence_ids": [],
+   "data": {
+    "round": 1,
+    "prosecutor": 5,
+    "defender": 5,
+    "gap": 0
+   }
+  },
+  {
+   "step": 18,
+   "t": 3.9,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "argument",
+   "text": "The defender is right that there are no financial demands or scam patterns here. I am withdrawing the charge regarding unverified details, as this is simply a free educational webinar.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 2,
+    "stage": "REBUT",
+    "round": 2
+   }
+  },
+  {
+   "step": 19,
+   "t": 3.9,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "ruling",
+   "text": "The ad explicitly states they do not sell products or ask for money, and the evidence shows the focus is purely educational.",
+   "evidence_ids": [
+    "E2",
+    "E3"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "stance": "WITHDRAWN"
+   }
+  },
+  {
+   "step": 20,
+   "t": 3.9,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "round",
+   "text": "Round 2: Prosecutor 2% vs Defender 5% — 3 points apart",
+   "evidence_ids": [],
+   "data": {
+    "round": 2,
+    "prosecutor": 2,
+    "defender": 5,
+    "gap": 3
+   }
+  },
+  {
+   "step": 21,
+   "t": 3.9,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "note",
+   "text": "Agreed on 1 of 1 charges. Arbiter confirms the verdict.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 22,
+   "t": 5.3,
+   "from": "arbiter",
+   "to": "user",
+   "type": "verdict",
+   "text": "LIKELY SAFE (risk 15/100): This is a free educational session. It is safe to attend.",
+   "evidence_ids": [
+    "E2",
+    "E3"
+   ],
+   "data": {
+    "label": "LIKELY_SAFE",
+    "risk": 15,
+    "headline": "This is a free educational session. It is safe to attend.",
+    "headline_hi": "यह एक मुफ्त शैक्षिक सत्र है। इसमें शामिल होना सुरक्षित है।",
+    "reasons": [
+     "The ad offers free education and does not ask for money.",
+     "It teaches about safe options like post office schemes and bank fixed deposits.",
+     "There are no promises of high or guaranteed returns."
+    ],
+    "reasons_hi": [
+     "यह विज्ञापन मुफ्त शिक्षा प्रदान करता है और पैसे नहीं मांगता है।",
+     "यह पोस्ट ऑफिस योजनाओं और बैंक सावधि जमा जैसे सुरक्षित विकल्पों के बारे में सिखाता है।",
+     "उच्च या गारंटीकृत रिटर्न का कोई वादा नहीं किया गया है।"
+    ],
+    "reason_evidence": [
+     [
+      "E2"
+     ],
+     [
+      "E3"
+     ],
+     [
+      "E3"
+     ]
+    ],
+    "what_to_do": [
+     "Invest only through the official channel: the post office, your bank branch, or the company's own registered app or website.",
+     "Check the interest rate and name on the official website before paying.",
+     "If anyone later asks for OTP or an extra fee, stop — that is a scam."
+    ],
+    "what_to_do_hi": [
+     "केवल आधिकारिक रास्ते से निवेश करें: डाकघर, अपनी बैंक शाखा, या कंपनी का पंजीकृत ऐप/वेबसाइट।",
+     "भुगतान से पहले आधिकारिक वेबसाइट पर ब्याज दर और नाम जाँच लें।",
+     "अगर बाद में कोई OTP या अतिरिक्त फ़ीस माँगे, तो रुक जाएँ — वह धोखा है।"
+    ],
+    "converged": true,
+    "deciding_factor": "Since all charges were withdrawn and the ad explicitly states it does not sell products or ask for money while focusing solely on education, it is safe.",
+    "guardrails": [],
+    "retiree_targeting": 40,
+    "retiree_hooks": [
+     "retired people in Hyderabad",
+     "SCSS, bank FDs and debt mutual funds"
+    ],
+    "charges_summary": {
+     "ACCEPTED": 0,
+     "WITHDRAWN": 1,
+     "UPHELD": 0,
+     "DISMISSED": 0,
+     "UNRESOLVED": 0
+    }
+   }
+  }
+ ],
+ "verdict": {
+  "label": "LIKELY_SAFE",
+  "risk": 15,
+  "headline": "This is a free educational session. It is safe to attend.",
+  "headline_hi": "यह एक मुफ्त शैक्षिक सत्र है। इसमें शामिल होना सुरक्षित है।",
+  "reasons": [
+   "The ad offers free education and does not ask for money.",
+   "It teaches about safe options like post office schemes and bank fixed deposits.",
+   "There are no promises of high or guaranteed returns."
+  ],
+  "reasons_hi": [
+   "यह विज्ञापन मुफ्त शिक्षा प्रदान करता है और पैसे नहीं मांगता है।",
+   "यह पोस्ट ऑफिस योजनाओं और बैंक सावधि जमा जैसे सुरक्षित विकल्पों के बारे में सिखाता है।",
+   "उच्च या गारंटीकृत रिटर्न का कोई वादा नहीं किया गया है।"
+  ],
+  "reason_evidence": [
+   [
+    "E2"
+   ],
+   [
+    "E3"
+   ],
+   [
+    "E3"
+   ]
+  ],
+  "what_to_do": [
+   "Invest only through the official channel: the post office, your bank branch, or the company's own registered app or website.",
+   "Check the interest rate and name on the official website before paying.",
+   "If anyone later asks for OTP or an extra fee, stop — that is a scam."
+  ],
+  "what_to_do_hi": [
+   "केवल आधिकारिक रास्ते से निवेश करें: डाकघर, अपनी बैंक शाखा, या कंपनी का पंजीकृत ऐप/वेबसाइट।",
+   "भुगतान से पहले आधिकारिक वेबसाइट पर ब्याज दर और नाम जाँच लें।",
+   "अगर बाद में कोई OTP या अतिरिक्त फ़ीस माँगे, तो रुक जाएँ — वह धोखा है।"
+  ],
+  "converged": true,
+  "deciding_factor": "Since all charges were withdrawn and the ad explicitly states it does not sell products or ask for money while focusing solely on education, it is safe.",
+  "guardrails": [],
+  "retiree_targeting": 40,
+  "retiree_hooks": [
+   "retired people in Hyderabad",
+   "SCSS, bank FDs and debt mutual funds"
+  ],
+  "charges_summary": {
+   "ACCEPTED": 0,
+   "WITHDRAWN": 1,
+   "UPHELD": 0,
+   "DISMISSED": 0,
+   "UNRESOLVED": 0
+  }
+ },
+ "plan": [
+  {
+   "agent": "registry",
+   "why": "(rule) the ad names a company or quotes a registration number"
+  },
+  {
+   "agent": "pattern",
+   "why": "(safety rule) every ad gets a scam-pattern check"
+  }
+ ],
+ "converged": true,
+ "agent_runs": [
+  "registry",
+  "pattern",
+  "web"
+ ],
+ "duration_s": 5.3
+}

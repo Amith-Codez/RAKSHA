@@ -1,0 +1,625 @@
+{
+ "ad_text": "Grow your retirement corpus by trading global currencies and gold with Trive. Tight spreads, fast withdrawals, trusted by over a million traders worldwide. Open your account in minutes at trive.com.",
+ "claims": {
+  "advertiser": "Trive",
+  "product": "global currencies and gold trading",
+  "promised_return": null,
+  "guaranteed": false,
+  "people_shown": [],
+  "authority_claims": [],
+  "reg_numbers": [],
+  "links": [
+   "trive.com"
+  ],
+  "phones": [],
+  "emails": [],
+  "payment_asks": [],
+  "retiree_hooks": [
+   "retirement corpus"
+  ],
+  "urgency": [],
+  "channel_shift": [],
+  "disclaimers": [],
+  "upi_ids": [],
+  "retiree_targeting": 75
+ },
+ "evidence": [
+  {
+   "id": "E1",
+   "agent": "registry",
+   "finding": "'Trive' is not a SEBI-registered adviser or analyst (not required if it only sells bank or government schemes)",
+   "supports": "NEUTRAL",
+   "strength": 1,
+   "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+  },
+  {
+   "id": "E2",
+   "agent": "registry",
+   "finding": "'Trive' is on the RBI Alert List of unauthorised forex/trading platforms (matched on website)",
+   "supports": "FRAUD",
+   "strength": 3,
+   "source": "RBI Alert List (95 entities, updated 2025-11-19)"
+  },
+  {
+   "id": "E3",
+   "agent": "web",
+   "finding": "trive.com has existed for 26 years",
+   "supports": "LEGIT",
+   "strength": 1,
+   "source": "RDAP domain records"
+  },
+  {
+   "id": "E4",
+   "agent": "pattern",
+   "finding": "The ad targets retirees by using the phrase 'Grow your retirement corpus' to market high-risk forex and gold trading.",
+   "supports": "FRAUD",
+   "strength": 2,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E5",
+   "agent": "pattern",
+   "finding": "Promotes leveraged trading in global currencies and gold without required risk disclaimers for Indian retail investors.",
+   "supports": "FRAUD",
+   "strength": 2,
+   "source": "known scam patterns + published govt rates"
+  }
+ ],
+ "turns": [
+  {
+   "agent": "prosecutor",
+   "stage": "OPEN",
+   "round": 1,
+   "fraud_probability": 85,
+   "message": "Dad, this ad uses the phrase 'retirement corpus' to lure seniors into high-risk forex and gold trading, which is completely inappropriate for retirement savings. Most alarmingly, records show this platform is on the RBI Alert List of unauthorised trading platforms."
+  },
+  {
+   "agent": "defender",
+   "stage": "RESPOND",
+   "round": 1,
+   "fraud_probability": 90,
+   "message": "I must accept that being on the RBI Alert List is a serious red flag, and marketing high-risk forex trading to retirees using retirement hooks is dangerous. False alarms are harmful, but when an entity matches an official regulatory alert list, we cannot defend it."
+  }
+ ],
+ "charges": [
+  {
+   "id": "C1",
+   "charge": "The platform Trive is flagged on the RBI Alert List of unauthorised forex and trading platforms.",
+   "severity": 3,
+   "evidence_ids": [
+    "E2"
+   ],
+   "status": "ACCEPTED",
+   "history": [
+    [
+     "Defender",
+     "accepted: The platform Trive is confirmed to be on the RBI Alert List of unauthorised forex and trading platforms."
+    ]
+   ],
+   "ruling": null
+  },
+  {
+   "id": "C2",
+   "charge": "The ad inappropriately targets retirees by mentioning 'retirement corpus' to market high-risk global currency and gold trading.",
+   "severity": 2,
+   "evidence_ids": [
+    "E4"
+   ],
+   "status": "ACCEPTED",
+   "history": [
+    [
+     "Defender",
+     "accepted: Targeting retirees with phrases like 'retirement corpus' to promote high-risk forex and gold trading is an established risk pattern."
+    ]
+   ],
+   "ruling": null
+  },
+  {
+   "id": "C3",
+   "charge": "The advertisement promotes leveraged trading without providing the mandatory risk disclaimers required for retail investors in India.",
+   "severity": 2,
+   "evidence_ids": [
+    "E5"
+   ],
+   "status": "ACCEPTED",
+   "history": [
+    [
+     "Defender",
+     "accepted: The advertisement lacks mandatory risk disclaimers for retail investors while promoting leveraged trading."
+    ]
+   ],
+   "ruling": null
+  }
+ ],
+ "trace": [
+  {
+   "step": 1,
+   "t": 0.0,
+   "from": "orchestrator",
+   "to": "extractor",
+   "type": "handoff",
+   "text": "New ad received. Extractor: read it and list every checkable claim.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 2,
+   "t": 0.0,
+   "from": "extractor",
+   "to": "blackboard",
+   "type": "claims",
+   "text": "Found advertiser 'Trive'; 1 link(s); aimed at retirees: 'retirement corpus'.",
+   "evidence_ids": [],
+   "data": {
+    "advertiser": "Trive",
+    "product": "global currencies and gold trading",
+    "promised_return": null,
+    "guaranteed": false,
+    "people_shown": [],
+    "authority_claims": [],
+    "reg_numbers": [],
+    "links": [
+     "trive.com"
+    ],
+    "phones": [],
+    "emails": [],
+    "payment_asks": [],
+    "retiree_hooks": [
+     "retirement corpus"
+    ],
+    "urgency": [],
+    "channel_shift": [],
+    "disclaimers": [],
+    "upi_ids": [],
+    "retiree_targeting": 75
+   }
+  },
+  {
+   "step": 3,
+   "t": 0.0,
+   "from": "router",
+   "to": "orchestrator",
+   "type": "plan",
+   "text": "Plan: Registry → Web & contact → Scam-pattern",
+   "evidence_ids": [],
+   "data": [
+    {
+     "agent": "registry",
+     "why": "Check if Trive is registered with SEBI for financial trading services in India."
+    },
+    {
+     "agent": "web",
+     "why": "Check the domain age and legitimacy of trive.com."
+    },
+    {
+     "agent": "pattern",
+     "why": "Analyze the retirement corpus hook against known financial scam patterns."
+    }
+   ]
+  },
+  {
+   "step": 4,
+   "t": 0.0,
+   "from": "router",
+   "to": "registry",
+   "type": "handoff",
+   "text": "Check if Trive is registered with SEBI for financial trading services in India.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 5,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "'Trive' is not a SEBI-registered adviser or analyst (not required if it only sells bank or government schemes)",
+   "evidence_ids": [
+    "E1"
+   ],
+   "data": {
+    "id": "E1",
+    "agent": "registry",
+    "finding": "'Trive' is not a SEBI-registered adviser or analyst (not required if it only sells bank or government schemes)",
+    "supports": "NEUTRAL",
+    "strength": 1,
+    "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+   }
+  },
+  {
+   "step": 6,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "'Trive' is on the RBI Alert List of unauthorised forex/trading platforms (matched on website)",
+   "evidence_ids": [
+    "E2"
+   ],
+   "data": {
+    "id": "E2",
+    "agent": "registry",
+    "finding": "'Trive' is on the RBI Alert List of unauthorised forex/trading platforms (matched on website)",
+    "supports": "FRAUD",
+    "strength": 3,
+    "source": "RBI Alert List (95 entities, updated 2025-11-19)"
+   }
+  },
+  {
+   "step": 7,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Checked 1 number(s)/name(s) against 3,251 SEBI records and 95 RBI alert entries.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 8,
+   "t": 0.0,
+   "from": "router",
+   "to": "web",
+   "type": "handoff",
+   "text": "Check the domain age and legitimacy of trive.com.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 9,
+   "t": 0.0,
+   "from": "web",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "trive.com has existed for 26 years",
+   "evidence_ids": [
+    "E3"
+   ],
+   "data": {
+    "id": "E3",
+    "agent": "web",
+    "finding": "trive.com has existed for 26 years",
+    "supports": "LEGIT",
+    "strength": 1,
+    "source": "RDAP domain records"
+   }
+  },
+  {
+   "step": 10,
+   "t": 0.0,
+   "from": "router",
+   "to": "pattern",
+   "type": "handoff",
+   "text": "Analyze the retirement corpus hook against known financial scam patterns.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 11,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "The ad targets retirees by using the phrase 'Grow your retirement corpus' to market high-risk forex and gold trading.",
+   "evidence_ids": [
+    "E4"
+   ],
+   "data": {
+    "id": "E4",
+    "agent": "pattern",
+    "finding": "The ad targets retirees by using the phrase 'Grow your retirement corpus' to market high-risk forex and gold trading.",
+    "supports": "FRAUD",
+    "strength": 2,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 12,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Promotes leveraged trading in global currencies and gold without required risk disclaimers for Indian retail investors.",
+   "evidence_ids": [
+    "E5"
+   ],
+   "data": {
+    "id": "E5",
+    "agent": "pattern",
+    "finding": "Promotes leveraged trading in global currencies and gold without required risk disclaimers for Indian retail investors.",
+    "supports": "FRAUD",
+    "strength": 2,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 13,
+   "t": 0.0,
+   "from": "orchestrator",
+   "to": "prosecutor",
+   "type": "handoff",
+   "text": "5 pieces of evidence collected. Prosecutor: file your charges. Defender: answer each one.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 14,
+   "t": 1.2,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "argument",
+   "text": "Dad, this ad uses the phrase 'retirement corpus' to lure seniors into high-risk forex and gold trading, which is completely inappropriate for retirement savings. Most alarmingly, records show this platform is on the RBI Alert List of unauthorised trading platforms.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 85,
+    "stage": "OPEN",
+    "round": 1
+   }
+  },
+  {
+   "step": 15,
+   "t": 1.2,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "The platform Trive is flagged on the RBI Alert List of unauthorised forex and trading platforms.",
+   "evidence_ids": [
+    "E2"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "severity": 3
+   }
+  },
+  {
+   "step": 16,
+   "t": 1.2,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "The ad inappropriately targets retirees by mentioning 'retirement corpus' to market high-risk global currency and gold trading.",
+   "evidence_ids": [
+    "E4"
+   ],
+   "data": {
+    "charge_id": "C2",
+    "severity": 2
+   }
+  },
+  {
+   "step": 17,
+   "t": 1.2,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "The advertisement promotes leveraged trading without providing the mandatory risk disclaimers required for retail investors in India.",
+   "evidence_ids": [
+    "E5"
+   ],
+   "data": {
+    "charge_id": "C3",
+    "severity": 2
+   }
+  },
+  {
+   "step": 18,
+   "t": 2.7,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "argument",
+   "text": "I must accept that being on the RBI Alert List is a serious red flag, and marketing high-risk forex trading to retirees using retirement hooks is dangerous. False alarms are harmful, but when an entity matches an official regulatory alert list, we cannot defend it.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 90,
+    "stage": "RESPOND",
+    "round": 1
+   }
+  },
+  {
+   "step": 19,
+   "t": 2.7,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "The platform Trive is confirmed to be on the RBI Alert List of unauthorised forex and trading platforms.",
+   "evidence_ids": [
+    "E2"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "stance": "ACCEPTED"
+   }
+  },
+  {
+   "step": 20,
+   "t": 2.7,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "Targeting retirees with phrases like 'retirement corpus' to promote high-risk forex and gold trading is an established risk pattern.",
+   "evidence_ids": [
+    "E4"
+   ],
+   "data": {
+    "charge_id": "C2",
+    "stance": "ACCEPTED"
+   }
+  },
+  {
+   "step": 21,
+   "t": 2.7,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "The advertisement lacks mandatory risk disclaimers for retail investors while promoting leveraged trading.",
+   "evidence_ids": [
+    "E5"
+   ],
+   "data": {
+    "charge_id": "C3",
+    "stance": "ACCEPTED"
+   }
+  },
+  {
+   "step": 22,
+   "t": 2.7,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "round",
+   "text": "Round 1: Prosecutor 85% vs Defender 90% — 5 points apart",
+   "evidence_ids": [],
+   "data": {
+    "round": 1,
+    "prosecutor": 85,
+    "defender": 90,
+    "gap": 5
+   }
+  },
+  {
+   "step": 23,
+   "t": 2.7,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "note",
+   "text": "Agreed on 3 of 3 charges. Arbiter confirms the verdict.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 24,
+   "t": 4.2,
+   "from": "arbiter",
+   "to": "user",
+   "type": "verdict",
+   "text": "FRAUD (risk 90/100): This looks like a fake investment scheme. Do not pay.",
+   "evidence_ids": [
+    "E2",
+    "E4",
+    "E5"
+   ],
+   "data": {
+    "label": "FRAUD",
+    "risk": 90,
+    "headline": "This looks like a fake investment scheme. Do not pay.",
+    "headline_hi": "यह एक धोखाधड़ी वाला विज्ञापन है। अपना पैसा न दें।",
+    "reasons": [
+     "'Trive' is on the RBI Alert List of unauthorised forex/trading platforms (matched on website)",
+     "The ad targets retirees by using the phrase 'Grow your retirement corpus' to market high-risk forex and gold trading.",
+     "Promotes leveraged trading in global currencies and gold without required risk disclaimers for Indian retail investors."
+    ],
+    "reasons_hi": [
+     "यह कंपनी भारतीय रिजर्व बैंक (RBI) की अनधिकृत ट्रेडिंग सूची में शामिल है।",
+     "यह विज्ञापन वरिष्ठ नागरिकों को जोखिम भरे विदेशी मुद्रा व्यापार में फंसाने की कोशिश करता है।",
+     "इसमें भारतीय निवेशकों के लिए जरूरी जोखिम चेतावनी नहीं दी गई है।"
+    ],
+    "reason_evidence": [
+     [
+      "E2"
+     ],
+     [
+      "E4"
+     ],
+     [
+      "E5"
+     ]
+    ],
+    "what_to_do": [
+     "Do not pay any money. Do not share OTP, bank or KYC details.",
+     "Call 1930 (National Cyber Crime Helpline) or report at cybercrime.gov.in.",
+     "If money was already sent, call your bank right away to try to stop it."
+    ],
+    "what_to_do_hi": [
+     "कोई पैसा न भेजें। OTP, बैंक या KYC जानकारी किसी को न दें।",
+     "1930 (राष्ट्रीय साइबर अपराध हेल्पलाइन) पर कॉल करें या cybercrime.gov.in पर शिकायत करें।",
+     "अगर पैसे भेज चुके हैं, तो तुरंत अपने बैंक को फ़ोन करें।"
+    ],
+    "converged": true,
+    "deciding_factor": "चूंकि यह कंपनी RBI की अनधिकृत सूची में है और उच्च जोखिम वाले विदेशी मुद्रा व्यापार को बढ़ावा देती है, इसलिए यह सेवानिवृत्ति के पैसों के लिए सुरक्षित नहीं है।",
+    "guardrails": [],
+    "retiree_targeting": 75,
+    "retiree_hooks": [
+     "retirement corpus"
+    ],
+    "charges_summary": {
+     "ACCEPTED": 3,
+     "WITHDRAWN": 0,
+     "UPHELD": 0,
+     "DISMISSED": 0,
+     "UNRESOLVED": 0
+    }
+   }
+  }
+ ],
+ "verdict": {
+  "label": "FRAUD",
+  "risk": 90,
+  "headline": "This looks like a fake investment scheme. Do not pay.",
+  "headline_hi": "यह एक धोखाधड़ी वाला विज्ञापन है। अपना पैसा न दें।",
+  "reasons": [
+   "'Trive' is on the RBI Alert List of unauthorised forex/trading platforms (matched on website)",
+   "The ad targets retirees by using the phrase 'Grow your retirement corpus' to market high-risk forex and gold trading.",
+   "Promotes leveraged trading in global currencies and gold without required risk disclaimers for Indian retail investors."
+  ],
+  "reasons_hi": [
+   "यह कंपनी भारतीय रिजर्व बैंक (RBI) की अनधिकृत ट्रेडिंग सूची में शामिल है।",
+   "यह विज्ञापन वरिष्ठ नागरिकों को जोखिम भरे विदेशी मुद्रा व्यापार में फंसाने की कोशिश करता है।",
+   "इसमें भारतीय निवेशकों के लिए जरूरी जोखिम चेतावनी नहीं दी गई है।"
+  ],
+  "reason_evidence": [
+   [
+    "E2"
+   ],
+   [
+    "E4"
+   ],
+   [
+    "E5"
+   ]
+  ],
+  "what_to_do": [
+   "Do not pay any money. Do not share OTP, bank or KYC details.",
+   "Call 1930 (National Cyber Crime Helpline) or report at cybercrime.gov.in.",
+   "If money was already sent, call your bank right away to try to stop it."
+  ],
+  "what_to_do_hi": [
+   "कोई पैसा न भेजें। OTP, बैंक या KYC जानकारी किसी को न दें।",
+   "1930 (राष्ट्रीय साइबर अपराध हेल्पलाइन) पर कॉल करें या cybercrime.gov.in पर शिकायत करें।",
+   "अगर पैसे भेज चुके हैं, तो तुरंत अपने बैंक को फ़ोन करें।"
+  ],
+  "converged": true,
+  "deciding_factor": "चूंकि यह कंपनी RBI की अनधिकृत सूची में है और उच्च जोखिम वाले विदेशी मुद्रा व्यापार को बढ़ावा देती है, इसलिए यह सेवानिवृत्ति के पैसों के लिए सुरक्षित नहीं है।",
+  "guardrails": [],
+  "retiree_targeting": 75,
+  "retiree_hooks": [
+   "retirement corpus"
+  ],
+  "charges_summary": {
+   "ACCEPTED": 3,
+   "WITHDRAWN": 0,
+   "UPHELD": 0,
+   "DISMISSED": 0,
+   "UNRESOLVED": 0
+  }
+ },
+ "plan": [
+  {
+   "agent": "registry",
+   "why": "Check if Trive is registered with SEBI for financial trading services in India."
+  },
+  {
+   "agent": "web",
+   "why": "Check the domain age and legitimacy of trive.com."
+  },
+  {
+   "agent": "pattern",
+   "why": "Analyze the retirement corpus hook against known financial scam patterns."
+  }
+ ],
+ "converged": true,
+ "agent_runs": [
+  "registry",
+  "web",
+  "pattern"
+ ],
+ "duration_s": 4.2
+}

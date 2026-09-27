@@ -1,0 +1,689 @@
+{
+ "ad_text": "1 Finance — SEBI Registered Investment Adviser (INA000017523). Fee-only retirement planning for senior citizens: we review your SCSS, fixed deposits and mutual funds and suggest a plan. No product commissions and no guaranteed returns. Book a consultation at www.1finance.co.in. Investments in the securities market are subject to market risks.",
+ "claims": {
+  "advertiser": "1 Finance",
+  "product": "Fee-only retirement planning",
+  "promised_return": null,
+  "guaranteed": true,
+  "people_shown": [
+   "SEBI"
+  ],
+  "authority_claims": [
+   "SEBI Registered Investment Adviser"
+  ],
+  "reg_numbers": [
+   "INA000017523"
+  ],
+  "links": [
+   "www.1finance.co.in"
+  ],
+  "phones": [],
+  "emails": [],
+  "payment_asks": [],
+  "retiree_hooks": [
+   "retirement planning for senior citizens",
+   "review your SCSS, fixed deposits and mutual funds"
+  ],
+  "urgency": [],
+  "channel_shift": [],
+  "disclaimers": [
+   "No product commissions and no guaranteed returns",
+   "Investments in the securities market are subject to market risks"
+  ],
+  "upi_ids": [],
+  "retiree_targeting": 70
+ },
+ "evidence": [
+  {
+   "id": "E1",
+   "agent": "registry",
+   "finding": "INA000017523 is a real SEBI Investment Adviser registration belonging to '1 Finance Private Limited'",
+   "supports": "LEGIT",
+   "strength": 2,
+   "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+  },
+  {
+   "id": "E2",
+   "agent": "registry",
+   "finding": "The ad's website/e-mail (1finance.co.in) matches the registered firm's official domain",
+   "supports": "LEGIT",
+   "strength": 2,
+   "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+  },
+  {
+   "id": "E3",
+   "agent": "pattern",
+   "finding": "Ad explicitly states 'No product commissions and no guaranteed returns', aligning with SEBI RIA regulations.",
+   "supports": "LEGIT",
+   "strength": 3,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E4",
+   "agent": "pattern",
+   "finding": "Includes standard statutory disclaimer about market risks for securities market investments.",
+   "supports": "LEGIT",
+   "strength": 2,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E5",
+   "agent": "pattern",
+   "finding": "Focuses on legitimate retirement instruments like SCSS and fixed deposits without making unrealistic return promises.",
+   "supports": "LEGIT",
+   "strength": 2,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E6",
+   "agent": "web",
+   "finding": "1finance.co.in is 60 months old",
+   "supports": "NEUTRAL",
+   "strength": 1,
+   "source": "RDAP domain records"
+  }
+ ],
+ "turns": [
+  {
+   "agent": "prosecutor",
+   "stage": "OPEN",
+   "round": 1,
+   "fraud_probability": 5,
+   "message": "The ad appears to be legitimate and transparent, clearly stating there are no guaranteed returns and highlighting market risks. However, as a precaution to protect our retiree, we should still verify their SEBI registration and domain details before proceeding."
+  },
+  {
+   "agent": "defender",
+   "stage": "RESPOND",
+   "round": 1,
+   "fraud_probability": 0,
+   "message": "The SEBI registration number and official website domain have already been verified against official records, confirming it is a legitimate fee-only investment adviser."
+  },
+  {
+   "agent": "prosecutor",
+   "stage": "REBUT",
+   "round": 2,
+   "fraud_probability": 0,
+   "message": "The registration number and domain both directly match the official SEBI records for 1 Finance Private Limited. With standard disclaimers present and zero return guarantees, this appears entirely legitimate."
+  }
+ ],
+ "charges": [
+  {
+   "id": "C1",
+   "charge": "We must verify that the SEBI registration number INA000017523 belongs to the entity operating the website 1finance.co.in.",
+   "severity": 1,
+   "evidence_ids": [
+    "E1",
+    "E2"
+   ],
+   "status": "WITHDRAWN",
+   "history": [
+    [
+     "Defender",
+     "disputed: Evidence E1 and E2 confirm that the SEBI registration number INA000017523 belongs to '1 Finance Private Limited' and matches their official website 1finance.co.in."
+    ],
+    [
+     "Prosecutor",
+     "withdrawn: Official SEBI records confirm INA000017523 belongs to 1 Finance Private Limited and is tied directly to the domain 1finance.co.in."
+    ]
+   ],
+   "ruling": null
+  }
+ ],
+ "trace": [
+  {
+   "step": 1,
+   "t": 0.0,
+   "from": "orchestrator",
+   "to": "extractor",
+   "type": "handoff",
+   "text": "New ad received. Extractor: read it and list every checkable claim.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 2,
+   "t": 0.0,
+   "from": "extractor",
+   "to": "blackboard",
+   "type": "claims",
+   "text": "Found advertiser '1 Finance'; endorsed by SEBI; 1 registration no., 1 link(s); aimed at retirees: 'retirement planning for senior citizens'.",
+   "evidence_ids": [],
+   "data": {
+    "advertiser": "1 Finance",
+    "product": "Fee-only retirement planning",
+    "promised_return": null,
+    "guaranteed": true,
+    "people_shown": [
+     "SEBI"
+    ],
+    "authority_claims": [
+     "SEBI Registered Investment Adviser"
+    ],
+    "reg_numbers": [
+     "INA000017523"
+    ],
+    "links": [
+     "www.1finance.co.in"
+    ],
+    "phones": [],
+    "emails": [],
+    "payment_asks": [],
+    "retiree_hooks": [
+     "retirement planning for senior citizens",
+     "review your SCSS, fixed deposits and mutual funds"
+    ],
+    "urgency": [],
+    "channel_shift": [],
+    "disclaimers": [
+     "No product commissions and no guaranteed returns",
+     "Investments in the securities market are subject to market risks"
+    ],
+    "upi_ids": [],
+    "retiree_targeting": 70
+   }
+  },
+  {
+   "step": 3,
+   "t": 0.0,
+   "from": "router",
+   "to": "orchestrator",
+   "type": "plan",
+   "text": "Plan: Registry → Scam-pattern → Web & contact",
+   "evidence_ids": [],
+   "data": [
+    {
+     "agent": "registry",
+     "why": "Checks if the registration number INA000017523 matches SEBI's register for Investment Advisers."
+    },
+    {
+     "agent": "pattern",
+     "why": "Compares retirement planning claims and SCSS/mutual fund reviews against known scam patterns."
+    },
+    {
+     "agent": "web",
+     "why": "Checks the domain www.1finance.co.in for authenticity and domain age."
+    }
+   ]
+  },
+  {
+   "step": 4,
+   "t": 0.0,
+   "from": "router",
+   "to": "registry",
+   "type": "handoff",
+   "text": "Checks if the registration number INA000017523 matches SEBI's register for Investment Advisers.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 5,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "INA000017523 is a real SEBI Investment Adviser registration belonging to '1 Finance Private Limited'",
+   "evidence_ids": [
+    "E1"
+   ],
+   "data": {
+    "id": "E1",
+    "agent": "registry",
+    "finding": "INA000017523 is a real SEBI Investment Adviser registration belonging to '1 Finance Private Limited'",
+    "supports": "LEGIT",
+    "strength": 2,
+    "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+   }
+  },
+  {
+   "step": 6,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "The ad's website/e-mail (1finance.co.in) matches the registered firm's official domain",
+   "evidence_ids": [
+    "E2"
+   ],
+   "data": {
+    "id": "E2",
+    "agent": "registry",
+    "finding": "The ad's website/e-mail (1finance.co.in) matches the registered firm's official domain",
+    "supports": "LEGIT",
+    "strength": 2,
+    "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+   }
+  },
+  {
+   "step": 7,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Checked 2 number(s)/name(s) against 3,251 SEBI records and 95 RBI alert entries.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 8,
+   "t": 0.0,
+   "from": "router",
+   "to": "pattern",
+   "type": "handoff",
+   "text": "Compares retirement planning claims and SCSS/mutual fund reviews against known scam patterns.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 9,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Ad explicitly states 'No product commissions and no guaranteed returns', aligning with SEBI RIA regulations.",
+   "evidence_ids": [
+    "E3"
+   ],
+   "data": {
+    "id": "E3",
+    "agent": "pattern",
+    "finding": "Ad explicitly states 'No product commissions and no guaranteed returns', aligning with SEBI RIA regulations.",
+    "supports": "LEGIT",
+    "strength": 3,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 10,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Includes standard statutory disclaimer about market risks for securities market investments.",
+   "evidence_ids": [
+    "E4"
+   ],
+   "data": {
+    "id": "E4",
+    "agent": "pattern",
+    "finding": "Includes standard statutory disclaimer about market risks for securities market investments.",
+    "supports": "LEGIT",
+    "strength": 2,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 11,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Focuses on legitimate retirement instruments like SCSS and fixed deposits without making unrealistic return promises.",
+   "evidence_ids": [
+    "E5"
+   ],
+   "data": {
+    "id": "E5",
+    "agent": "pattern",
+    "finding": "Focuses on legitimate retirement instruments like SCSS and fixed deposits without making unrealistic return promises.",
+    "supports": "LEGIT",
+    "strength": 2,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 12,
+   "t": 0.0,
+   "from": "router",
+   "to": "web",
+   "type": "handoff",
+   "text": "Checks the domain www.1finance.co.in for authenticity and domain age.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 13,
+   "t": 0.0,
+   "from": "web",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "1finance.co.in is 60 months old",
+   "evidence_ids": [
+    "E6"
+   ],
+   "data": {
+    "id": "E6",
+    "agent": "web",
+    "finding": "1finance.co.in is 60 months old",
+    "supports": "NEUTRAL",
+    "strength": 1,
+    "source": "RDAP domain records"
+   }
+  },
+  {
+   "step": 14,
+   "t": 0.0,
+   "from": "orchestrator",
+   "to": "prosecutor",
+   "type": "handoff",
+   "text": "6 pieces of evidence collected. Prosecutor: file your charges. Defender: answer each one.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 15,
+   "t": 6.3,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "argument",
+   "text": "The ad appears to be legitimate and transparent, clearly stating there are no guaranteed returns and highlighting market risks. However, as a precaution to protect our retiree, we should still verify their SEBI registration and domain details before proceeding.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 5,
+    "stage": "OPEN",
+    "round": 1
+   }
+  },
+  {
+   "step": 16,
+   "t": 6.3,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "We must verify that the SEBI registration number INA000017523 belongs to the entity operating the website 1finance.co.in.",
+   "evidence_ids": [
+    "E1",
+    "E2"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "severity": 1
+   }
+  },
+  {
+   "step": 17,
+   "t": 6.3,
+   "from": "prosecutor",
+   "to": "registry",
+   "type": "handoff",
+   "text": "Confirming the official SEBI registration details for 1 Finance. — checking \"INA000017523\"",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 18,
+   "t": 6.3,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Re-checked: confirms E1 (INA000017523 is a real SEBI Investment Adviser registration belonging to '1 Finance Privat)",
+   "evidence_ids": [
+    "E1"
+   ],
+   "data": null
+  },
+  {
+   "step": 19,
+   "t": 6.3,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Re-checked: confirms E2 (The ad's website/e-mail (1finance.co.in) matches the registered firm's official domain)",
+   "evidence_ids": [
+    "E2"
+   ],
+   "data": null
+  },
+  {
+   "step": 20,
+   "t": 6.3,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Checked 1 number(s)/name(s) against 3,251 SEBI records and 95 RBI alert entries.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 21,
+   "t": 7.9,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "argument",
+   "text": "The SEBI registration number and official website domain have already been verified against official records, confirming it is a legitimate fee-only investment adviser.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 0,
+    "stage": "RESPOND",
+    "round": 1
+   }
+  },
+  {
+   "step": 22,
+   "t": 7.9,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "Evidence E1 and E2 confirm that the SEBI registration number INA000017523 belongs to '1 Finance Private Limited' and matches their official website 1finance.co.in.",
+   "evidence_ids": [
+    "E1",
+    "E2"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "stance": "DISPUTED"
+   }
+  },
+  {
+   "step": 23,
+   "t": 7.9,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "round",
+   "text": "Round 1: Prosecutor 5% vs Defender 0% — 5 points apart",
+   "evidence_ids": [],
+   "data": {
+    "round": 1,
+    "prosecutor": 5,
+    "defender": 0,
+    "gap": 5
+   }
+  },
+  {
+   "step": 24,
+   "t": 14.9,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "argument",
+   "text": "The registration number and domain both directly match the official SEBI records for 1 Finance Private Limited. With standard disclaimers present and zero return guarantees, this appears entirely legitimate.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 0,
+    "stage": "REBUT",
+    "round": 2
+   }
+  },
+  {
+   "step": 25,
+   "t": 14.9,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "ruling",
+   "text": "Official SEBI records confirm INA000017523 belongs to 1 Finance Private Limited and is tied directly to the domain 1finance.co.in.",
+   "evidence_ids": [
+    "E1",
+    "E2"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "stance": "WITHDRAWN"
+   }
+  },
+  {
+   "step": 26,
+   "t": 14.9,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "round",
+   "text": "Round 2: Prosecutor 0% vs Defender 0% — 0 points apart",
+   "evidence_ids": [],
+   "data": {
+    "round": 2,
+    "prosecutor": 0,
+    "defender": 0,
+    "gap": 0
+   }
+  },
+  {
+   "step": 27,
+   "t": 14.9,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "note",
+   "text": "Agreed on 1 of 1 charges. Arbiter confirms the verdict.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 28,
+   "t": 21.4,
+   "from": "arbiter",
+   "to": "user",
+   "type": "verdict",
+   "text": "LIKELY SAFE (risk 5/100): This ad is genuine and safe to consult.",
+   "evidence_ids": [
+    "E1",
+    "E2",
+    "E3",
+    "E4"
+   ],
+   "data": {
+    "label": "LIKELY_SAFE",
+    "risk": 5,
+    "headline": "This ad is genuine and safe to consult.",
+    "headline_hi": "यह विज्ञापन पूरी तरह असली और सुरक्षित है।",
+    "reasons": [
+     "The SEBI registration number is verified and belongs to this official company.",
+     "The official website matches SEBI government registry records.",
+     "They do not promise guaranteed returns and follow all legal guidelines."
+    ],
+    "reasons_hi": [
+     "सेबी (SEBI) पंजीकरण नंबर असली है और इसी कंपनी के नाम पर दर्ज है।",
+     "वेबसाइट का पता सेबी के आधिकारिक रिकॉर्ड से पूरी तरह मेल खाता है।",
+     "वे किसी भी गारंटीड मुनाफे का झूठा वादा नहीं करते हैं।"
+    ],
+    "reason_evidence": [
+     [
+      "E1"
+     ],
+     [
+      "E2"
+     ],
+     [
+      "E3",
+      "E4"
+     ]
+    ],
+    "what_to_do": [
+     "Invest only through the official channel: the post office, your bank branch, or the company's own registered app or website.",
+     "Check the interest rate and name on the official website before paying.",
+     "If anyone later asks for OTP or an extra fee, stop — that is a scam."
+    ],
+    "what_to_do_hi": [
+     "केवल आधिकारिक रास्ते से निवेश करें: डाकघर, अपनी बैंक शाखा, या कंपनी का पंजीकृत ऐप/वेबसाइट।",
+     "भुगतान से पहले आधिकारिक वेबसाइट पर ब्याज दर और नाम जाँच लें।",
+     "अगर बाद में कोई OTP या अतिरिक्त फ़ीस माँगे, तो रुक जाएँ — वह धोखा है।"
+    ],
+    "converged": true,
+    "deciding_factor": "Official SEBI records confirmed that registration number INA000017523 belongs directly to 1 Finance Private Limited, matching their official domain with all mandatory disclaimers in place.",
+    "guardrails": [],
+    "retiree_targeting": 70,
+    "retiree_hooks": [
+     "retirement planning for senior citizens",
+     "review your SCSS, fixed deposits and mutual funds"
+    ],
+    "charges_summary": {
+     "ACCEPTED": 0,
+     "WITHDRAWN": 1,
+     "UPHELD": 0,
+     "DISMISSED": 0,
+     "UNRESOLVED": 0
+    }
+   }
+  }
+ ],
+ "verdict": {
+  "label": "LIKELY_SAFE",
+  "risk": 5,
+  "headline": "This ad is genuine and safe to consult.",
+  "headline_hi": "यह विज्ञापन पूरी तरह असली और सुरक्षित है।",
+  "reasons": [
+   "The SEBI registration number is verified and belongs to this official company.",
+   "The official website matches SEBI government registry records.",
+   "They do not promise guaranteed returns and follow all legal guidelines."
+  ],
+  "reasons_hi": [
+   "सेबी (SEBI) पंजीकरण नंबर असली है और इसी कंपनी के नाम पर दर्ज है।",
+   "वेबसाइट का पता सेबी के आधिकारिक रिकॉर्ड से पूरी तरह मेल खाता है।",
+   "वे किसी भी गारंटीड मुनाफे का झूठा वादा नहीं करते हैं।"
+  ],
+  "reason_evidence": [
+   [
+    "E1"
+   ],
+   [
+    "E2"
+   ],
+   [
+    "E3",
+    "E4"
+   ]
+  ],
+  "what_to_do": [
+   "Invest only through the official channel: the post office, your bank branch, or the company's own registered app or website.",
+   "Check the interest rate and name on the official website before paying.",
+   "If anyone later asks for OTP or an extra fee, stop — that is a scam."
+  ],
+  "what_to_do_hi": [
+   "केवल आधिकारिक रास्ते से निवेश करें: डाकघर, अपनी बैंक शाखा, या कंपनी का पंजीकृत ऐप/वेबसाइट।",
+   "भुगतान से पहले आधिकारिक वेबसाइट पर ब्याज दर और नाम जाँच लें।",
+   "अगर बाद में कोई OTP या अतिरिक्त फ़ीस माँगे, तो रुक जाएँ — वह धोखा है।"
+  ],
+  "converged": true,
+  "deciding_factor": "Official SEBI records confirmed that registration number INA000017523 belongs directly to 1 Finance Private Limited, matching their official domain with all mandatory disclaimers in place.",
+  "guardrails": [],
+  "retiree_targeting": 70,
+  "retiree_hooks": [
+   "retirement planning for senior citizens",
+   "review your SCSS, fixed deposits and mutual funds"
+  ],
+  "charges_summary": {
+   "ACCEPTED": 0,
+   "WITHDRAWN": 1,
+   "UPHELD": 0,
+   "DISMISSED": 0,
+   "UNRESOLVED": 0
+  }
+ },
+ "plan": [
+  {
+   "agent": "registry",
+   "why": "Checks if the registration number INA000017523 matches SEBI's register for Investment Advisers."
+  },
+  {
+   "agent": "pattern",
+   "why": "Compares retirement planning claims and SCSS/mutual fund reviews against known scam patterns."
+  },
+  {
+   "agent": "web",
+   "why": "Checks the domain www.1finance.co.in for authenticity and domain age."
+  }
+ ],
+ "converged": true,
+ "agent_runs": [
+  "registry",
+  "pattern",
+  "web",
+  "registry"
+ ],
+ "duration_s": 21.4
+}

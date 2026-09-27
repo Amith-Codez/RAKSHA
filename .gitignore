@@ -1,0 +1,11 @@
+.env
+**/.venv/
+**/__pycache__/
+**/.pytest_cache/
+backend/cache/llm/*.json
+backend/cache/tts/
+backend/cache/raksha.db
+extension/node_modules/
+extension/.output/
+extension/.wxt/
+.DS_Store

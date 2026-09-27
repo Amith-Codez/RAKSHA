@@ -1,0 +1,173 @@
+{
+ "note": "Scam ads are reconstructed from patterns in public news reports and regulator warnings; phone numbers use the UK's fictional drama range (+44 7700 900xxx) and fictional Indian test numbers. Genuine ads use published Jul-Sep 2026 small-savings rates.",
+ "ads": [
+  {
+   "id": "scam_fm_deepfake",
+   "title": "Finance Minister 'Govt + SBI' scheme (deepfake-style)",
+   "category": "scam",
+   "expected": "FRAUD",
+   "acceptable": [
+    "FRAUD"
+   ],
+   "based_on": "Bengaluru senior lost ₹6.88 lakh to a Facebook deepfake of FM Nirmala Sitharaman (NewsFirst, 2026)",
+   "text": "BREAKING: Finance Minister Nirmala Sitharaman launches the new Government–SBI Senior Citizen Income Scheme! A joint initiative of the Central Government and State Bank of India. Invest just ₹21,000 and receive ₹15,00,000 within 10 days — 100% guaranteed by the Government. Only for pensioners and retired employees. Limited slots, registration closes tonight! Register now: www.sbi-govtscheme-invest.com  For help WhatsApp: +44 7700 900123"
+  },
+  {
+   "id": "scam_ai_trading_celebrity",
+   "title": "Business leader endorses 'AI trading app' for retirees",
+   "category": "scam",
+   "expected": "FRAUD",
+   "acceptable": [
+    "FRAUD"
+   ],
+   "based_on": "Recurring deepfake ads of Narayana Murthy and other business leaders promoting 'AI trading' platforms",
+   "text": "Narayana Murthy reveals the secret that banks don't want you to know: retired people across India are earning ₹3,00,000 every month with the new QuantumAI Trade app. Deposit just ₹21,000 and the AI trades for you. No experience needed, zero risk. Offer valid only today for senior citizens. Download now: bit.ly/quantum-ai-retire  Our advisor will call you on WhatsApp."
+  },
+  {
+   "id": "scam_fake_sebi_tips",
+   "title": "'SEBI registered' WhatsApp stock-tips club",
+   "category": "scam",
+   "expected": "FRAUD",
+   "acceptable": [
+    "FRAUD"
+   ],
+   "based_on": "WhatsApp/Telegram 'VIP stock tips' groups quoting fake SEBI numbers (SEBI investor warnings)",
+   "text": "Growth Capital Advisors — SEBI Registered Investment Adviser, Reg. No. INA000099999. Join our FREE VIP Stock Club on WhatsApp: guaranteed 30% profit every month on your retirement savings. 5,000+ retired bank officers already earning. Only 20 seats left! Join: chat.whatsapp.com/VIPstockclub  Contact: growthcapital.advisors@gmail.com"
+  },
+  {
+   "id": "scam_pension_fd",
+   "title": "'Senior Citizen Special FD' at 18% with UPI payment",
+   "category": "scam",
+   "expected": "FRAUD",
+   "acceptable": [
+    "FRAUD",
+    "SUSPICIOUS"
+   ],
+   "based_on": "Fake FD / pension top-up schemes asking for payment to personal UPI IDs",
+   "text": "Suraksha Wealth Nidhi presents PENSION PLUS: Senior Citizen Special Fixed Deposit at 18% per annum, assured monthly payout. RBI approved. No documents, no bank visit needed. Pay your deposit today via UPI to surakshawealth.nidhi@ybl and get a ₹5,000 joining bonus. Offer ends Sunday."
+  },
+  {
+   "id": "scam_rbi_alert_forex",
+   "title": "Forex/gold trading platform on RBI Alert List",
+   "category": "scam",
+   "expected": "FRAUD",
+   "acceptable": [
+    "FRAUD"
+   ],
+   "based_on": "Starnet FX was added to the RBI Alert List of unauthorised forex platforms on 19 Nov 2025",
+   "text": "Trade gold and forex with Starnet FX and earn 2% daily profit. Trusted by thousands of retired government officers. Open your account in 5 minutes at www.starnetfx.com — our relationship manager will guide you personally on Telegram: t.me/starnetfx_india"
+  },
+  {
+   "id": "genuine_scss",
+   "title": "Senior Citizens Savings Scheme (post office)",
+   "category": "genuine",
+   "expected": "LIKELY_SAFE",
+   "acceptable": [
+    "LIKELY_SAFE"
+   ],
+   "based_on": "Govt of India small-savings rates Jul–Sep 2026: SCSS 8.2% (Business Today, 30 Jun 2026)",
+   "text": "Senior Citizens Savings Scheme (SCSS) — a Government of India savings scheme for citizens aged 60 and above. Interest 8.2% per annum for the July–September 2026 quarter, paid every quarter. Deposit from ₹1,000 up to ₹30 lakh. Tax deduction available under Section 80C. Open your account at any post office or authorised bank branch. Details: www.indiapost.gov.in"
+  },
+  {
+   "id": "genuine_pomis",
+   "title": "Post Office Monthly Income Scheme",
+   "category": "genuine",
+   "expected": "LIKELY_SAFE",
+   "acceptable": [
+    "LIKELY_SAFE"
+   ],
+   "based_on": "POMIS 7.4% for Jul–Sep 2026 (Business Today, 30 Jun 2026)",
+   "text": "Monthly income for your retirement: Post Office Monthly Income Scheme (POMIS). Earn 7.4% per annum, paid every month into your savings account. Invest up to ₹9 lakh (single account) for 5 years. Backed by the Government of India. Visit your nearest post office. More information at www.indiapost.gov.in"
+  },
+  {
+   "id": "genuine_mf_awareness",
+   "title": "Mutual fund investor-awareness ad (AMFI)",
+   "category": "genuine",
+   "expected": "LIKELY_SAFE",
+   "acceptable": [
+    "LIKELY_SAFE"
+   ],
+   "based_on": "Standard AMFI investor-awareness campaign format with statutory disclaimer",
+   "text": "Planning for retirement? A Systematic Withdrawal Plan in mutual funds can give you a regular income. Talk to a SEBI-registered investment adviser or an AMFI-registered mutual fund distributor before you invest. An investor education initiative. Mutual fund investments are subject to market risks, read all scheme related documents carefully. Visit www.mutualfundssahihai.com"
+  },
+  {
+   "id": "grey_clone_firm",
+   "title": "Clone of a real registered adviser (impersonation)",
+   "category": "grey",
+   "expected": "FRAUD",
+   "acceptable": [
+    "FRAUD",
+    "SUSPICIOUS"
+   ],
+   "based_on": "SEBI warnings about fraudsters impersonating registered intermediaries",
+   "text": "360 ONE Investment Adviser — SEBI Reg. No. INA000000888. Exclusive Retirement Wealth Program for senior citizens: assured 4% monthly returns on your PF and gratuity savings. Our senior relationship manager will personally help you open the account. Message us on WhatsApp +44 7700 900456 or e-mail 360one.retirement@gmail.com"
+  },
+  {
+   "id": "grey_unregistered_educator",
+   "title": "Unregistered educator, no product sold",
+   "category": "grey",
+   "expected": "LIKELY_SAFE",
+   "acceptable": [
+    "LIKELY_SAFE",
+    "SUSPICIOUS"
+   ],
+   "based_on": "Tests that 'not registered' alone does not mean fraud",
+   "text": "Pension Pathshala — a free Sunday webinar for retired people in Hyderabad. Learn the difference between SCSS, bank FDs and debt mutual funds, and how to spot investment scams. We do not sell any product and never ask for money. Hosted with the local senior citizens' association."
+  },
+  {
+   "id": "hard_borrowed_number",
+   "title": "Professional-looking adviser using someone else's SEBI number",
+   "category": "hard",
+   "expected": "FRAUD",
+   "acceptable": [
+    "FRAUD"
+   ],
+   "based_on": "SEBI warns that fraudsters quote registration numbers of genuine intermediaries. Needs a registry lookup to catch.",
+   "text": "Sunrise Pension Advisors — SEBI Registered Investment Adviser, Reg. No. INA000017231. Personalised retirement portfolios for pensioners with expected returns of 10–12% a year. Our advisory desk handles everything for you. Write to desk@sunrisepensionadvisors.in to book a free review."
+  },
+  {
+   "id": "hard_fake_ra_number",
+   "title": "Research-analyst tips with a registration number that doesn't exist",
+   "category": "hard",
+   "expected": "FRAUD",
+   "acceptable": [
+    "FRAUD"
+   ],
+   "based_on": "Fake 'SEBI registered' tip services. The number looks valid but is not in SEBI's register.",
+   "text": "Nifty Pension Research — SEBI Registered Research Analyst INH000099999. Premium stock recommendations designed for retirees, targeting 12–15% annual returns. Subscription ₹4,999 per month. Visit niftypensionresearch.in to subscribe."
+  },
+  {
+   "id": "hard_rbi_alert_quiet",
+   "title": "Calm, professional ad for a platform on the RBI Alert List",
+   "category": "hard",
+   "expected": "FRAUD",
+   "acceptable": [
+    "FRAUD"
+   ],
+   "based_on": "Trive was added to the RBI Alert List on 19 Nov 2025. No wild promises, so only the list reveals it.",
+   "text": "Grow your retirement corpus by trading global currencies and gold with Trive. Tight spreads, fast withdrawals, trusted by over a million traders worldwide. Open your account in minutes at trive.com."
+  },
+  {
+   "id": "hard_lookalike_indiapost",
+   "title": "Correct SCSS rate, but a look-alike India Post site and UPI payment",
+   "category": "hard",
+   "expected": "FRAUD",
+   "acceptable": [
+    "FRAUD"
+   ],
+   "based_on": "Clone sites copy real government rates; the website and payment route give them away.",
+   "text": "Senior Citizens Savings Scheme — now open online! Earn 8.2% per annum, a Government of India scheme for citizens aged 60+. Skip the post-office queue: open your SCSS account in 5 minutes at www.indiapost-scss.in and pay your deposit by UPI to indiapostscss@ybl."
+  },
+  {
+   "id": "hard_genuine_registered_adviser",
+   "title": "Genuine registered adviser with matching official website",
+   "category": "hard",
+   "expected": "LIKELY_SAFE",
+   "acceptable": [
+    "LIKELY_SAFE"
+   ],
+   "based_on": "A real SEBI-registered adviser, no guaranteed returns, website matches the registered e-mail domain. Needs the registry to trust it.",
+   "text": "1 Finance — SEBI Registered Investment Adviser (INA000017523). Fee-only retirement planning for senior citizens: we review your SCSS, fixed deposits and mutual funds and suggest a plan. No product commissions and no guaranteed returns. Book a consultation at www.1finance.co.in. Investments in the securities market are subject to market risks."
+  }
+ ]
+}

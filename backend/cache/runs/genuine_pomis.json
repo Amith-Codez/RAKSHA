@@ -1,0 +1,648 @@
+{
+ "ad_text": "Monthly income for your retirement: Post Office Monthly Income Scheme (POMIS). Earn 7.4% per annum, paid every month into your savings account. Invest up to ₹9 lakh (single account) for 5 years. Backed by the Government of India. Visit your nearest post office. More information at www.indiapost.gov.in",
+ "claims": {
+  "advertiser": "India Post",
+  "product": "Post Office Monthly Income Scheme (POMIS)",
+  "promised_return": "7.4% per annum",
+  "guaranteed": true,
+  "people_shown": [
+   "Government of India"
+  ],
+  "authority_claims": [
+   "Backed by the Government of India"
+  ],
+  "reg_numbers": [],
+  "links": [
+   "www.indiapost.gov.in"
+  ],
+  "phones": [],
+  "emails": [],
+  "payment_asks": [],
+  "retiree_hooks": [
+   "Monthly income for your retirement"
+  ],
+  "urgency": [],
+  "channel_shift": [],
+  "disclaimers": [],
+  "upi_ids": [],
+  "retiree_targeting": 90
+ },
+ "evidence": [
+  {
+   "id": "E1",
+   "agent": "registry",
+   "finding": "'India Post' is not in SEBI's registers of investment advisers or research analysts, yet the ad promises investment returns",
+   "supports": "FRAUD",
+   "strength": 1,
+   "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+  },
+  {
+   "id": "E2",
+   "agent": "web",
+   "finding": "indiapost.gov.in is an official website of India Post",
+   "supports": "LEGIT",
+   "strength": 2,
+   "source": "domain check"
+  },
+  {
+   "id": "E3",
+   "agent": "pattern",
+   "finding": "Promised return of 7.4% p.a. matches the official Post Office Monthly Income Scheme rate for the Jul-Sep 2026 quarter.",
+   "supports": "LEGIT",
+   "strength": 3,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E4",
+   "agent": "pattern",
+   "finding": "Ad directs users to 'nearest post office' and official domain 'www.indiapost.gov.in', aligning with genuine government channels.",
+   "supports": "LEGIT",
+   "strength": 3,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E5",
+   "agent": "pattern",
+   "finding": "Investment limit of up to 9 lakh for a single account correctly reflects POMIS rules.",
+   "supports": "LEGIT",
+   "strength": 2,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E6",
+   "agent": "registry",
+   "finding": "'India Post POMIS' is not in SEBI's registers of investment advisers or research analysts, yet the ad promises investment returns",
+   "supports": "FRAUD",
+   "strength": 1,
+   "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+  }
+ ],
+ "turns": [
+  {
+   "agent": "prosecutor",
+   "stage": "OPEN",
+   "round": 1,
+   "fraud_probability": 5,
+   "message": "Even though this ad promotes a legitimate government scheme, I am filing a minor charge because it lacks statutory disclaimers and mentions investment advisory aspects. Let's verify the official standing before clearing it."
+  },
+  {
+   "agent": "defender",
+   "stage": "RESPOND",
+   "round": 1,
+   "fraud_probability": 0,
+   "message": "This ad promotes the genuine Post Office Monthly Income Scheme backed by the Government of India, with rates and limits matching official rules and directing users to official channels (E2, E3, E4, E5). Government small-savings schemes like POMIS are managed directly through the Ministry of Finance and India Post, so they do not require SEBI investment adviser registration."
+  },
+  {
+   "agent": "prosecutor",
+   "stage": "REBUT",
+   "round": 2,
+   "fraud_probability": 0,
+   "message": "Since this is a sovereign-backed small savings scheme managed directly by India Post rather than a market-linked product, SEBI disclaimers do not apply. I am withdrawing the charge."
+  }
+ ],
+ "charges": [
+  {
+   "id": "C1",
+   "charge": "The ad promotes financial returns but lacks SEBI or statutory disclaimers regarding market or scheme risks.",
+   "severity": 1,
+   "evidence_ids": [
+    "E1"
+   ],
+   "status": "WITHDRAWN",
+   "history": [
+    [
+     "Defender",
+     "disputed: India Post POMIS is a sovereign-backed small savings scheme, not a market-linked mutual fund or private advisory service, so SEBI investment disclaimers do not apply (E2, E3, E4, E5)."
+    ],
+    [
+     "Prosecutor",
+     "withdrawn: POMIS is a government-backed small savings scheme, not a market-linked investment requiring SEBI disclaimers."
+    ]
+   ],
+   "ruling": null
+  }
+ ],
+ "trace": [
+  {
+   "step": 1,
+   "t": 0.0,
+   "from": "orchestrator",
+   "to": "extractor",
+   "type": "handoff",
+   "text": "New ad received. Extractor: read it and list every checkable claim.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 2,
+   "t": 0.0,
+   "from": "extractor",
+   "to": "blackboard",
+   "type": "claims",
+   "text": "Found advertiser 'India Post'; promise '7.4% per annum' (guaranteed); endorsed by Government of India; 1 link(s); aimed at retirees: 'Monthly income for your retirement'.",
+   "evidence_ids": [],
+   "data": {
+    "advertiser": "India Post",
+    "product": "Post Office Monthly Income Scheme (POMIS)",
+    "promised_return": "7.4% per annum",
+    "guaranteed": true,
+    "people_shown": [
+     "Government of India"
+    ],
+    "authority_claims": [
+     "Backed by the Government of India"
+    ],
+    "reg_numbers": [],
+    "links": [
+     "www.indiapost.gov.in"
+    ],
+    "phones": [],
+    "emails": [],
+    "payment_asks": [],
+    "retiree_hooks": [
+     "Monthly income for your retirement"
+    ],
+    "urgency": [],
+    "channel_shift": [],
+    "disclaimers": [],
+    "upi_ids": [],
+    "retiree_targeting": 90
+   }
+  },
+  {
+   "step": 3,
+   "t": 0.0,
+   "from": "router",
+   "to": "orchestrator",
+   "type": "plan",
+   "text": "Plan: Registry → Web & contact → Scam-pattern",
+   "evidence_ids": [],
+   "data": [
+    {
+     "agent": "registry",
+     "why": "(rule) the ad names a company or quotes a registration number"
+    },
+    {
+     "agent": "web",
+     "why": "(rule) the ad has links or phone numbers to check"
+    },
+    {
+     "agent": "pattern",
+     "why": "(safety rule) every ad gets a scam-pattern check"
+    }
+   ]
+  },
+  {
+   "step": 4,
+   "t": 0.0,
+   "from": "router",
+   "to": "registry",
+   "type": "handoff",
+   "text": "(rule) the ad names a company or quotes a registration number",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 5,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "'India Post' is not in SEBI's registers of investment advisers or research analysts, yet the ad promises investment returns",
+   "evidence_ids": [
+    "E1"
+   ],
+   "data": {
+    "id": "E1",
+    "agent": "registry",
+    "finding": "'India Post' is not in SEBI's registers of investment advisers or research analysts, yet the ad promises investment returns",
+    "supports": "FRAUD",
+    "strength": 1,
+    "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+   }
+  },
+  {
+   "step": 6,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Checked 1 number(s)/name(s) against 3,251 SEBI records and 95 RBI alert entries.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 7,
+   "t": 0.0,
+   "from": "router",
+   "to": "web",
+   "type": "handoff",
+   "text": "(rule) the ad has links or phone numbers to check",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 8,
+   "t": 0.0,
+   "from": "web",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "indiapost.gov.in is an official website of India Post",
+   "evidence_ids": [
+    "E2"
+   ],
+   "data": {
+    "id": "E2",
+    "agent": "web",
+    "finding": "indiapost.gov.in is an official website of India Post",
+    "supports": "LEGIT",
+    "strength": 2,
+    "source": "domain check"
+   }
+  },
+  {
+   "step": 9,
+   "t": 0.0,
+   "from": "router",
+   "to": "pattern",
+   "type": "handoff",
+   "text": "(safety rule) every ad gets a scam-pattern check",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 10,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Promised return of 7.4% p.a. matches the official Post Office Monthly Income Scheme rate for the Jul-Sep 2026 quarter.",
+   "evidence_ids": [
+    "E3"
+   ],
+   "data": {
+    "id": "E3",
+    "agent": "pattern",
+    "finding": "Promised return of 7.4% p.a. matches the official Post Office Monthly Income Scheme rate for the Jul-Sep 2026 quarter.",
+    "supports": "LEGIT",
+    "strength": 3,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 11,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Ad directs users to 'nearest post office' and official domain 'www.indiapost.gov.in', aligning with genuine government channels.",
+   "evidence_ids": [
+    "E4"
+   ],
+   "data": {
+    "id": "E4",
+    "agent": "pattern",
+    "finding": "Ad directs users to 'nearest post office' and official domain 'www.indiapost.gov.in', aligning with genuine government channels.",
+    "supports": "LEGIT",
+    "strength": 3,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 12,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Investment limit of up to 9 lakh for a single account correctly reflects POMIS rules.",
+   "evidence_ids": [
+    "E5"
+   ],
+   "data": {
+    "id": "E5",
+    "agent": "pattern",
+    "finding": "Investment limit of up to 9 lakh for a single account correctly reflects POMIS rules.",
+    "supports": "LEGIT",
+    "strength": 2,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 13,
+   "t": 0.0,
+   "from": "orchestrator",
+   "to": "prosecutor",
+   "type": "handoff",
+   "text": "5 pieces of evidence collected. Prosecutor: file your charges. Defender: answer each one.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 14,
+   "t": 1.3,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "argument",
+   "text": "Even though this ad promotes a legitimate government scheme, I am filing a minor charge because it lacks statutory disclaimers and mentions investment advisory aspects. Let's verify the official standing before clearing it.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 5,
+    "stage": "OPEN",
+    "round": 1
+   }
+  },
+  {
+   "step": 15,
+   "t": 1.3,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "The ad promotes financial returns but lacks SEBI or statutory disclaimers regarding market or scheme risks.",
+   "evidence_ids": [
+    "E1"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "severity": 1
+   }
+  },
+  {
+   "step": 16,
+   "t": 1.3,
+   "from": "prosecutor",
+   "to": "registry",
+   "type": "handoff",
+   "text": "Confirm official status of the Post Office Monthly Income Scheme parameters. — checking \"India Post POMIS\"",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 17,
+   "t": 1.3,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "'India Post POMIS' is not in SEBI's registers of investment advisers or research analysts, yet the ad promises investment returns",
+   "evidence_ids": [
+    "E6"
+   ],
+   "data": {
+    "id": "E6",
+    "agent": "registry",
+    "finding": "'India Post POMIS' is not in SEBI's registers of investment advisers or research analysts, yet the ad promises investment returns",
+    "supports": "FRAUD",
+    "strength": 1,
+    "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+   }
+  },
+  {
+   "step": 18,
+   "t": 1.3,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Checked 1 number(s)/name(s) against 3,251 SEBI records and 95 RBI alert entries.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 19,
+   "t": 2.5,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "argument",
+   "text": "This ad promotes the genuine Post Office Monthly Income Scheme backed by the Government of India, with rates and limits matching official rules and directing users to official channels (E2, E3, E4, E5). Government small-savings schemes like POMIS are managed directly through the Ministry of Finance and India Post, so they do not require SEBI investment adviser registration.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 0,
+    "stage": "RESPOND",
+    "round": 1
+   }
+  },
+  {
+   "step": 20,
+   "t": 2.5,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "India Post POMIS is a sovereign-backed small savings scheme, not a market-linked mutual fund or private advisory service, so SEBI investment disclaimers do not apply (E2, E3, E4, E5).",
+   "evidence_ids": [
+    "E2",
+    "E3",
+    "E4",
+    "E5"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "stance": "DISPUTED"
+   }
+  },
+  {
+   "step": 21,
+   "t": 2.5,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "round",
+   "text": "Round 1: Prosecutor 5% vs Defender 0% — 5 points apart",
+   "evidence_ids": [],
+   "data": {
+    "round": 1,
+    "prosecutor": 5,
+    "defender": 0,
+    "gap": 5
+   }
+  },
+  {
+   "step": 22,
+   "t": 14.2,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "argument",
+   "text": "Since this is a sovereign-backed small savings scheme managed directly by India Post rather than a market-linked product, SEBI disclaimers do not apply. I am withdrawing the charge.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 0,
+    "stage": "REBUT",
+    "round": 2
+   }
+  },
+  {
+   "step": 23,
+   "t": 14.2,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "ruling",
+   "text": "POMIS is a government-backed small savings scheme, not a market-linked investment requiring SEBI disclaimers.",
+   "evidence_ids": [
+    "E3",
+    "E4"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "stance": "WITHDRAWN"
+   }
+  },
+  {
+   "step": 24,
+   "t": 14.2,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "round",
+   "text": "Round 2: Prosecutor 0% vs Defender 0% — 0 points apart",
+   "evidence_ids": [],
+   "data": {
+    "round": 2,
+    "prosecutor": 0,
+    "defender": 0,
+    "gap": 0
+   }
+  },
+  {
+   "step": 25,
+   "t": 14.2,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "note",
+   "text": "Agreed on 1 of 1 charges. Arbiter confirms the verdict.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 26,
+   "t": 15.3,
+   "from": "arbiter",
+   "to": "user",
+   "type": "verdict",
+   "text": "LIKELY SAFE (risk 0/100): This is a genuine government scheme. It is safe to use.",
+   "evidence_ids": [
+    "E2",
+    "E3",
+    "E4"
+   ],
+   "data": {
+    "label": "LIKELY_SAFE",
+    "risk": 0,
+    "headline": "This is a genuine government scheme. It is safe to use.",
+    "headline_hi": "यह एक असली सरकारी योजना है। इसका उपयोग करना सुरक्षित है।",
+    "reasons": [
+     "The promised return of 7.4 percent matches official Post Office rules.",
+     "The ad uses the official India Post website.",
+     "It tells you to visit your nearest post office."
+    ],
+    "reasons_hi": [
+     "7.4 प्रतिशत का वादा किया गया रिटर्न आधिकारिक डाकघर के नियमों से मेल खाता है।",
+     "विज्ञापन आधिकारिक इंडिया पोस्ट वेबसाइट का उपयोग करता है।",
+     "यह आपको अपने नजदीki डाकघर जाने के लिए कहता है।"
+    ],
+    "reason_evidence": [
+     [
+      "E3"
+     ],
+     [
+      "E2"
+     ],
+     [
+      "E4"
+     ]
+    ],
+    "what_to_do": [
+     "Invest only through the official channel: the post office, your bank branch, or the company's own registered app or website.",
+     "Check the interest rate and name on the official website before paying.",
+     "If anyone later asks for OTP or an extra fee, stop — that is a scam."
+    ],
+    "what_to_do_hi": [
+     "केवल आधिकारिक रास्ते से निवेश करें: डाकघर, अपनी बैंक शाखा, या कंपनी का पंजीकृत ऐप/वेबसाइट।",
+     "भुगतान से पहले आधिकारिक वेबसाइट पर ब्याज दर और नाम जाँच लें।",
+     "अगर बाद में कोई OTP या अतिरिक्त फ़ीस माँगे, तो रुक जाएँ — वह धोखा है।"
+    ],
+    "converged": true,
+    "deciding_factor": "All charges were withdrawn because the ad promotes a genuine government-backed small savings scheme with correct rates and official channels.",
+    "guardrails": [],
+    "retiree_targeting": 90,
+    "retiree_hooks": [
+     "Monthly income for your retirement"
+    ],
+    "charges_summary": {
+     "ACCEPTED": 0,
+     "WITHDRAWN": 1,
+     "UPHELD": 0,
+     "DISMISSED": 0,
+     "UNRESOLVED": 0
+    }
+   }
+  }
+ ],
+ "verdict": {
+  "label": "LIKELY_SAFE",
+  "risk": 0,
+  "headline": "This is a genuine government scheme. It is safe to use.",
+  "headline_hi": "यह एक असली सरकारी योजना है। इसका उपयोग करना सुरक्षित है।",
+  "reasons": [
+   "The promised return of 7.4 percent matches official Post Office rules.",
+   "The ad uses the official India Post website.",
+   "It tells you to visit your nearest post office."
+  ],
+  "reasons_hi": [
+   "7.4 प्रतिशत का वादा किया गया रिटर्न आधिकारिक डाकघर के नियमों से मेल खाता है।",
+   "विज्ञापन आधिकारिक इंडिया पोस्ट वेबसाइट का उपयोग करता है।",
+   "यह आपको अपने नजदीki डाकघर जाने के लिए कहता है।"
+  ],
+  "reason_evidence": [
+   [
+    "E3"
+   ],
+   [
+    "E2"
+   ],
+   [
+    "E4"
+   ]
+  ],
+  "what_to_do": [
+   "Invest only through the official channel: the post office, your bank branch, or the company's own registered app or website.",
+   "Check the interest rate and name on the official website before paying.",
+   "If anyone later asks for OTP or an extra fee, stop — that is a scam."
+  ],
+  "what_to_do_hi": [
+   "केवल आधिकारिक रास्ते से निवेश करें: डाकघर, अपनी बैंक शाखा, या कंपनी का पंजीकृत ऐप/वेबसाइट।",
+   "भुगतान से पहले आधिकारिक वेबसाइट पर ब्याज दर और नाम जाँच लें।",
+   "अगर बाद में कोई OTP या अतिरिक्त फ़ीस माँगे, तो रुक जाएँ — वह धोखा है।"
+  ],
+  "converged": true,
+  "deciding_factor": "All charges were withdrawn because the ad promotes a genuine government-backed small savings scheme with correct rates and official channels.",
+  "guardrails": [],
+  "retiree_targeting": 90,
+  "retiree_hooks": [
+   "Monthly income for your retirement"
+  ],
+  "charges_summary": {
+   "ACCEPTED": 0,
+   "WITHDRAWN": 1,
+   "UPHELD": 0,
+   "DISMISSED": 0,
+   "UNRESOLVED": 0
+  }
+ },
+ "plan": [
+  {
+   "agent": "registry",
+   "why": "(rule) the ad names a company or quotes a registration number"
+  },
+  {
+   "agent": "web",
+   "why": "(rule) the ad has links or phone numbers to check"
+  },
+  {
+   "agent": "pattern",
+   "why": "(safety rule) every ad gets a scam-pattern check"
+  }
+ ],
+ "converged": true,
+ "agent_runs": [
+  "registry",
+  "web",
+  "pattern",
+  "registry"
+ ],
+ "duration_s": 15.3
+}

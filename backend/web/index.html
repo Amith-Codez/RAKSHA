@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RAKSHA · Check an ad before you click</title>
+<meta name="description" content="RAKSHA is a browser extension for Indian families: click an investment ad and 11 AI agents check it against SEBI and RBI records before anyone clicks or pays.">
+<link rel="icon" type="image/svg+xml" href="img/logo.svg">
+<link rel="apple-touch-icon" href="img/logo-512.png">
+<meta name="theme-color" content="#6D4AFF">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="RAKSHA home">
+      <img src="img/logo.svg" alt="" width="36" height="36">
+      raksha
+    </a>
+    <nav aria-label="Sections"><a href="#install">Get the extension</a><a href="#check">Try it here</a><a href="#how">How it works</a><a href="#proof">Proof</a></nav>
+    <div class="right">
+      <span class="status" id="status"><i></i><span>Connecting…</span></span>
+      <div class="seg" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="hi" aria-pressed="false">हिं</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-in">
+        <span class="sticker">₹22,495 crore lost to cyber fraud in India in 2025</span>
+        <h1>Check an ad <em class="serif">before</em> you <span class="scam">click.</span></h1>
+        <p class="lead">RAKSHA lives in your browser. Click the shield, click the ad, and 11 AI agents check it against SEBI and RBI records, follow its real links, and tell you straight.</p>
+        <div class="cta"><a class="btn btn-marigold" href="#install">Get the extension</a><a class="btn btn-ghost" href="#check">Try it here first</a></div>
+        <ul class="trust"><li>SEBI · 3,251 records</li><li>RBI Alert List</li><li>English · हिंदी · తెలుగు</li></ul>
+      </div>
+      <div id="stage-home" class="stage-wrap">
+        <img class="hero-sticker" src="img/logo.svg" alt="" aria-hidden="true">
+        <span class="hero-tag">a digital <em class="serif">rakhi</em> for your parents’ savings</span>
+        <div class="stage" id="stage">
+          <div class="stage-note">Drag to spin. Each glow is an agent.</div>
+          <div class="labels" id="labels"></div>
+          <div class="caption"><span><span class="live-dot" id="live-dot" hidden></span><b id="stage-status">11 agents standing by</b></span><span id="stage-count"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div class="marquee-track">
+    <span>“Guaranteed 18% a year”?</span><i>✦</i><span>“Govt + SBI scheme” on WhatsApp?</span><i>✦</i><span>“Pay by UPI to join”?</span><i>✦</i>
+    <span>“Double your money in 90 days”?</span><i>✦</i><span>A celebrity says invest?</span><i>✦</i><b>Check it with RAKSHA first.</b><i>✦</i>
+    <span>“Guaranteed 18% a year”?</span><i>✦</i><span>“Govt + SBI scheme” on WhatsApp?</span><i>✦</i><span>“Pay by UPI to join”?</span><i>✦</i>
+    <span>“Double your money in 90 days”?</span><i>✦</i><span>A celebrity says invest?</span><i>✦</i><b>Check it with RAKSHA first.</b><i>✦</i>
+  </div></div>
+
+  <section class="section wrap install reveal" id="install" aria-labelledby="install-h">
+    <div class="install-grid">
+      <div>
+        <span class="eyebrow">The browser extension</span>
+        <h2 id="install-h">Three clicks between your parents and a <em class="serif">scam.</em></h2>
+        <p class="sub">The danger is the click. RAKSHA sits in the toolbar, reads only the ad you point at, and answers in the side panel before anyone opens a link or pays.</p>
+        <ol class="install-steps">
+          <li><b>Add it to Chrome</b><span><a href="/download/raksha-extension.zip" download>Download the extension</a> and unzip it. Open <code>chrome://extensions</code>, switch on <em>Developer mode</em>, click <em>Load unpacked</em> and pick the unzipped <code>raksha-extension</code> folder. A short tutorial opens by itself.</span></li>
+          <li><b>Pin the shield</b><span>Click the puzzle piece in Chrome’s toolbar and pin RAKSHA, so the orange shield is always one click away.</span></li>
+          <li><b>Click any ad</b><span>On Facebook, YouTube, WhatsApp Web or any site: click the shield (or press <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>R</kbd>), then click the ad. That’s it.</span></li>
+        </ol>
+        <div class="cta"><a class="btn btn-marigold" href="/download/raksha-extension.zip" download>Download the extension (.zip)</a><a class="btn btn-primary" href="/demo" target="_blank" rel="noopener">Open the practice feed ↗</a></div>
+        <p class="fine">Private by design: nothing is read until you click, only the part you pick is sent, and query strings are stripped from page addresses.</p>
+      </div>
+      <div class="panels" aria-hidden="true">
+        <img class="panel p2" src="img/panel-scanning.png" alt="" loading="lazy">
+        <img class="panel p1" src="img/panel-verdict.png" alt="" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="checker wrap reveal" id="check" aria-label="Check an ad">
+    <h2 class="check-h">No extension yet? <em class="serif">Try it here.</em></h2>
+    <div class="card">
+      <div class="tabs" role="tablist" aria-label="How to share the ad">
+        <button class="tab" role="tab" aria-selected="true" data-pane="samples" id="tab-samples">Try a sample</button>
+        <button class="tab" role="tab" aria-selected="false" data-pane="paste" id="tab-paste">Paste text</button>
+        <button class="tab" role="tab" aria-selected="false" data-pane="shot" id="tab-shot">Upload screenshot</button>
+      </div>
+      <div class="pane" data-pane="samples" role="tabpanel" aria-labelledby="tab-samples">
+        <div class="chips" id="chips"></div>
+        <div class="preview" id="preview" hidden></div>
+      </div>
+      <div class="pane" data-pane="paste" role="tabpanel" aria-labelledby="tab-paste" hidden>
+        <label class="sr" for="adtext">Ad text</label>
+        <textarea id="adtext" placeholder="Paste the whole ad here, including any links, phone numbers or registration numbers…"></textarea>
+      </div>
+      <div class="pane" data-pane="shot" role="tabpanel" aria-labelledby="tab-shot" hidden>
+        <label class="drop" id="drop" tabindex="0">
+          <input type="file" id="file" accept="image/png,image/jpeg,image/webp" hidden>
+          <strong>Drop a screenshot here</strong><span>or tap to choose one (PNG or JPG, up to 6 MB)</span>
+          <div id="shot-preview"></div>
+        </label>
+      </div>
+      <div class="helper" id="helper" aria-live="polite"></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="go" type="button">Check this ad</button>
+        <label class="toggle" title="Plays back a saved investigation of the sample. Use it if the internet fails."><input type="checkbox" id="offline"> Offline demo</label>
+        <label class="toggle"><input type="checkbox" id="simple"> Simple view for parents</label>
+      </div>
+    </div>
+  </section>
+
+  <section class="investigation wrap" id="investigation" hidden aria-label="Live investigation">
+    <div class="stepper" id="stepper">
+      <div class="step" data-step="read"><i>1</i>Read</div><div class="step" data-step="investigate"><i>2</i>Investigate</div>
+      <div class="step" data-step="debate"><i>3</i>Debate</div><div class="step" data-step="verdict"><i>4</i>Verdict</div>
+    </div>
+    <div id="result-slot"></div>
+    <div class="inv-grid">
+      <div class="inv-stage simple-hide" id="stage-inv"></div>
+      <div>
+        <div class="simple-hide">
+          <div class="feed-head"><h2>The investigation</h2><span id="feed-count"></span></div>
+          <div class="feed" id="feed" aria-live="polite"></div>
+          <div class="typing" id="typing" hidden><span><i></i><i></i><i></i></span><em id="typing-text">Agents are on it…</em></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap reveal" id="how">
+    <h2>Eleven agents. One argument. A <em class="serif">straight</em> answer.</h2>
+    <p class="sub">No single AI decides. Specialists gather facts, a Prosecutor and a Defender fight over every charge, and an Arbiter settles only what they can't agree on.</p>
+    <div class="steps4">
+      <div class="card"><div class="n">1</div><h3>Read</h3><p>The Extractor pulls out every checkable claim: promised returns, names, links, phone numbers, SEBI numbers.</p></div>
+      <div class="card"><div class="n">2</div><h3>Investigate</h3><p>The Router sends the right specialists: SEBI and RBI registries, website, phone and UPI checks, the Link agent (where the button really goes), community memory and known scam patterns.</p></div>
+      <div class="card"><div class="n">3</div><h3>Debate</h3><p>The Prosecutor files charges. The Defender accepts, disputes, or asks a specialist to check a fact.</p></div>
+      <div class="card"><div class="n">4</div><h3>Verdict</h3><p>The Arbiter rules on anything still contested, then explains the answer in plain English and Hindi.</p></div>
+    </div>
+  </section>
+
+  <section class="section wrap reveal" id="proof">
+    <h2>Does the agent team beat one AI prompt?</h2>
+    <p class="sub" id="proof-sub">Loading results…</p>
+    <div class="proof" id="proof-cards"></div>
+    <div class="table-scroll"><table class="results" id="proof-table" hidden></table></div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b>RAKSHA</b> gives guidance, not legal or financial advice. Always verify an adviser on sebi.gov.in or with your bank branch. If you have already paid, call <b>1930</b> or report at cybercrime.gov.in.</div>
+    <div>Data: SEBI registers of Investment Advisers and Research Analysts (sebi.gov.in, 26 Sep 2026); RBI Alert List (19 Nov 2025); small-savings rates for Jul–Sep 2026. Loss figure: MHA/I4C 2025 data, via ThePrint. Built at Promptothon 2026.</div>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status"></div>
+<div class="cursor-glow" aria-hidden="true"></div>
+<script type="module" src="app.js"></script>
+<script src="fx.js" defer></script>
+</body>
+</html>

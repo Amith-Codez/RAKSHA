@@ -1,0 +1,914 @@
+{
+ "ad_text": "Suraksha Wealth Nidhi Sponsored SURAKSHA WEALTH NIDHI PENSION PLUS Senior Citizen Special Fixed Deposit No documents RBI APPROVED 18% per annum ASSURED monthly payout Pay today via UPI: surakshawealth.nidhi@ybl Get Rs 5,000 joining bonus | Offer ends Sunday! No bank visit needed. Only for pensioners.",
+ "page_url": "http://localhost:8000/demo",
+ "page_links": [
+  {
+   "href": "upi://pay?pa=surakshawealth.nidhi@ybl&pn=Suraksha",
+   "text": "Pay by UPI"
+  }
+ ],
+ "image_hash": "20aaaa6e968e8eb2",
+ "claims": {
+  "advertiser": "Suraksha Wealth Nidhi",
+  "product": "Senior Citizen Special Fixed Deposit",
+  "promised_return": "18% per annum",
+  "guaranteed": true,
+  "people_shown": [],
+  "authority_claims": [
+   "RBI APPROVED"
+  ],
+  "reg_numbers": [],
+  "links": [],
+  "phones": [],
+  "emails": [],
+  "payment_asks": [
+   "Pay today via UPI: surakshawealth.nidhi@ybl"
+  ],
+  "retiree_hooks": [
+   "Senior Citizen Special Fixed Deposit",
+   "PENSION PLUS",
+   "Only for pensioners."
+  ],
+  "urgency": [
+   "Pay today",
+   "Offer ends Sunday!"
+  ],
+  "channel_shift": [],
+  "disclaimers": [],
+  "upi_ids": [
+   "surakshawealth.nidhi@ybl"
+  ],
+  "retiree_targeting": 95,
+  "final_domains": []
+ },
+ "evidence": [
+  {
+   "id": "E1",
+   "agent": "registry",
+   "finding": "'Suraksha Wealth Nidhi' is not in SEBI's registers of investment advisers or research analysts, yet the ad promises investment returns",
+   "supports": "FRAUD",
+   "strength": 1,
+   "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+  },
+  {
+   "id": "E2",
+   "agent": "pattern",
+   "finding": "'18% per annum' is promised as guaranteed/assured, far above SCSS (8.2%) and bank FDs for seniors (7–8.5%)",
+   "supports": "FRAUD",
+   "strength": 2,
+   "source": "returns compared with SCSS 8.2% (Jul–Sep 2026)"
+  },
+  {
+   "id": "E3",
+   "agent": "pattern",
+   "finding": "Claims 'RBI APPROVED' for an unrealistic 18% p.a. assured return FD, misusing RBI's name as RBI never approves or guarantees high-yield private deposit schemes.",
+   "supports": "FRAUD",
+   "strength": 3,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E4",
+   "agent": "pattern",
+   "finding": "Directs immediate investment payment directly via UPI ('surakshawealth.nidhi@ybl') with 'No documents' and 'No bank visit needed', bypassing standard KYC and formal banking deposit procedures.",
+   "supports": "FRAUD",
+   "strength": 3,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E5",
+   "agent": "pattern",
+   "finding": "Uses artificial urgency and inducements ('Get Rs 5,000 joining bonus | Offer ends Sunday!') tailored specifically to retirees ('Only for pensioners').",
+   "supports": "FRAUD",
+   "strength": 2,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E6",
+   "agent": "community",
+   "finding": "This UPI ID (surakshawealth.nidhi@ybl) was already flagged as a scam by RAKSHA users (score 3), last on 2026-09-26",
+   "supports": "FRAUD",
+   "strength": 2,
+   "source": "RAKSHA community memory (sqlite)"
+  },
+  {
+   "id": "E7",
+   "agent": "community",
+   "finding": "This same ad picture was flagged as a scam 1 time(s) before, last on 2026-09-26",
+   "supports": "FRAUD",
+   "strength": 3,
+   "source": "RAKSHA community memory (sqlite)"
+  },
+  {
+   "id": "E8",
+   "agent": "link",
+   "finding": "Before you click: the button “Pay by UPI” pays money to the UPI ID surakshawealth.nidhi@ybl",
+   "supports": "NEUTRAL",
+   "strength": 1,
+   "source": "payment link read from the page under the ad"
+  },
+  {
+   "id": "E9",
+   "agent": "web",
+   "finding": "It asks you to pay into a UPI ID (surakshawealth.nidhi@ybl). Genuine deposits and government schemes are never collected through a personal UPI ID",
+   "supports": "FRAUD",
+   "strength": 2,
+   "source": "payment channel check"
+  }
+ ],
+ "turns": [
+  {
+   "agent": "prosecutor",
+   "stage": "OPEN",
+   "round": 1,
+   "fraud_probability": 98,
+   "message": "This ad is an obvious scam impersonating an RBI-approved deposit scheme while promising an impossible 18% guaranteed annual return. It bypasses legitimate banking KYC procedures and directs retirees to transfer money directly to a known scam UPI ID. Senior citizens must be protected from this illegal attempt to steal their savings."
+  },
+  {
+   "agent": "defender",
+   "stage": "RESPOND",
+   "round": 1,
+   "fraud_probability": 98,
+   "message": "I agree with the Prosecutor's charges. Promising an 18% guaranteed return while falsely claiming RBI approval and collecting funds via a private UPI ID are clear indicators of illegal financial activity."
+  }
+ ],
+ "charges": [
+  {
+   "id": "C1",
+   "charge": "Promises an impossible 18% p.a. guaranteed return far above legitimate senior citizen rates.",
+   "severity": 2,
+   "evidence_ids": [
+    "E2"
+   ],
+   "status": "ACCEPTED",
+   "history": [
+    [
+     "Defender",
+     "accepted: An 18% p.a. guaranteed return is far above the legitimate SCSS benchmark of 8.2% and cannot be defended."
+    ]
+   ],
+   "ruling": null
+  },
+  {
+   "id": "C2",
+   "charge": "Falsely claims RBI approval to mislead retirees into trusting an unauthorized investment scheme.",
+   "severity": 3,
+   "evidence_ids": [
+    "E3"
+   ],
+   "status": "ACCEPTED",
+   "history": [
+    [
+     "Defender",
+     "accepted: The RBI does not approve or endorse private high-yield deposit schemes, making this claim fraudulent."
+    ]
+   ],
+   "ruling": null
+  },
+  {
+   "id": "C3",
+   "charge": "Bypasses official banking channels and KYC requirements by requesting direct payment to a private UPI ID.",
+   "severity": 3,
+   "evidence_ids": [
+    "E4",
+    "E9"
+   ],
+   "status": "ACCEPTED",
+   "history": [
+    [
+     "Defender",
+     "accepted: Genuine fixed deposits are processed through official banking channels with KYC, not directly via private UPI handles."
+    ]
+   ],
+   "ruling": null
+  },
+  {
+   "id": "C4",
+   "charge": "Uses a UPI ID and ad material that have already been reported as a scam by the community.",
+   "severity": 3,
+   "evidence_ids": [
+    "E6",
+    "E7"
+   ],
+   "status": "ACCEPTED",
+   "history": [
+    [
+     "Defender",
+     "accepted: The community memory confirms that this UPI ID and ad image have previously been reported as fraudulent."
+    ]
+   ],
+   "ruling": null
+  }
+ ],
+ "trace": [
+  {
+   "step": 1,
+   "t": 0.0,
+   "from": "orchestrator",
+   "to": "extractor",
+   "type": "handoff",
+   "text": "New ad received. Extractor: read it and list every checkable claim.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 2,
+   "t": 0.0,
+   "from": "extractor",
+   "to": "blackboard",
+   "type": "claims",
+   "text": "Found advertiser 'Suraksha Wealth Nidhi'; promise '18% per annum' (guaranteed); 1 UPI ID(s); aimed at retirees: 'Senior Citizen Special Fixed Deposit'; pressure: 'Pay today'.",
+   "evidence_ids": [],
+   "data": {
+    "advertiser": "Suraksha Wealth Nidhi",
+    "product": "Senior Citizen Special Fixed Deposit",
+    "promised_return": "18% per annum",
+    "guaranteed": true,
+    "people_shown": [],
+    "authority_claims": [
+     "RBI APPROVED"
+    ],
+    "reg_numbers": [],
+    "links": [],
+    "phones": [],
+    "emails": [],
+    "payment_asks": [
+     "Pay today via UPI: surakshawealth.nidhi@ybl"
+    ],
+    "retiree_hooks": [
+     "Senior Citizen Special Fixed Deposit",
+     "PENSION PLUS",
+     "Only for pensioners."
+    ],
+    "urgency": [
+     "Pay today",
+     "Offer ends Sunday!"
+    ],
+    "channel_shift": [],
+    "disclaimers": [],
+    "upi_ids": [
+     "surakshawealth.nidhi@ybl"
+    ],
+    "retiree_targeting": 95,
+    "final_domains": []
+   }
+  },
+  {
+   "step": 3,
+   "t": 0.0,
+   "from": "router",
+   "to": "orchestrator",
+   "type": "plan",
+   "text": "Plan: Registry → Scam-pattern → Community memory → Link → Web & contact",
+   "evidence_ids": [],
+   "data": [
+    {
+     "agent": "registry",
+     "why": "Check 'Suraksha Wealth Nidhi' against the RBI Alert List and SEBI registers for unauthorized entity status."
+    },
+    {
+     "agent": "pattern",
+     "why": "Evaluate the unrealistic 18% guaranteed return and RBI approval claims against known scam patterns."
+    },
+    {
+     "agent": "community",
+     "why": "Check if the UPI ID 'surakshawealth.nidhi@ybl' or company name has been previously reported."
+    },
+    {
+     "agent": "link",
+     "why": "Trace the 1 page link under the ad to verify its final destination."
+    },
+    {
+     "agent": "web",
+     "why": "(safety rule) the ad has links, numbers or payment IDs to check"
+    }
+   ]
+  },
+  {
+   "step": 4,
+   "t": 0.0,
+   "from": "router",
+   "to": "registry",
+   "type": "handoff",
+   "text": "Check 'Suraksha Wealth Nidhi' against the RBI Alert List and SEBI registers for unauthorized entity status.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 5,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "'Suraksha Wealth Nidhi' is not in SEBI's registers of investment advisers or research analysts, yet the ad promises investment returns",
+   "evidence_ids": [
+    "E1"
+   ],
+   "data": {
+    "id": "E1",
+    "agent": "registry",
+    "finding": "'Suraksha Wealth Nidhi' is not in SEBI's registers of investment advisers or research analysts, yet the ad promises investment returns",
+    "supports": "FRAUD",
+    "strength": 1,
+    "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+   }
+  },
+  {
+   "step": 6,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Checked 1 number(s)/name(s) against 3,251 SEBI records and 95 RBI alert entries.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 7,
+   "t": 0.0,
+   "from": "router",
+   "to": "pattern",
+   "type": "handoff",
+   "text": "Evaluate the unrealistic 18% guaranteed return and RBI approval claims against known scam patterns.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 8,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "'18% per annum' is promised as guaranteed/assured, far above SCSS (8.2%) and bank FDs for seniors (7–8.5%)",
+   "evidence_ids": [
+    "E2"
+   ],
+   "data": {
+    "id": "E2",
+    "agent": "pattern",
+    "finding": "'18% per annum' is promised as guaranteed/assured, far above SCSS (8.2%) and bank FDs for seniors (7–8.5%)",
+    "supports": "FRAUD",
+    "strength": 2,
+    "source": "returns compared with SCSS 8.2% (Jul–Sep 2026)"
+   }
+  },
+  {
+   "step": 9,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Claims 'RBI APPROVED' for an unrealistic 18% p.a. assured return FD, misusing RBI's name as RBI never approves or guarantees high-yield private deposit schemes.",
+   "evidence_ids": [
+    "E3"
+   ],
+   "data": {
+    "id": "E3",
+    "agent": "pattern",
+    "finding": "Claims 'RBI APPROVED' for an unrealistic 18% p.a. assured return FD, misusing RBI's name as RBI never approves or guarantees high-yield private deposit schemes.",
+    "supports": "FRAUD",
+    "strength": 3,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 10,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Directs immediate investment payment directly via UPI ('surakshawealth.nidhi@ybl') with 'No documents' and 'No bank visit needed', bypassing standard KYC and formal banking deposit procedures.",
+   "evidence_ids": [
+    "E4"
+   ],
+   "data": {
+    "id": "E4",
+    "agent": "pattern",
+    "finding": "Directs immediate investment payment directly via UPI ('surakshawealth.nidhi@ybl') with 'No documents' and 'No bank visit needed', bypassing standard KYC and formal banking deposit procedures.",
+    "supports": "FRAUD",
+    "strength": 3,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 11,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Uses artificial urgency and inducements ('Get Rs 5,000 joining bonus | Offer ends Sunday!') tailored specifically to retirees ('Only for pensioners').",
+   "evidence_ids": [
+    "E5"
+   ],
+   "data": {
+    "id": "E5",
+    "agent": "pattern",
+    "finding": "Uses artificial urgency and inducements ('Get Rs 5,000 joining bonus | Offer ends Sunday!') tailored specifically to retirees ('Only for pensioners').",
+    "supports": "FRAUD",
+    "strength": 2,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 12,
+   "t": 0.0,
+   "from": "router",
+   "to": "community",
+   "type": "handoff",
+   "text": "Check if the UPI ID 'surakshawealth.nidhi@ybl' or company name has been previously reported.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 13,
+   "t": 0.0,
+   "from": "community",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "This UPI ID (surakshawealth.nidhi@ybl) was already flagged as a scam by RAKSHA users (score 3), last on 2026-09-26",
+   "evidence_ids": [
+    "E6"
+   ],
+   "data": {
+    "id": "E6",
+    "agent": "community",
+    "finding": "This UPI ID (surakshawealth.nidhi@ybl) was already flagged as a scam by RAKSHA users (score 3), last on 2026-09-26",
+    "supports": "FRAUD",
+    "strength": 2,
+    "source": "RAKSHA community memory (sqlite)"
+   }
+  },
+  {
+   "step": 14,
+   "t": 0.0,
+   "from": "community",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "This same ad picture was flagged as a scam 1 time(s) before, last on 2026-09-26",
+   "evidence_ids": [
+    "E7"
+   ],
+   "data": {
+    "id": "E7",
+    "agent": "community",
+    "finding": "This same ad picture was flagged as a scam 1 time(s) before, last on 2026-09-26",
+    "supports": "FRAUD",
+    "strength": 3,
+    "source": "RAKSHA community memory (sqlite)"
+   }
+  },
+  {
+   "step": 15,
+   "t": 0.0,
+   "from": "router",
+   "to": "link",
+   "type": "handoff",
+   "text": "Trace the 1 page link under the ad to verify its final destination.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 16,
+   "t": 0.0,
+   "from": "link",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Before you click: the button “Pay by UPI” pays money to the UPI ID surakshawealth.nidhi@ybl",
+   "evidence_ids": [
+    "E8"
+   ],
+   "data": {
+    "id": "E8",
+    "agent": "link",
+    "finding": "Before you click: the button “Pay by UPI” pays money to the UPI ID surakshawealth.nidhi@ybl",
+    "supports": "NEUTRAL",
+    "strength": 1,
+    "source": "payment link read from the page under the ad"
+   }
+  },
+  {
+   "step": 17,
+   "t": 0.0,
+   "from": "router",
+   "to": "web",
+   "type": "handoff",
+   "text": "(safety rule) the ad has links, numbers or payment IDs to check",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 18,
+   "t": 0.0,
+   "from": "web",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "It asks you to pay into a UPI ID (surakshawealth.nidhi@ybl). Genuine deposits and government schemes are never collected through a personal UPI ID",
+   "evidence_ids": [
+    "E9"
+   ],
+   "data": {
+    "id": "E9",
+    "agent": "web",
+    "finding": "It asks you to pay into a UPI ID (surakshawealth.nidhi@ybl). Genuine deposits and government schemes are never collected through a personal UPI ID",
+    "supports": "FRAUD",
+    "strength": 2,
+    "source": "payment channel check"
+   }
+  },
+  {
+   "step": 19,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "registry",
+   "type": "handoff",
+   "text": "Check MCA/RBI records to verify if this entity exists as a registered Nidhi company or NBFC — checking \"Suraksha Wealth Nidhi\"",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 20,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Re-checked: confirms E1 ('Suraksha Wealth Nidhi' is not in SEBI's registers of investment advisers or research anal)",
+   "evidence_ids": [
+    "E1"
+   ],
+   "data": null
+  },
+  {
+   "step": 21,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Checked 1 number(s)/name(s) against 3,251 SEBI records and 95 RBI alert entries.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 22,
+   "t": 0.0,
+   "from": "link",
+   "to": "web",
+   "type": "handoff",
+   "text": "check the payment / chat ID from a button (surakshawealth.nidhi@ybl) — checking \"surakshawealth.nidhi@ybl\"",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 23,
+   "t": 0.0,
+   "from": "web",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Re-checked: confirms E9 (It asks you to pay into a UPI ID (surakshawealth.nidhi@ybl). Genuine deposits and governme)",
+   "evidence_ids": [
+    "E9"
+   ],
+   "data": null
+  },
+  {
+   "step": 24,
+   "t": 0.0,
+   "from": "orchestrator",
+   "to": "prosecutor",
+   "type": "handoff",
+   "text": "9 pieces of evidence collected. Prosecutor: file your charges. Defender: answer each one.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 25,
+   "t": 28.6,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "argument",
+   "text": "This ad is an obvious scam impersonating an RBI-approved deposit scheme while promising an impossible 18% guaranteed annual return. It bypasses legitimate banking KYC procedures and directs retirees to transfer money directly to a known scam UPI ID. Senior citizens must be protected from this illegal attempt to steal their savings.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 98,
+    "stage": "OPEN",
+    "round": 1
+   }
+  },
+  {
+   "step": 26,
+   "t": 28.6,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "Promises an impossible 18% p.a. guaranteed return far above legitimate senior citizen rates.",
+   "evidence_ids": [
+    "E2"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "severity": 2
+   }
+  },
+  {
+   "step": 27,
+   "t": 28.6,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "Falsely claims RBI approval to mislead retirees into trusting an unauthorized investment scheme.",
+   "evidence_ids": [
+    "E3"
+   ],
+   "data": {
+    "charge_id": "C2",
+    "severity": 3
+   }
+  },
+  {
+   "step": 28,
+   "t": 28.6,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "Bypasses official banking channels and KYC requirements by requesting direct payment to a private UPI ID.",
+   "evidence_ids": [
+    "E4",
+    "E9"
+   ],
+   "data": {
+    "charge_id": "C3",
+    "severity": 3
+   }
+  },
+  {
+   "step": 29,
+   "t": 28.6,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "Uses a UPI ID and ad material that have already been reported as a scam by the community.",
+   "evidence_ids": [
+    "E6",
+    "E7"
+   ],
+   "data": {
+    "charge_id": "C4",
+    "severity": 3
+   }
+  },
+  {
+   "step": 30,
+   "t": 33.1,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "argument",
+   "text": "I agree with the Prosecutor's charges. Promising an 18% guaranteed return while falsely claiming RBI approval and collecting funds via a private UPI ID are clear indicators of illegal financial activity.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 98,
+    "stage": "RESPOND",
+    "round": 1
+   }
+  },
+  {
+   "step": 31,
+   "t": 33.1,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "An 18% p.a. guaranteed return is far above the legitimate SCSS benchmark of 8.2% and cannot be defended.",
+   "evidence_ids": [
+    "E2"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "stance": "ACCEPTED"
+   }
+  },
+  {
+   "step": 32,
+   "t": 33.1,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "The RBI does not approve or endorse private high-yield deposit schemes, making this claim fraudulent.",
+   "evidence_ids": [
+    "E3"
+   ],
+   "data": {
+    "charge_id": "C2",
+    "stance": "ACCEPTED"
+   }
+  },
+  {
+   "step": 33,
+   "t": 33.1,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "Genuine fixed deposits are processed through official banking channels with KYC, not directly via private UPI handles.",
+   "evidence_ids": [
+    "E4",
+    "E9"
+   ],
+   "data": {
+    "charge_id": "C3",
+    "stance": "ACCEPTED"
+   }
+  },
+  {
+   "step": 34,
+   "t": 33.1,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "The community memory confirms that this UPI ID and ad image have previously been reported as fraudulent.",
+   "evidence_ids": [
+    "E6",
+    "E7"
+   ],
+   "data": {
+    "charge_id": "C4",
+    "stance": "ACCEPTED"
+   }
+  },
+  {
+   "step": 35,
+   "t": 33.1,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "round",
+   "text": "Round 1: Prosecutor 98% vs Defender 98% — 0 points apart",
+   "evidence_ids": [],
+   "data": {
+    "round": 1,
+    "prosecutor": 98,
+    "defender": 98,
+    "gap": 0
+   }
+  },
+  {
+   "step": 36,
+   "t": 33.1,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "note",
+   "text": "Agreed on 4 of 4 charges. Arbiter confirms the verdict.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 37,
+   "t": 39.3,
+   "from": "arbiter",
+   "to": "user",
+   "type": "verdict",
+   "text": "FRAUD (risk 99/100): This is a fake investment scheme. Do not send any money.",
+   "evidence_ids": [
+    "E2",
+    "E3",
+    "E4",
+    "E9"
+   ],
+   "data": {
+    "label": "FRAUD",
+    "not_investment": false,
+    "risk": 99,
+    "headline": "This is a fake investment scheme. Do not send any money.",
+    "headline_hi": "यह एक नकली निवेश योजना है। इसमें बिल्कुल भी पैसे न भेजें।",
+    "reasons": [
+     "An 18% guaranteed return is impossible and far above official bank rates.",
+     "The RBI never approves private high-interest pension or deposit schemes.",
+     "Real fixed deposits are opened at bank branches, not through direct UPI payments."
+    ],
+    "reasons_hi": [
+     "18% की गारंटीकृत ब्याज दर पूरी तरह असंभव है और बैंक दरों से बहुत अधिक है।",
+     "आरबीआई कभी भी प्राइवेट जमा योजनाओं को मंजूरी या गारंटी नहीं देता है।",
+     "असली फिक्स्ड डिपॉजिट बैंक जाकर खुलते हैं, यूपीआई (UPI) से पैसे भेजकर नहीं।"
+    ],
+    "reason_evidence": [
+     [
+      "E2"
+     ],
+     [
+      "E3"
+     ],
+     [
+      "E4",
+      "E9"
+     ]
+    ],
+    "what_to_do": [
+     "Do not pay any money. Do not share OTP, bank or KYC details.",
+     "Call 1930 (National Cyber Crime Helpline) or report at cybercrime.gov.in.",
+     "If money was already sent, call your bank right away to try to stop it."
+    ],
+    "what_to_do_hi": [
+     "कोई पैसा न भेजें। OTP, बैंक या KYC जानकारी किसी को न दें।",
+     "1930 (राष्ट्रीय साइबर अपराध हेल्पलाइन) पर कॉल करें या cybercrime.gov.in पर शिकायत करें।",
+     "अगर पैसे भेज चुके हैं, तो तुरंत अपने बैंक को फ़ोन करें।"
+    ],
+    "converged": true,
+    "deciding_factor": "All fraud charges were accepted by the Defender, confirmed by impossible 18% returns, fake RBI approval, and payment via UPI.",
+    "guardrails": [],
+    "retiree_targeting": 95,
+    "retiree_hooks": [
+     "Senior Citizen Special Fixed Deposit",
+     "PENSION PLUS"
+    ],
+    "charges_summary": {
+     "ACCEPTED": 4,
+     "WITHDRAWN": 0,
+     "UPHELD": 0,
+     "DISMISSED": 0,
+     "UNRESOLVED": 0
+    }
+   }
+  }
+ ],
+ "verdict": {
+  "label": "FRAUD",
+  "not_investment": false,
+  "risk": 99,
+  "headline": "This is a fake investment scheme. Do not send any money.",
+  "headline_hi": "यह एक नकली निवेश योजना है। इसमें बिल्कुल भी पैसे न भेजें।",
+  "reasons": [
+   "An 18% guaranteed return is impossible and far above official bank rates.",
+   "The RBI never approves private high-interest pension or deposit schemes.",
+   "Real fixed deposits are opened at bank branches, not through direct UPI payments."
+  ],
+  "reasons_hi": [
+   "18% की गारंटीकृत ब्याज दर पूरी तरह असंभव है और बैंक दरों से बहुत अधिक है।",
+   "आरबीआई कभी भी प्राइवेट जमा योजनाओं को मंजूरी या गारंटी नहीं देता है।",
+   "असली फिक्स्ड डिपॉजिट बैंक जाकर खुलते हैं, यूपीआई (UPI) से पैसे भेजकर नहीं।"
+  ],
+  "reason_evidence": [
+   [
+    "E2"
+   ],
+   [
+    "E3"
+   ],
+   [
+    "E4",
+    "E9"
+   ]
+  ],
+  "what_to_do": [
+   "Do not pay any money. Do not share OTP, bank or KYC details.",
+   "Call 1930 (National Cyber Crime Helpline) or report at cybercrime.gov.in.",
+   "If money was already sent, call your bank right away to try to stop it."
+  ],
+  "what_to_do_hi": [
+   "कोई पैसा न भेजें। OTP, बैंक या KYC जानकारी किसी को न दें।",
+   "1930 (राष्ट्रीय साइबर अपराध हेल्पलाइन) पर कॉल करें या cybercrime.gov.in पर शिकायत करें।",
+   "अगर पैसे भेज चुके हैं, तो तुरंत अपने बैंक को फ़ोन करें।"
+  ],
+  "converged": true,
+  "deciding_factor": "All fraud charges were accepted by the Defender, confirmed by impossible 18% returns, fake RBI approval, and payment via UPI.",
+  "guardrails": [],
+  "retiree_targeting": 95,
+  "retiree_hooks": [
+   "Senior Citizen Special Fixed Deposit",
+   "PENSION PLUS"
+  ],
+  "charges_summary": {
+   "ACCEPTED": 4,
+   "WITHDRAWN": 0,
+   "UPHELD": 0,
+   "DISMISSED": 0,
+   "UNRESOLVED": 0
+  }
+ },
+ "plan": [
+  {
+   "agent": "registry",
+   "why": "Check 'Suraksha Wealth Nidhi' against the RBI Alert List and SEBI registers for unauthorized entity status."
+  },
+  {
+   "agent": "pattern",
+   "why": "Evaluate the unrealistic 18% guaranteed return and RBI approval claims against known scam patterns."
+  },
+  {
+   "agent": "community",
+   "why": "Check if the UPI ID 'surakshawealth.nidhi@ybl' or company name has been previously reported."
+  },
+  {
+   "agent": "link",
+   "why": "Trace the 1 page link under the ad to verify its final destination."
+  },
+  {
+   "agent": "web",
+   "why": "(safety rule) the ad has links, numbers or payment IDs to check"
+  }
+ ],
+ "converged": true,
+ "agent_runs": [
+  "registry",
+  "pattern",
+  "community",
+  "link",
+  "web",
+  "registry",
+  "web"
+ ],
+ "duration_s": 39.3
+}

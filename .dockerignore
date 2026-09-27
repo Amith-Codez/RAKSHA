@@ -1,0 +1,11 @@
+.git
+**/.env
+**/.venv
+**/__pycache__
+**/.pytest_cache
+**/.DS_Store
+backend/cache/raksha.db
+backend/cache/tts
+backend/cache/llm/*.json
+extension
+docs

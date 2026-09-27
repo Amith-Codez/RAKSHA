@@ -1,0 +1,774 @@
+{
+ "ad_text": "360 ONE Investment Adviser — SEBI Reg. No. INA000000888. Exclusive Retirement Wealth Program for senior citizens: assured 4% monthly returns on your PF and gratuity savings. Our senior relationship manager will personally help you open the account. Message us on WhatsApp +44 7700 900456 or e-mail 360one.retirement@gmail.com",
+ "claims": {
+  "advertiser": "360 ONE Investment Adviser",
+  "product": "Retirement Wealth Program",
+  "promised_return": "assured 4% monthly returns",
+  "guaranteed": true,
+  "people_shown": [],
+  "authority_claims": [
+   "SEBI Reg. No. INA000000888"
+  ],
+  "reg_numbers": [
+   "INA000000888"
+  ],
+  "links": [],
+  "phones": [
+   "+44 7700 900456"
+  ],
+  "emails": [
+   "360one.retirement@gmail.com"
+  ],
+  "payment_asks": [],
+  "retiree_hooks": [
+   "Exclusive Retirement Wealth Program for senior citizens",
+   "PF and gratuity savings"
+  ],
+  "urgency": [],
+  "channel_shift": [
+   "Message us on WhatsApp +44 7700 900456"
+  ],
+  "disclaimers": [],
+  "upi_ids": [],
+  "retiree_targeting": 95
+ },
+ "evidence": [
+  {
+   "id": "E1",
+   "agent": "registry",
+   "finding": "INA000000888 is a real SEBI Investment Adviser registration belonging to '360 ONE Investment Adviser and Trustee Services Limited'",
+   "supports": "LEGIT",
+   "strength": 2,
+   "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+  },
+  {
+   "id": "E2",
+   "agent": "registry",
+   "finding": "'360 ONE Investment Adviser and Trustee Services Limited' is registered with the e-mail domain 360.one, but the ad sends people to gmail.com — this looks like a clone pretending to be a registered firm",
+   "supports": "FRAUD",
+   "strength": 2,
+   "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+  },
+  {
+   "id": "E3",
+   "agent": "registry",
+   "finding": "'360 ONE Investment Adviser' matches SEBI-registered Investment Adviser '360 ONE Investment Adviser and Trustee Services Limited' (INA000000888)",
+   "supports": "LEGIT",
+   "strength": 1,
+   "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+  },
+  {
+   "id": "E4",
+   "agent": "web",
+   "finding": "It uses a free gmail.com e-mail address, not an official company or government address",
+   "supports": "FRAUD",
+   "strength": 1,
+   "source": "domain check"
+  },
+  {
+   "id": "E5",
+   "agent": "web",
+   "finding": "+44 7700 900456 is a United Kingdom number — an Indian government, bank or registered firm would not use a foreign WhatsApp number",
+   "supports": "FRAUD",
+   "strength": 3,
+   "source": "phone numbering plan"
+  },
+  {
+   "id": "E6",
+   "agent": "pattern",
+   "finding": "'4% monthly' works out to about 48% a year, while the best government-backed rate for seniors (SCSS) is 8.2%",
+   "supports": "FRAUD",
+   "strength": 3,
+   "source": "returns compared with SCSS 8.2% (Jul–Sep 2026)"
+  },
+  {
+   "id": "E7",
+   "agent": "pattern",
+   "finding": "Promising 'assured 4% monthly returns' amounts to ~60.1% annually, which far exceeds any legitimate Indian senior citizen scheme like SCSS at 8.2%.",
+   "supports": "FRAUD",
+   "strength": 3,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E8",
+   "agent": "pattern",
+   "finding": "Targeting senior citizens' 'PF and gratuity savings' with a high-return promise is a classic predatory retiree scam pattern.",
+   "supports": "FRAUD",
+   "strength": 3,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E9",
+   "agent": "pattern",
+   "finding": "SEBI regulations strictly prohibit investment advisers from guaranteeing returns, making an 'assured' return claim a clear violation.",
+   "supports": "FRAUD",
+   "strength": 3,
+   "source": "known scam patterns + published govt rates"
+  }
+ ],
+ "turns": [
+  {
+   "agent": "prosecutor",
+   "stage": "OPEN",
+   "round": 1,
+   "fraud_probability": 95,
+   "message": "Dad, this ad promises an impossible 4% monthly return which is way higher than any genuine scheme like the 8.2% Senior Citizens Savings Scheme. Also, a SEBI-registered firm would never use a free Gmail address and a foreign UK WhatsApp number to handle your retirement savings."
+  },
+  {
+   "agent": "defender",
+   "stage": "RESPOND",
+   "round": 1,
+   "fraud_probability": 98,
+   "message": "We cannot defend this ad because SEBI-registered advisers are strictly prohibited from guaranteeing returns, and the use of a UK WhatsApp number combined with a Gmail address strongly points to impersonation."
+  }
+ ],
+ "charges": [
+  {
+   "id": "C1",
+   "charge": "Promising an assured 4% monthly return violates SEBI rules and far exceeds legitimate Indian senior citizen schemes.",
+   "severity": 3,
+   "evidence_ids": [
+    "E6",
+    "E7",
+    "E9"
+   ],
+   "status": "ACCEPTED",
+   "history": [
+    [
+     "Defender",
+     "accepted: SEBI regulations prohibit investment advisers from guaranteeing returns, and 4% monthly far exceeds genuine rates like SCSS."
+    ]
+   ],
+   "ruling": null
+  },
+  {
+   "id": "C2",
+   "charge": "The ad uses a free gmail.com email instead of the official domain belonging to the registered firm.",
+   "severity": 3,
+   "evidence_ids": [
+    "E2",
+    "E4"
+   ],
+   "status": "ACCEPTED",
+   "history": [
+    [
+     "Defender",
+     "accepted: The ad uses a free gmail.com address instead of the official company domain, indicating a clone."
+    ]
+   ],
+   "ruling": null
+  },
+  {
+   "id": "C3",
+   "charge": "The contact number provided is a United Kingdom (+44) WhatsApp number, which no legitimate Indian financial firm uses.",
+   "severity": 3,
+   "evidence_ids": [
+    "E5"
+   ],
+   "status": "ACCEPTED",
+   "history": [
+    [
+     "Defender",
+     "accepted: Legitimate Indian financial firms do not use foreign UK WhatsApp numbers for customer interactions."
+    ]
+   ],
+   "ruling": null
+  }
+ ],
+ "trace": [
+  {
+   "step": 1,
+   "t": 0.0,
+   "from": "orchestrator",
+   "to": "extractor",
+   "type": "handoff",
+   "text": "New ad received. Extractor: read it and list every checkable claim.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 2,
+   "t": 0.0,
+   "from": "extractor",
+   "to": "blackboard",
+   "type": "claims",
+   "text": "Found advertiser '360 ONE Investment Adviser'; promise 'assured 4% monthly returns' (guaranteed); 1 registration no., 1 phone(s), 1 e-mail(s); aimed at retirees: 'Exclusive Retirement Wealth Program for senior citizens'.",
+   "evidence_ids": [],
+   "data": {
+    "advertiser": "360 ONE Investment Adviser",
+    "product": "Retirement Wealth Program",
+    "promised_return": "assured 4% monthly returns",
+    "guaranteed": true,
+    "people_shown": [],
+    "authority_claims": [
+     "SEBI Reg. No. INA000000888"
+    ],
+    "reg_numbers": [
+     "INA000000888"
+    ],
+    "links": [],
+    "phones": [
+     "+44 7700 900456"
+    ],
+    "emails": [
+     "360one.retirement@gmail.com"
+    ],
+    "payment_asks": [],
+    "retiree_hooks": [
+     "Exclusive Retirement Wealth Program for senior citizens",
+     "PF and gratuity savings"
+    ],
+    "urgency": [],
+    "channel_shift": [
+     "Message us on WhatsApp +44 7700 900456"
+    ],
+    "disclaimers": [],
+    "upi_ids": [],
+    "retiree_targeting": 95
+   }
+  },
+  {
+   "step": 3,
+   "t": 0.0,
+   "from": "router",
+   "to": "orchestrator",
+   "type": "plan",
+   "text": "Plan: Registry → Web & contact → Scam-pattern",
+   "evidence_ids": [],
+   "data": [
+    {
+     "agent": "registry",
+     "why": "Checks if the SEBI registration number and advertiser name are valid on official registers."
+    },
+    {
+     "agent": "web",
+     "why": "Investigates the foreign WhatsApp phone number and Gmail address for suspicious contact methods."
+    },
+    {
+     "agent": "pattern",
+     "why": "Compares the assured 4% monthly returns and retiree hooks against known scam patterns."
+    }
+   ]
+  },
+  {
+   "step": 4,
+   "t": 0.0,
+   "from": "router",
+   "to": "registry",
+   "type": "handoff",
+   "text": "Checks if the SEBI registration number and advertiser name are valid on official registers.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 5,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "INA000000888 is a real SEBI Investment Adviser registration belonging to '360 ONE Investment Adviser and Trustee Services Limited'",
+   "evidence_ids": [
+    "E1"
+   ],
+   "data": {
+    "id": "E1",
+    "agent": "registry",
+    "finding": "INA000000888 is a real SEBI Investment Adviser registration belonging to '360 ONE Investment Adviser and Trustee Services Limited'",
+    "supports": "LEGIT",
+    "strength": 2,
+    "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+   }
+  },
+  {
+   "step": 6,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "'360 ONE Investment Adviser and Trustee Services Limited' is registered with the e-mail domain 360.one, but the ad sends people to gmail.com — this looks like a clone pretending to be a registered firm",
+   "evidence_ids": [
+    "E2"
+   ],
+   "data": {
+    "id": "E2",
+    "agent": "registry",
+    "finding": "'360 ONE Investment Adviser and Trustee Services Limited' is registered with the e-mail domain 360.one, but the ad sends people to gmail.com — this looks like a clone pretending to be a registered firm",
+    "supports": "FRAUD",
+    "strength": 2,
+    "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+   }
+  },
+  {
+   "step": 7,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "'360 ONE Investment Adviser' matches SEBI-registered Investment Adviser '360 ONE Investment Adviser and Trustee Services Limited' (INA000000888)",
+   "evidence_ids": [
+    "E3"
+   ],
+   "data": {
+    "id": "E3",
+    "agent": "registry",
+    "finding": "'360 ONE Investment Adviser' matches SEBI-registered Investment Adviser '360 ONE Investment Adviser and Trustee Services Limited' (INA000000888)",
+    "supports": "LEGIT",
+    "strength": 1,
+    "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+   }
+  },
+  {
+   "step": 8,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Re-checked: confirms E2 ('360 ONE Investment Adviser and Trustee Services Limited' is registered with the e-mail do)",
+   "evidence_ids": [
+    "E2"
+   ],
+   "data": null
+  },
+  {
+   "step": 9,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Checked 2 number(s)/name(s) against 3,251 SEBI records and 95 RBI alert entries.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 10,
+   "t": 0.0,
+   "from": "router",
+   "to": "web",
+   "type": "handoff",
+   "text": "Investigates the foreign WhatsApp phone number and Gmail address for suspicious contact methods.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 11,
+   "t": 0.0,
+   "from": "web",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "It uses a free gmail.com e-mail address, not an official company or government address",
+   "evidence_ids": [
+    "E4"
+   ],
+   "data": {
+    "id": "E4",
+    "agent": "web",
+    "finding": "It uses a free gmail.com e-mail address, not an official company or government address",
+    "supports": "FRAUD",
+    "strength": 1,
+    "source": "domain check"
+   }
+  },
+  {
+   "step": 12,
+   "t": 0.0,
+   "from": "web",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "+44 7700 900456 is a United Kingdom number — an Indian government, bank or registered firm would not use a foreign WhatsApp number",
+   "evidence_ids": [
+    "E5"
+   ],
+   "data": {
+    "id": "E5",
+    "agent": "web",
+    "finding": "+44 7700 900456 is a United Kingdom number — an Indian government, bank or registered firm would not use a foreign WhatsApp number",
+    "supports": "FRAUD",
+    "strength": 3,
+    "source": "phone numbering plan"
+   }
+  },
+  {
+   "step": 13,
+   "t": 0.0,
+   "from": "router",
+   "to": "pattern",
+   "type": "handoff",
+   "text": "Compares the assured 4% monthly returns and retiree hooks against known scam patterns.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 14,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "'4% monthly' works out to about 48% a year, while the best government-backed rate for seniors (SCSS) is 8.2%",
+   "evidence_ids": [
+    "E6"
+   ],
+   "data": {
+    "id": "E6",
+    "agent": "pattern",
+    "finding": "'4% monthly' works out to about 48% a year, while the best government-backed rate for seniors (SCSS) is 8.2%",
+    "supports": "FRAUD",
+    "strength": 3,
+    "source": "returns compared with SCSS 8.2% (Jul–Sep 2026)"
+   }
+  },
+  {
+   "step": 15,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Promising 'assured 4% monthly returns' amounts to ~60.1% annually, which far exceeds any legitimate Indian senior citizen scheme like SCSS at 8.2%.",
+   "evidence_ids": [
+    "E7"
+   ],
+   "data": {
+    "id": "E7",
+    "agent": "pattern",
+    "finding": "Promising 'assured 4% monthly returns' amounts to ~60.1% annually, which far exceeds any legitimate Indian senior citizen scheme like SCSS at 8.2%.",
+    "supports": "FRAUD",
+    "strength": 3,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 16,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Targeting senior citizens' 'PF and gratuity savings' with a high-return promise is a classic predatory retiree scam pattern.",
+   "evidence_ids": [
+    "E8"
+   ],
+   "data": {
+    "id": "E8",
+    "agent": "pattern",
+    "finding": "Targeting senior citizens' 'PF and gratuity savings' with a high-return promise is a classic predatory retiree scam pattern.",
+    "supports": "FRAUD",
+    "strength": 3,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 17,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "SEBI regulations strictly prohibit investment advisers from guaranteeing returns, making an 'assured' return claim a clear violation.",
+   "evidence_ids": [
+    "E9"
+   ],
+   "data": {
+    "id": "E9",
+    "agent": "pattern",
+    "finding": "SEBI regulations strictly prohibit investment advisers from guaranteeing returns, making an 'assured' return claim a clear violation.",
+    "supports": "FRAUD",
+    "strength": 3,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 18,
+   "t": 0.0,
+   "from": "orchestrator",
+   "to": "prosecutor",
+   "type": "handoff",
+   "text": "9 pieces of evidence collected. Prosecutor: file your charges. Defender: answer each one.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 19,
+   "t": 1.5,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "argument",
+   "text": "Dad, this ad promises an impossible 4% monthly return which is way higher than any genuine scheme like the 8.2% Senior Citizens Savings Scheme. Also, a SEBI-registered firm would never use a free Gmail address and a foreign UK WhatsApp number to handle your retirement savings.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 95,
+    "stage": "OPEN",
+    "round": 1
+   }
+  },
+  {
+   "step": 20,
+   "t": 1.5,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "Promising an assured 4% monthly return violates SEBI rules and far exceeds legitimate Indian senior citizen schemes.",
+   "evidence_ids": [
+    "E6",
+    "E7",
+    "E9"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "severity": 3
+   }
+  },
+  {
+   "step": 21,
+   "t": 1.5,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "The ad uses a free gmail.com email instead of the official domain belonging to the registered firm.",
+   "evidence_ids": [
+    "E2",
+    "E4"
+   ],
+   "data": {
+    "charge_id": "C2",
+    "severity": 3
+   }
+  },
+  {
+   "step": 22,
+   "t": 1.5,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "The contact number provided is a United Kingdom (+44) WhatsApp number, which no legitimate Indian financial firm uses.",
+   "evidence_ids": [
+    "E5"
+   ],
+   "data": {
+    "charge_id": "C3",
+    "severity": 3
+   }
+  },
+  {
+   "step": 23,
+   "t": 3.5,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "argument",
+   "text": "We cannot defend this ad because SEBI-registered advisers are strictly prohibited from guaranteeing returns, and the use of a UK WhatsApp number combined with a Gmail address strongly points to impersonation.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 98,
+    "stage": "RESPOND",
+    "round": 1
+   }
+  },
+  {
+   "step": 24,
+   "t": 3.5,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "SEBI regulations prohibit investment advisers from guaranteeing returns, and 4% monthly far exceeds genuine rates like SCSS.",
+   "evidence_ids": [
+    "E6",
+    "E7",
+    "E9"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "stance": "ACCEPTED"
+   }
+  },
+  {
+   "step": 25,
+   "t": 3.5,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "The ad uses a free gmail.com address instead of the official company domain, indicating a clone.",
+   "evidence_ids": [
+    "E2",
+    "E4"
+   ],
+   "data": {
+    "charge_id": "C2",
+    "stance": "ACCEPTED"
+   }
+  },
+  {
+   "step": 26,
+   "t": 3.5,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "Legitimate Indian financial firms do not use foreign UK WhatsApp numbers for customer interactions.",
+   "evidence_ids": [
+    "E5"
+   ],
+   "data": {
+    "charge_id": "C3",
+    "stance": "ACCEPTED"
+   }
+  },
+  {
+   "step": 27,
+   "t": 3.5,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "round",
+   "text": "Round 1: Prosecutor 95% vs Defender 98% — 3 points apart",
+   "evidence_ids": [],
+   "data": {
+    "round": 1,
+    "prosecutor": 95,
+    "defender": 98,
+    "gap": 3
+   }
+  },
+  {
+   "step": 28,
+   "t": 3.5,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "note",
+   "text": "Agreed on 3 of 3 charges. Arbiter confirms the verdict.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 29,
+   "t": 5.3,
+   "from": "arbiter",
+   "to": "user",
+   "type": "verdict",
+   "text": "FRAUD (risk 100/100): This is a fake scheme. Do not pay.",
+   "evidence_ids": [
+    "E2",
+    "E5",
+    "E7"
+   ],
+   "data": {
+    "label": "FRAUD",
+    "risk": 100,
+    "headline": "This is a fake scheme. Do not pay.",
+    "headline_hi": "यह एक फर्जी योजना है। पैसे न दें।",
+    "reasons": [
+     "It promises a fake monthly return of 4% which is impossible.",
+     "It uses a foreign UK WhatsApp number instead of an office.",
+     "It asks you to use a free Gmail address instead of an official website."
+    ],
+    "reasons_hi": [
+     "यह 4% मासिक रिटर्न का झूठा वादा करता है जो असंभव है।",
+     "यह कार्यालय के बजाय विदेशी यूके व्हाट्सएप नंबर का उपयोग करता है।",
+     "यह आधिकारिक वेबसाइट के बजाय मुफ्त जीमेल पते का उपयोग करता है।"
+    ],
+    "reason_evidence": [
+     [
+      "E7"
+     ],
+     [
+      "E5"
+     ],
+     [
+      "E2"
+     ]
+    ],
+    "what_to_do": [
+     "Do not pay any money. Do not share OTP, bank or KYC details.",
+     "Call 1930 (National Cyber Crime Helpline) or report at cybercrime.gov.in.",
+     "If money was already sent, call your bank right away to try to stop it."
+    ],
+    "what_to_do_hi": [
+     "कोई पैसा न भेजें। OTP, बैंक या KYC जानकारी किसी को न दें।",
+     "1930 (राष्ट्रीय साइबर अपराध हेल्पलाइन) पर कॉल करें या cybercrime.gov.in पर शिकायत करें।",
+     "अगर पैसे भेज चुके हैं, तो तुरंत अपने बैंक को फ़ोन करें।"
+    ],
+    "converged": true,
+    "deciding_factor": "Since all charges were accepted by the defender, the impossible 4% monthly return and fake foreign contact details prove this is a scam.",
+    "guardrails": [],
+    "retiree_targeting": 95,
+    "retiree_hooks": [
+     "Exclusive Retirement Wealth Program for senior citizens",
+     "PF and gratuity savings"
+    ],
+    "charges_summary": {
+     "ACCEPTED": 3,
+     "WITHDRAWN": 0,
+     "UPHELD": 0,
+     "DISMISSED": 0,
+     "UNRESOLVED": 0
+    }
+   }
+  }
+ ],
+ "verdict": {
+  "label": "FRAUD",
+  "risk": 100,
+  "headline": "This is a fake scheme. Do not pay.",
+  "headline_hi": "यह एक फर्जी योजना है। पैसे न दें।",
+  "reasons": [
+   "It promises a fake monthly return of 4% which is impossible.",
+   "It uses a foreign UK WhatsApp number instead of an office.",
+   "It asks you to use a free Gmail address instead of an official website."
+  ],
+  "reasons_hi": [
+   "यह 4% मासिक रिटर्न का झूठा वादा करता है जो असंभव है।",
+   "यह कार्यालय के बजाय विदेशी यूके व्हाट्सएप नंबर का उपयोग करता है।",
+   "यह आधिकारिक वेबसाइट के बजाय मुफ्त जीमेल पते का उपयोग करता है।"
+  ],
+  "reason_evidence": [
+   [
+    "E7"
+   ],
+   [
+    "E5"
+   ],
+   [
+    "E2"
+   ]
+  ],
+  "what_to_do": [
+   "Do not pay any money. Do not share OTP, bank or KYC details.",
+   "Call 1930 (National Cyber Crime Helpline) or report at cybercrime.gov.in.",
+   "If money was already sent, call your bank right away to try to stop it."
+  ],
+  "what_to_do_hi": [
+   "कोई पैसा न भेजें। OTP, बैंक या KYC जानकारी किसी को न दें।",
+   "1930 (राष्ट्रीय साइबर अपराध हेल्पलाइन) पर कॉल करें या cybercrime.gov.in पर शिकायत करें।",
+   "अगर पैसे भेज चुके हैं, तो तुरंत अपने बैंक को फ़ोन करें।"
+  ],
+  "converged": true,
+  "deciding_factor": "Since all charges were accepted by the defender, the impossible 4% monthly return and fake foreign contact details prove this is a scam.",
+  "guardrails": [],
+  "retiree_targeting": 95,
+  "retiree_hooks": [
+   "Exclusive Retirement Wealth Program for senior citizens",
+   "PF and gratuity savings"
+  ],
+  "charges_summary": {
+   "ACCEPTED": 3,
+   "WITHDRAWN": 0,
+   "UPHELD": 0,
+   "DISMISSED": 0,
+   "UNRESOLVED": 0
+  }
+ },
+ "plan": [
+  {
+   "agent": "registry",
+   "why": "Checks if the SEBI registration number and advertiser name are valid on official registers."
+  },
+  {
+   "agent": "web",
+   "why": "Investigates the foreign WhatsApp phone number and Gmail address for suspicious contact methods."
+  },
+  {
+   "agent": "pattern",
+   "why": "Compares the assured 4% monthly returns and retiree hooks against known scam patterns."
+  }
+ ],
+ "converged": true,
+ "agent_runs": [
+  "registry",
+  "web",
+  "pattern"
+ ],
+ "duration_s": 5.3
+}

@@ -1,0 +1,1007 @@
+{
+ "ad_text": "G Govt Senior Income Updates Sponsored BREAKING: Finance Minister Nirmala Sitharaman launches the new Government–SBI Senior Citizen Income Scheme! A joint initiative of the Central Government and State Bank of India. Invest just ₹21,000 and receive ₹15,00,000 within 10 days — 100% guaranteed by the Government. Only for pensioners and retired employees. Limited slots, registration closes tonight! Register now: www.sbi-govtscheme-invest.com For help WhatsApp: +44 7700 900123 Register now",
+ "page_url": "http://localhost:8000/demo",
+ "page_links": [
+  {
+   "href": "http://localhost:8000/r?u=https%3A%2F%2Fgovt-sbi-yojana.online%2Fpay",
+   "text": "Register now"
+  }
+ ],
+ "image_hash": "2320d4b2dc248e8e",
+ "claims": {
+  "advertiser": "Govt Senior Income Updates",
+  "product": "Government-SBI Senior Citizen Income Scheme",
+  "promised_return": "₹15,00,000 within 10 days for an investment of ₹21,000",
+  "guaranteed": true,
+  "people_shown": [
+   "Nirmala Sitharaman",
+   "Central Government",
+   "State Bank of India"
+  ],
+  "authority_claims": [
+   "Finance Minister Nirmala Sitharaman launches the new Government–SBI Senior Citizen Income Scheme!",
+   "A joint initiative of the Central Government and State Bank of India.",
+   "100% guaranteed by the Government."
+  ],
+  "reg_numbers": [],
+  "links": [
+   "www.sbi-govtscheme-invest.com"
+  ],
+  "phones": [
+   "+44 7700 900123"
+  ],
+  "emails": [],
+  "payment_asks": [
+   "Invest just ₹21,000"
+  ],
+  "retiree_hooks": [
+   "Senior Citizen Income Scheme",
+   "Only for pensioners and retired employees."
+  ],
+  "urgency": [
+   "Limited slots",
+   "registration closes tonight!"
+  ],
+  "channel_shift": [
+   "For help WhatsApp: +44 7700 900123"
+  ],
+  "disclaimers": [],
+  "upi_ids": [],
+  "retiree_targeting": 95,
+  "final_domains": [
+   "govt-sbi-yojana.online"
+  ]
+ },
+ "evidence": [
+  {
+   "id": "E1",
+   "agent": "pattern",
+   "finding": "It promises to turn ₹21,000 into ₹15,00,000 within 10 days — no real investment multiplies money like that",
+   "supports": "FRAUD",
+   "strength": 3,
+   "source": "returns compared with SCSS 8.2% (Jul–Sep 2026)"
+  },
+  {
+   "id": "E2",
+   "agent": "pattern",
+   "finding": "Claims Finance Minister Nirmala Sitharaman launched a scheme, violating the rule that the government does not promote private schemes via social media ads",
+   "supports": "FRAUD",
+   "strength": 3,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E3",
+   "agent": "pattern",
+   "finding": "Uses a foreign UK WhatsApp number (+44) for a supposedly official Indian government and SBI scheme",
+   "supports": "FRAUD",
+   "strength": 3,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E4",
+   "agent": "pattern",
+   "finding": "Employs classic retiree targeting and artificial urgency ('Only for pensioners', 'registration closes tonight')",
+   "supports": "FRAUD",
+   "strength": 2,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E5",
+   "agent": "web",
+   "finding": "sbi-govtscheme-invest.com uses the name 'SBI' but is not its official website — a look-alike domain",
+   "supports": "FRAUD",
+   "strength": 3,
+   "source": "domain check"
+  },
+  {
+   "id": "E6",
+   "agent": "web",
+   "finding": "+44 7700 900123 is a United Kingdom number — an Indian government, bank or registered firm would not use a foreign WhatsApp number",
+   "supports": "FRAUD",
+   "strength": 3,
+   "source": "phone numbering plan"
+  },
+  {
+   "id": "E7",
+   "agent": "link",
+   "finding": "Before you click: the button “Register now” really goes to govt-sbi-yojana.online",
+   "supports": "NEUTRAL",
+   "strength": 1,
+   "source": "links read from the page under the ad"
+  },
+  {
+   "id": "E8",
+   "agent": "link",
+   "finding": "The ad shows sbi-govtscheme-invest.com, but its button goes to govt-sbi-yojana.online",
+   "supports": "FRAUD",
+   "strength": 2,
+   "source": "links read from the page under the ad"
+  },
+  {
+   "id": "E9",
+   "agent": "link",
+   "finding": "govt-sbi-yojana.online does not exist on the internet right now (scam sites are often short-lived or taken down)",
+   "supports": "FRAUD",
+   "strength": 1,
+   "source": "DNS lookup"
+  },
+  {
+   "id": "E10",
+   "agent": "registry",
+   "finding": "'Govt Senior Income Updates' is not in SEBI's registers of investment advisers or research analysts, yet the ad promises investment returns",
+   "supports": "FRAUD",
+   "strength": 1,
+   "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+  },
+  {
+   "id": "E11",
+   "agent": "web",
+   "finding": "govt-sbi-yojana.online uses the name 'SBI' but is not its official website — a look-alike domain",
+   "supports": "FRAUD",
+   "strength": 3,
+   "source": "domain check"
+  }
+ ],
+ "turns": [
+  {
+   "agent": "prosecutor",
+   "stage": "OPEN",
+   "round": 1,
+   "fraud_probability": 99,
+   "message": "This ad promises an impossible return of 15 lakh rupees from a tiny 21,000 rupee investment in just 10 days, while falsely claiming an endorsement by the Finance Minister and using a suspicious UK WhatsApp number."
+  },
+  {
+   "agent": "defender",
+   "stage": "RESPOND",
+   "round": 1,
+   "fraud_probability": 100,
+   "message": "The evidence clearly demonstrates that this is a fraudulent scheme, as no legitimate government initiative multiplies money at such impossible rates or uses look-alike domains and foreign WhatsApp numbers."
+  }
+ ],
+ "charges": [
+  {
+   "id": "C1",
+   "charge": "The ad promises an impossible financial return of ₹15,00,000 from a ₹21,000 investment in just 10 days.",
+   "severity": 3,
+   "evidence_ids": [
+    "E1"
+   ],
+   "status": "ACCEPTED",
+   "history": [
+    [
+     "Defender",
+     "accepted: The promised return of 15 lakhs from 21 thousand in 10 days is mathematically impossible and completely unsupported by any genuine small-savings benchmarks."
+    ]
+   ],
+   "ruling": null
+  },
+  {
+   "id": "C2",
+   "charge": "It falsely claims that Finance Minister Nirmala Sitharaman and the Government of India launched this scheme via a social media ad.",
+   "severity": 3,
+   "evidence_ids": [
+    "E2"
+   ],
+   "status": "ACCEPTED",
+   "history": [
+    [
+     "Defender",
+     "accepted: The evidence confirms the government does not promote private investment schemes through social media ads or misuse the Finance Minister's name in this manner."
+    ]
+   ],
+   "ruling": null
+  },
+  {
+   "id": "C3",
+   "charge": "It uses a foreign UK WhatsApp number (+44) for a supposed official Indian government and State Bank of India initiative.",
+   "severity": 3,
+   "evidence_ids": [
+    "E3",
+    "E6"
+   ],
+   "status": "ACCEPTED",
+   "history": [
+    [
+     "Defender",
+     "accepted: Using a UK country code (+44) for an official Indian banking and government scheme is a definitive indicator of impersonation."
+    ]
+   ],
+   "ruling": null
+  },
+  {
+   "id": "C4",
+   "charge": "The domain shown in the ad (sbi-govtscheme-invest.com) and the destination link (govt-sbi-yojana.online) are look-alike domains and not the official SBI website.",
+   "severity": 3,
+   "evidence_ids": [
+    "E5",
+    "E8",
+    "E11"
+   ],
+   "status": "ACCEPTED",
+   "history": [
+    [
+     "Defender",
+     "accepted: Both domains are look-alikes attempting to spoof the State Bank of India rather than using official banking portals."
+    ]
+   ],
+   "ruling": null
+  }
+ ],
+ "trace": [
+  {
+   "step": 1,
+   "t": 0.0,
+   "from": "orchestrator",
+   "to": "extractor",
+   "type": "handoff",
+   "text": "New ad received. Extractor: read it and list every checkable claim.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 2,
+   "t": 2.6,
+   "from": "extractor",
+   "to": "blackboard",
+   "type": "claims",
+   "text": "Found advertiser 'Govt Senior Income Updates'; promise '₹15,00,000 within 10 days for an investment of ₹21,000' (guaranteed); endorsed by Nirmala Sitharaman, Central Government, State Bank of India; 1 link(s), 1 phone(s); aimed at retirees: 'Senior Citizen Income Scheme'; pressure: 'Limited slots'.",
+   "evidence_ids": [],
+   "data": {
+    "advertiser": "Govt Senior Income Updates",
+    "product": "Government-SBI Senior Citizen Income Scheme",
+    "promised_return": "₹15,00,000 within 10 days for an investment of ₹21,000",
+    "guaranteed": true,
+    "people_shown": [
+     "Nirmala Sitharaman",
+     "Central Government",
+     "State Bank of India"
+    ],
+    "authority_claims": [
+     "Finance Minister Nirmala Sitharaman launches the new Government–SBI Senior Citizen Income Scheme!",
+     "A joint initiative of the Central Government and State Bank of India.",
+     "100% guaranteed by the Government."
+    ],
+    "reg_numbers": [],
+    "links": [
+     "www.sbi-govtscheme-invest.com"
+    ],
+    "phones": [
+     "+44 7700 900123"
+    ],
+    "emails": [],
+    "payment_asks": [
+     "Invest just ₹21,000"
+    ],
+    "retiree_hooks": [
+     "Senior Citizen Income Scheme",
+     "Only for pensioners and retired employees."
+    ],
+    "urgency": [
+     "Limited slots",
+     "registration closes tonight!"
+    ],
+    "channel_shift": [
+     "For help WhatsApp: +44 7700 900123"
+    ],
+    "disclaimers": [],
+    "upi_ids": [],
+    "retiree_targeting": 95,
+    "final_domains": [
+     "govt-sbi-yojana.online"
+    ]
+   }
+  },
+  {
+   "step": 3,
+   "t": 4.0,
+   "from": "router",
+   "to": "orchestrator",
+   "type": "plan",
+   "text": "Plan: Scam-pattern → Web & contact → Link → Registry → Community memory",
+   "evidence_ids": [],
+   "data": [
+    {
+     "agent": "pattern",
+     "why": "Compare the unrealistic return of ₹15,00,000 for ₹21,000 and fake government endorsements with known retiree scam patterns."
+    },
+    {
+     "agent": "web",
+     "why": "Check the suspicious look-alike domain www.sbi-govtscheme-invest.com and the foreign WhatsApp number +44 7700 900123."
+    },
+    {
+     "agent": "link",
+     "why": "Inspect the page link under the ad to see where the buttons actually lead."
+    },
+    {
+     "agent": "registry",
+     "why": "Verify if the advertiser 'Govt Senior Income Updates' or the domain is listed on regulatory or RBI alert lists."
+    },
+    {
+     "agent": "community",
+     "why": "Check if this website, phone number, or ad has already been flagged by other users."
+    }
+   ]
+  },
+  {
+   "step": 4,
+   "t": 4.0,
+   "from": "router",
+   "to": "pattern",
+   "type": "handoff",
+   "text": "Compare the unrealistic return of ₹15,00,000 for ₹21,000 and fake government endorsements with known retiree scam patterns.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 5,
+   "t": 4.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "It promises to turn ₹21,000 into ₹15,00,000 within 10 days — no real investment multiplies money like that",
+   "evidence_ids": [
+    "E1"
+   ],
+   "data": {
+    "id": "E1",
+    "agent": "pattern",
+    "finding": "It promises to turn ₹21,000 into ₹15,00,000 within 10 days — no real investment multiplies money like that",
+    "supports": "FRAUD",
+    "strength": 3,
+    "source": "returns compared with SCSS 8.2% (Jul–Sep 2026)"
+   }
+  },
+  {
+   "step": 6,
+   "t": 5.1,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Claims Finance Minister Nirmala Sitharaman launched a scheme, violating the rule that the government does not promote private schemes via social media ads",
+   "evidence_ids": [
+    "E2"
+   ],
+   "data": {
+    "id": "E2",
+    "agent": "pattern",
+    "finding": "Claims Finance Minister Nirmala Sitharaman launched a scheme, violating the rule that the government does not promote private schemes via social media ads",
+    "supports": "FRAUD",
+    "strength": 3,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 7,
+   "t": 5.1,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Uses a foreign UK WhatsApp number (+44) for a supposedly official Indian government and SBI scheme",
+   "evidence_ids": [
+    "E3"
+   ],
+   "data": {
+    "id": "E3",
+    "agent": "pattern",
+    "finding": "Uses a foreign UK WhatsApp number (+44) for a supposedly official Indian government and SBI scheme",
+    "supports": "FRAUD",
+    "strength": 3,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 8,
+   "t": 5.1,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Employs classic retiree targeting and artificial urgency ('Only for pensioners', 'registration closes tonight')",
+   "evidence_ids": [
+    "E4"
+   ],
+   "data": {
+    "id": "E4",
+    "agent": "pattern",
+    "finding": "Employs classic retiree targeting and artificial urgency ('Only for pensioners', 'registration closes tonight')",
+    "supports": "FRAUD",
+    "strength": 2,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 9,
+   "t": 5.1,
+   "from": "router",
+   "to": "web",
+   "type": "handoff",
+   "text": "Check the suspicious look-alike domain www.sbi-govtscheme-invest.com and the foreign WhatsApp number +44 7700 900123.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 10,
+   "t": 5.1,
+   "from": "web",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "sbi-govtscheme-invest.com uses the name 'SBI' but is not its official website — a look-alike domain",
+   "evidence_ids": [
+    "E5"
+   ],
+   "data": {
+    "id": "E5",
+    "agent": "web",
+    "finding": "sbi-govtscheme-invest.com uses the name 'SBI' but is not its official website — a look-alike domain",
+    "supports": "FRAUD",
+    "strength": 3,
+    "source": "domain check"
+   }
+  },
+  {
+   "step": 11,
+   "t": 5.1,
+   "from": "web",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "+44 7700 900123 is a United Kingdom number — an Indian government, bank or registered firm would not use a foreign WhatsApp number",
+   "evidence_ids": [
+    "E6"
+   ],
+   "data": {
+    "id": "E6",
+    "agent": "web",
+    "finding": "+44 7700 900123 is a United Kingdom number — an Indian government, bank or registered firm would not use a foreign WhatsApp number",
+    "supports": "FRAUD",
+    "strength": 3,
+    "source": "phone numbering plan"
+   }
+  },
+  {
+   "step": 12,
+   "t": 5.1,
+   "from": "router",
+   "to": "link",
+   "type": "handoff",
+   "text": "Inspect the page link under the ad to see where the buttons actually lead.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 13,
+   "t": 5.2,
+   "from": "link",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Before you click: the button “Register now” really goes to govt-sbi-yojana.online",
+   "evidence_ids": [
+    "E7"
+   ],
+   "data": {
+    "id": "E7",
+    "agent": "link",
+    "finding": "Before you click: the button “Register now” really goes to govt-sbi-yojana.online",
+    "supports": "NEUTRAL",
+    "strength": 1,
+    "source": "links read from the page under the ad"
+   }
+  },
+  {
+   "step": 14,
+   "t": 5.2,
+   "from": "link",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "The ad shows sbi-govtscheme-invest.com, but its button goes to govt-sbi-yojana.online",
+   "evidence_ids": [
+    "E8"
+   ],
+   "data": {
+    "id": "E8",
+    "agent": "link",
+    "finding": "The ad shows sbi-govtscheme-invest.com, but its button goes to govt-sbi-yojana.online",
+    "supports": "FRAUD",
+    "strength": 2,
+    "source": "links read from the page under the ad"
+   }
+  },
+  {
+   "step": 15,
+   "t": 5.2,
+   "from": "link",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "govt-sbi-yojana.online does not exist on the internet right now (scam sites are often short-lived or taken down)",
+   "evidence_ids": [
+    "E9"
+   ],
+   "data": {
+    "id": "E9",
+    "agent": "link",
+    "finding": "govt-sbi-yojana.online does not exist on the internet right now (scam sites are often short-lived or taken down)",
+    "supports": "FRAUD",
+    "strength": 1,
+    "source": "DNS lookup"
+   }
+  },
+  {
+   "step": 16,
+   "t": 5.2,
+   "from": "router",
+   "to": "registry",
+   "type": "handoff",
+   "text": "Verify if the advertiser 'Govt Senior Income Updates' or the domain is listed on regulatory or RBI alert lists.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 17,
+   "t": 5.2,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "'Govt Senior Income Updates' is not in SEBI's registers of investment advisers or research analysts, yet the ad promises investment returns",
+   "evidence_ids": [
+    "E10"
+   ],
+   "data": {
+    "id": "E10",
+    "agent": "registry",
+    "finding": "'Govt Senior Income Updates' is not in SEBI's registers of investment advisers or research analysts, yet the ad promises investment returns",
+    "supports": "FRAUD",
+    "strength": 1,
+    "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+   }
+  },
+  {
+   "step": 18,
+   "t": 5.2,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Checked 1 number(s)/name(s) against 3,251 SEBI records and 95 RBI alert entries.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 19,
+   "t": 5.2,
+   "from": "router",
+   "to": "community",
+   "type": "handoff",
+   "text": "Check if this website, phone number, or ad has already been flagged by other users.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 20,
+   "t": 5.2,
+   "from": "community",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Checked 4 fingerprint(s) of this ad against earlier reports: nothing flagged before.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 21,
+   "t": 5.2,
+   "from": "pattern",
+   "to": "web",
+   "type": "handoff",
+   "text": "Check if the domain is a known phishing site impersonating SBI. — checking \"www.sbi-govtscheme-invest.com\"",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 22,
+   "t": 5.2,
+   "from": "web",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Re-checked: confirms E5 (sbi-govtscheme-invest.com uses the name 'SBI' but is not its official website — a look-ali)",
+   "evidence_ids": [
+    "E5"
+   ],
+   "data": null
+  },
+  {
+   "step": 23,
+   "t": 5.2,
+   "from": "link",
+   "to": "web",
+   "type": "handoff",
+   "text": "check the real destination govt-sbi-yojana.online — checking \"https://govt-sbi-yojana.online/pay\"",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 24,
+   "t": 5.2,
+   "from": "web",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "govt-sbi-yojana.online uses the name 'SBI' but is not its official website — a look-alike domain",
+   "evidence_ids": [
+    "E11"
+   ],
+   "data": {
+    "id": "E11",
+    "agent": "web",
+    "finding": "govt-sbi-yojana.online uses the name 'SBI' but is not its official website — a look-alike domain",
+    "supports": "FRAUD",
+    "strength": 3,
+    "source": "domain check"
+   }
+  },
+  {
+   "step": 25,
+   "t": 5.2,
+   "from": "link",
+   "to": "web",
+   "type": "handoff",
+   "text": "check the payment / chat ID from a button (+44 7700 900123) — checking \"+44 7700 900123\"",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 26,
+   "t": 5.2,
+   "from": "web",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Re-checked: confirms E6 (+44 7700 900123 is a United Kingdom number — an Indian government, bank or registered firm)",
+   "evidence_ids": [
+    "E6"
+   ],
+   "data": null
+  },
+  {
+   "step": 27,
+   "t": 5.2,
+   "from": "orchestrator",
+   "to": "prosecutor",
+   "type": "handoff",
+   "text": "11 pieces of evidence collected. Prosecutor: file your charges. Defender: answer each one.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 28,
+   "t": 6.7,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "argument",
+   "text": "This ad promises an impossible return of 15 lakh rupees from a tiny 21,000 rupee investment in just 10 days, while falsely claiming an endorsement by the Finance Minister and using a suspicious UK WhatsApp number.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 99,
+    "stage": "OPEN",
+    "round": 1
+   }
+  },
+  {
+   "step": 29,
+   "t": 6.7,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "The ad promises an impossible financial return of ₹15,00,000 from a ₹21,000 investment in just 10 days.",
+   "evidence_ids": [
+    "E1"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "severity": 3
+   }
+  },
+  {
+   "step": 30,
+   "t": 6.7,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "It falsely claims that Finance Minister Nirmala Sitharaman and the Government of India launched this scheme via a social media ad.",
+   "evidence_ids": [
+    "E2"
+   ],
+   "data": {
+    "charge_id": "C2",
+    "severity": 3
+   }
+  },
+  {
+   "step": 31,
+   "t": 6.7,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "It uses a foreign UK WhatsApp number (+44) for a supposed official Indian government and State Bank of India initiative.",
+   "evidence_ids": [
+    "E3",
+    "E6"
+   ],
+   "data": {
+    "charge_id": "C3",
+    "severity": 3
+   }
+  },
+  {
+   "step": 32,
+   "t": 6.7,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "The domain shown in the ad (sbi-govtscheme-invest.com) and the destination link (govt-sbi-yojana.online) are look-alike domains and not the official SBI website.",
+   "evidence_ids": [
+    "E5",
+    "E8",
+    "E11"
+   ],
+   "data": {
+    "charge_id": "C4",
+    "severity": 3
+   }
+  },
+  {
+   "step": 33,
+   "t": 8.2,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "argument",
+   "text": "The evidence clearly demonstrates that this is a fraudulent scheme, as no legitimate government initiative multiplies money at such impossible rates or uses look-alike domains and foreign WhatsApp numbers.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 100,
+    "stage": "RESPOND",
+    "round": 1
+   }
+  },
+  {
+   "step": 34,
+   "t": 8.2,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "The promised return of 15 lakhs from 21 thousand in 10 days is mathematically impossible and completely unsupported by any genuine small-savings benchmarks.",
+   "evidence_ids": [
+    "E1"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "stance": "ACCEPTED"
+   }
+  },
+  {
+   "step": 35,
+   "t": 8.2,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "The evidence confirms the government does not promote private investment schemes through social media ads or misuse the Finance Minister's name in this manner.",
+   "evidence_ids": [
+    "E2"
+   ],
+   "data": {
+    "charge_id": "C2",
+    "stance": "ACCEPTED"
+   }
+  },
+  {
+   "step": 36,
+   "t": 8.2,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "Using a UK country code (+44) for an official Indian banking and government scheme is a definitive indicator of impersonation.",
+   "evidence_ids": [
+    "E3",
+    "E6"
+   ],
+   "data": {
+    "charge_id": "C3",
+    "stance": "ACCEPTED"
+   }
+  },
+  {
+   "step": 37,
+   "t": 8.2,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "Both domains are look-alikes attempting to spoof the State Bank of India rather than using official banking portals.",
+   "evidence_ids": [
+    "E5",
+    "E8",
+    "E11"
+   ],
+   "data": {
+    "charge_id": "C4",
+    "stance": "ACCEPTED"
+   }
+  },
+  {
+   "step": 38,
+   "t": 8.2,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "round",
+   "text": "Round 1: Prosecutor 99% vs Defender 100% — 1 points apart",
+   "evidence_ids": [],
+   "data": {
+    "round": 1,
+    "prosecutor": 99,
+    "defender": 100,
+    "gap": 1
+   }
+  },
+  {
+   "step": 39,
+   "t": 8.2,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "note",
+   "text": "Agreed on 4 of 4 charges. Arbiter confirms the verdict.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 40,
+   "t": 9.7,
+   "from": "arbiter",
+   "to": "user",
+   "type": "verdict",
+   "text": "FRAUD (risk 100/100): This is a fake scheme. Do not pay.",
+   "evidence_ids": [
+    "E1",
+    "E2",
+    "E3",
+    "E5",
+    "E6"
+   ],
+   "data": {
+    "label": "FRAUD",
+    "not_investment": false,
+    "risk": 100,
+    "headline": "This is a fake scheme. Do not pay.",
+    "headline_hi": "यह एक फर्जी योजना है। पैसे न दें।",
+    "reasons": [
+     "It promises impossible money growth, turning twenty-one thousand rupees into fifteen lakhs in ten days.",
+     "It falsely uses the Finance Minister and State Bank of India names to trick you.",
+     "It uses a foreign WhatsApp number and fake web links instead of official bank pages."
+    ],
+    "reasons_hi": [
+     "यह दस दिनों में इक्कीस हजार रुपये को पंद्रह लाख बनाने का असंभव वादा करता है।",
+     "यह आपको धोखा देने के लिए वित्त मंत्री और भारतीय स्टेट बैंक के नाम का गलत इस्तेमाल करता है।",
+     "यह आधिकारिक बैंक पृष्ठों के बजाय विदेशी व्हाट्सएप नंबर और फर्जी वेब लिंक का उपयोग करता है।"
+    ],
+    "reason_evidence": [
+     [
+      "E1"
+     ],
+     [
+      "E2"
+     ],
+     [
+      "E3",
+      "E5",
+      "E6"
+     ]
+    ],
+    "what_to_do": [
+     "Do not pay any money. Do not share OTP, bank or KYC details.",
+     "Call 1930 (National Cyber Crime Helpline) or report at cybercrime.gov.in.",
+     "If money was already sent, call your bank right away to try to stop it."
+    ],
+    "what_to_do_hi": [
+     "कोई पैसा न भेजें। OTP, बैंक या KYC जानकारी किसी को न दें।",
+     "1930 (राष्ट्रीय साइबर अपराध हेल्पलाइन) पर कॉल करें या cybercrime.gov.in पर शिकायत करें।",
+     "अगर पैसे भेज चुके हैं, तो तुरंत अपने बैंक को फ़ोन करें।"
+    ],
+    "converged": true,
+    "deciding_factor": "All charges were accepted by the defender, and overwhelming evidence shows impossible financial returns, fake government endorsements, and look-alike domains.",
+    "guardrails": [],
+    "retiree_targeting": 95,
+    "retiree_hooks": [
+     "Senior Citizen Income Scheme",
+     "Only for pensioners and retired employees."
+    ],
+    "charges_summary": {
+     "ACCEPTED": 4,
+     "WITHDRAWN": 0,
+     "UPHELD": 0,
+     "DISMISSED": 0,
+     "UNRESOLVED": 0
+    }
+   }
+  }
+ ],
+ "verdict": {
+  "label": "FRAUD",
+  "not_investment": false,
+  "risk": 100,
+  "headline": "This is a fake scheme. Do not pay.",
+  "headline_hi": "यह एक फर्जी योजना है। पैसे न दें।",
+  "reasons": [
+   "It promises impossible money growth, turning twenty-one thousand rupees into fifteen lakhs in ten days.",
+   "It falsely uses the Finance Minister and State Bank of India names to trick you.",
+   "It uses a foreign WhatsApp number and fake web links instead of official bank pages."
+  ],
+  "reasons_hi": [
+   "यह दस दिनों में इक्कीस हजार रुपये को पंद्रह लाख बनाने का असंभव वादा करता है।",
+   "यह आपको धोखा देने के लिए वित्त मंत्री और भारतीय स्टेट बैंक के नाम का गलत इस्तेमाल करता है।",
+   "यह आधिकारिक बैंक पृष्ठों के बजाय विदेशी व्हाट्सएप नंबर और फर्जी वेब लिंक का उपयोग करता है।"
+  ],
+  "reason_evidence": [
+   [
+    "E1"
+   ],
+   [
+    "E2"
+   ],
+   [
+    "E3",
+    "E5",
+    "E6"
+   ]
+  ],
+  "what_to_do": [
+   "Do not pay any money. Do not share OTP, bank or KYC details.",
+   "Call 1930 (National Cyber Crime Helpline) or report at cybercrime.gov.in.",
+   "If money was already sent, call your bank right away to try to stop it."
+  ],
+  "what_to_do_hi": [
+   "कोई पैसा न भेजें। OTP, बैंक या KYC जानकारी किसी को न दें।",
+   "1930 (राष्ट्रीय साइबर अपराध हेल्पलाइन) पर कॉल करें या cybercrime.gov.in पर शिकायत करें।",
+   "अगर पैसे भेज चुके हैं, तो तुरंत अपने बैंक को फ़ोन करें।"
+  ],
+  "converged": true,
+  "deciding_factor": "All charges were accepted by the defender, and overwhelming evidence shows impossible financial returns, fake government endorsements, and look-alike domains.",
+  "guardrails": [],
+  "retiree_targeting": 95,
+  "retiree_hooks": [
+   "Senior Citizen Income Scheme",
+   "Only for pensioners and retired employees."
+  ],
+  "charges_summary": {
+   "ACCEPTED": 4,
+   "WITHDRAWN": 0,
+   "UPHELD": 0,
+   "DISMISSED": 0,
+   "UNRESOLVED": 0
+  }
+ },
+ "plan": [
+  {
+   "agent": "pattern",
+   "why": "Compare the unrealistic return of ₹15,00,000 for ₹21,000 and fake government endorsements with known retiree scam patterns."
+  },
+  {
+   "agent": "web",
+   "why": "Check the suspicious look-alike domain www.sbi-govtscheme-invest.com and the foreign WhatsApp number +44 7700 900123."
+  },
+  {
+   "agent": "link",
+   "why": "Inspect the page link under the ad to see where the buttons actually lead."
+  },
+  {
+   "agent": "registry",
+   "why": "Verify if the advertiser 'Govt Senior Income Updates' or the domain is listed on regulatory or RBI alert lists."
+  },
+  {
+   "agent": "community",
+   "why": "Check if this website, phone number, or ad has already been flagged by other users."
+  }
+ ],
+ "converged": true,
+ "agent_runs": [
+  "pattern",
+  "web",
+  "link",
+  "registry",
+  "community",
+  "web",
+  "web",
+  "web"
+ ],
+ "duration_s": 9.7
+}

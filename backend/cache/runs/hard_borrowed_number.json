@@ -1,0 +1,618 @@
+{
+ "ad_text": "Sunrise Pension Advisors — SEBI Registered Investment Adviser, Reg. No. INA000017231. Personalised retirement portfolios for pensioners with expected returns of 10–12% a year. Our advisory desk handles everything for you. Write to desk@sunrisepensionadvisors.in to book a free review.",
+ "claims": {
+  "advertiser": "Sunrise Pension Advisors",
+  "product": "Personalised retirement portfolios",
+  "promised_return": "10–12% a year",
+  "guaranteed": false,
+  "people_shown": [],
+  "authority_claims": [
+   "SEBI Registered Investment Adviser"
+  ],
+  "reg_numbers": [
+   "INA000017231"
+  ],
+  "links": [],
+  "phones": [],
+  "emails": [
+   "desk@sunrisepensionadvisors.in"
+  ],
+  "payment_asks": [],
+  "retiree_hooks": [
+   "retirement portfolios for pensioners"
+  ],
+  "urgency": [],
+  "channel_shift": [],
+  "disclaimers": [],
+  "upi_ids": [],
+  "retiree_targeting": 90
+ },
+ "evidence": [
+  {
+   "id": "E1",
+   "agent": "registry",
+   "finding": "INA000017231 is a real SEBI Investment Adviser registration belonging to '21G INVESTMENT ADVISERS PRIVATE LIMITED'",
+   "supports": "LEGIT",
+   "strength": 2,
+   "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+  },
+  {
+   "id": "E2",
+   "agent": "registry",
+   "finding": "The ad says it is 'Sunrise Pension Advisors', but INA000017231 belongs to '21G INVESTMENT ADVISERS PRIVATE LIMITED' — a borrowed registration number",
+   "supports": "FRAUD",
+   "strength": 3,
+   "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+  },
+  {
+   "id": "E3",
+   "agent": "registry",
+   "finding": "'21G INVESTMENT ADVISERS PRIVATE LIMITED' is registered with the e-mail domain 21ginvestments.com, but the ad sends people to sunrisepensionadvisors.in — this looks like a clone pretending to be a registered firm",
+   "supports": "FRAUD",
+   "strength": 2,
+   "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+  },
+  {
+   "id": "E4",
+   "agent": "registry",
+   "finding": "'Sunrise Pension Advisors' is not in SEBI's registers of investment advisers or research analysts, yet the ad promises investment returns",
+   "supports": "FRAUD",
+   "strength": 1,
+   "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+  },
+  {
+   "id": "E5",
+   "agent": "pattern",
+   "finding": "Promotes 10-12% expected annual returns specifically targeting pensioners using a mismatched SEBI registration number.",
+   "supports": "FRAUD",
+   "strength": 3,
+   "source": "known scam patterns + published govt rates"
+  }
+ ],
+ "turns": [
+  {
+   "agent": "prosecutor",
+   "stage": "OPEN",
+   "round": 1,
+   "fraud_probability": 85,
+   "message": "We need to check the SEBI registration number in this ad because the name 'Sunrise Pension Advisors' does not match the actual registered entity on record."
+  },
+  {
+   "agent": "defender",
+   "stage": "RESPOND",
+   "round": 1,
+   "fraud_probability": 90,
+   "message": "We must accept that the registration number and email domain do not match the actual entity on record, which misleads retirees."
+  }
+ ],
+ "charges": [
+  {
+   "id": "C1",
+   "charge": "The ad uses a SEBI registration number belonging to a different company named 21G Investment Advisers Private Limited.",
+   "severity": 3,
+   "evidence_ids": [
+    "E2"
+   ],
+   "status": "ACCEPTED",
+   "history": [
+    [
+     "Defender",
+     "accepted: Evidence E2 confirms that registration number INA000017231 belongs to 21G Investment Advisers Private Limited rather than Sunrise Pension Advisors."
+    ]
+   ],
+   "ruling": null
+  },
+  {
+   "id": "C2",
+   "charge": "The email domain in the ad does not match the official domain associated with the registered entity.",
+   "severity": 2,
+   "evidence_ids": [
+    "E3"
+   ],
+   "status": "ACCEPTED",
+   "history": [
+    [
+     "Defender",
+     "accepted: Evidence E3 shows that the ad's email domain does not match the official domain of the registered entity."
+    ]
+   ],
+   "ruling": null
+  }
+ ],
+ "trace": [
+  {
+   "step": 1,
+   "t": 0.0,
+   "from": "orchestrator",
+   "to": "extractor",
+   "type": "handoff",
+   "text": "New ad received. Extractor: read it and list every checkable claim.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 2,
+   "t": 0.0,
+   "from": "extractor",
+   "to": "blackboard",
+   "type": "claims",
+   "text": "Found advertiser 'Sunrise Pension Advisors'; promise '10–12% a year'; 1 registration no., 1 e-mail(s); aimed at retirees: 'retirement portfolios for pensioners'.",
+   "evidence_ids": [],
+   "data": {
+    "advertiser": "Sunrise Pension Advisors",
+    "product": "Personalised retirement portfolios",
+    "promised_return": "10–12% a year",
+    "guaranteed": false,
+    "people_shown": [],
+    "authority_claims": [
+     "SEBI Registered Investment Adviser"
+    ],
+    "reg_numbers": [
+     "INA000017231"
+    ],
+    "links": [],
+    "phones": [],
+    "emails": [
+     "desk@sunrisepensionadvisors.in"
+    ],
+    "payment_asks": [],
+    "retiree_hooks": [
+     "retirement portfolios for pensioners"
+    ],
+    "urgency": [],
+    "channel_shift": [],
+    "disclaimers": [],
+    "upi_ids": [],
+    "retiree_targeting": 90
+   }
+  },
+  {
+   "step": 3,
+   "t": 0.0,
+   "from": "router",
+   "to": "orchestrator",
+   "type": "plan",
+   "text": "Plan: Registry → Web & contact → Scam-pattern",
+   "evidence_ids": [],
+   "data": [
+    {
+     "agent": "registry",
+     "why": "Checks the SEBI registration number INA000017231 and the advertiser name 'Sunrise Pension Advisors'."
+    },
+    {
+     "agent": "web",
+     "why": "Checks the email domain 'sunrisepensionadvisors.in' for legitimacy and domain age."
+    },
+    {
+     "agent": "pattern",
+     "why": "Compares the retirement portfolio promises and retiree hooks against known scam patterns."
+    }
+   ]
+  },
+  {
+   "step": 4,
+   "t": 0.0,
+   "from": "router",
+   "to": "registry",
+   "type": "handoff",
+   "text": "Checks the SEBI registration number INA000017231 and the advertiser name 'Sunrise Pension Advisors'.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 5,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "INA000017231 is a real SEBI Investment Adviser registration belonging to '21G INVESTMENT ADVISERS PRIVATE LIMITED'",
+   "evidence_ids": [
+    "E1"
+   ],
+   "data": {
+    "id": "E1",
+    "agent": "registry",
+    "finding": "INA000017231 is a real SEBI Investment Adviser registration belonging to '21G INVESTMENT ADVISERS PRIVATE LIMITED'",
+    "supports": "LEGIT",
+    "strength": 2,
+    "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+   }
+  },
+  {
+   "step": 6,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "The ad says it is 'Sunrise Pension Advisors', but INA000017231 belongs to '21G INVESTMENT ADVISERS PRIVATE LIMITED' — a borrowed registration number",
+   "evidence_ids": [
+    "E2"
+   ],
+   "data": {
+    "id": "E2",
+    "agent": "registry",
+    "finding": "The ad says it is 'Sunrise Pension Advisors', but INA000017231 belongs to '21G INVESTMENT ADVISERS PRIVATE LIMITED' — a borrowed registration number",
+    "supports": "FRAUD",
+    "strength": 3,
+    "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+   }
+  },
+  {
+   "step": 7,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "'21G INVESTMENT ADVISERS PRIVATE LIMITED' is registered with the e-mail domain 21ginvestments.com, but the ad sends people to sunrisepensionadvisors.in — this looks like a clone pretending to be a registered firm",
+   "evidence_ids": [
+    "E3"
+   ],
+   "data": {
+    "id": "E3",
+    "agent": "registry",
+    "finding": "'21G INVESTMENT ADVISERS PRIVATE LIMITED' is registered with the e-mail domain 21ginvestments.com, but the ad sends people to sunrisepensionadvisors.in — this looks like a clone pretending to be a registered firm",
+    "supports": "FRAUD",
+    "strength": 2,
+    "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+   }
+  },
+  {
+   "step": 8,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "'Sunrise Pension Advisors' is not in SEBI's registers of investment advisers or research analysts, yet the ad promises investment returns",
+   "evidence_ids": [
+    "E4"
+   ],
+   "data": {
+    "id": "E4",
+    "agent": "registry",
+    "finding": "'Sunrise Pension Advisors' is not in SEBI's registers of investment advisers or research analysts, yet the ad promises investment returns",
+    "supports": "FRAUD",
+    "strength": 1,
+    "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+   }
+  },
+  {
+   "step": 9,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Checked 2 number(s)/name(s) against 3,251 SEBI records and 95 RBI alert entries.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 10,
+   "t": 0.0,
+   "from": "router",
+   "to": "web",
+   "type": "handoff",
+   "text": "Checks the email domain 'sunrisepensionadvisors.in' for legitimacy and domain age.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 11,
+   "t": 0.0,
+   "from": "web",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Could not look up the age of sunrisepensionadvisors.in (offline or registry doesn't publish it).",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 12,
+   "t": 0.0,
+   "from": "router",
+   "to": "pattern",
+   "type": "handoff",
+   "text": "Compares the retirement portfolio promises and retiree hooks against known scam patterns.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 13,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Promotes 10-12% expected annual returns specifically targeting pensioners using a mismatched SEBI registration number.",
+   "evidence_ids": [
+    "E5"
+   ],
+   "data": {
+    "id": "E5",
+    "agent": "pattern",
+    "finding": "Promotes 10-12% expected annual returns specifically targeting pensioners using a mismatched SEBI registration number.",
+    "supports": "FRAUD",
+    "strength": 3,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 14,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "web",
+   "type": "handoff",
+   "text": "Check domain registration and hosting details for potential phishing or clone operations. — checking \"sunrisepensionadvisors.in\"",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 15,
+   "t": 0.0,
+   "from": "web",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Could not look up the age of sunrisepensionadvisors.in (offline or registry doesn't publish it).",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 16,
+   "t": 0.0,
+   "from": "orchestrator",
+   "to": "prosecutor",
+   "type": "handoff",
+   "text": "5 pieces of evidence collected. Prosecutor: file your charges. Defender: answer each one.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 17,
+   "t": 1.4,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "argument",
+   "text": "We need to check the SEBI registration number in this ad because the name 'Sunrise Pension Advisors' does not match the actual registered entity on record.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 85,
+    "stage": "OPEN",
+    "round": 1
+   }
+  },
+  {
+   "step": 18,
+   "t": 1.4,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "The ad uses a SEBI registration number belonging to a different company named 21G Investment Advisers Private Limited.",
+   "evidence_ids": [
+    "E2"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "severity": 3
+   }
+  },
+  {
+   "step": 19,
+   "t": 1.4,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "The email domain in the ad does not match the official domain associated with the registered entity.",
+   "evidence_ids": [
+    "E3"
+   ],
+   "data": {
+    "charge_id": "C2",
+    "severity": 2
+   }
+  },
+  {
+   "step": 20,
+   "t": 2.5,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "argument",
+   "text": "We must accept that the registration number and email domain do not match the actual entity on record, which misleads retirees.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 90,
+    "stage": "RESPOND",
+    "round": 1
+   }
+  },
+  {
+   "step": 21,
+   "t": 2.5,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "Evidence E2 confirms that registration number INA000017231 belongs to 21G Investment Advisers Private Limited rather than Sunrise Pension Advisors.",
+   "evidence_ids": [
+    "E2"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "stance": "ACCEPTED"
+   }
+  },
+  {
+   "step": 22,
+   "t": 2.5,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "Evidence E3 shows that the ad's email domain does not match the official domain of the registered entity.",
+   "evidence_ids": [
+    "E3"
+   ],
+   "data": {
+    "charge_id": "C2",
+    "stance": "ACCEPTED"
+   }
+  },
+  {
+   "step": 23,
+   "t": 2.5,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "round",
+   "text": "Round 1: Prosecutor 85% vs Defender 90% — 5 points apart",
+   "evidence_ids": [],
+   "data": {
+    "round": 1,
+    "prosecutor": 85,
+    "defender": 90,
+    "gap": 5
+   }
+  },
+  {
+   "step": 24,
+   "t": 2.5,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "note",
+   "text": "Agreed on 2 of 2 charges. Arbiter confirms the verdict.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 25,
+   "t": 4.3,
+   "from": "arbiter",
+   "to": "user",
+   "type": "verdict",
+   "text": "FRAUD (risk 95/100): This ad uses a fake company name and a stolen registration number. Do not trust them.",
+   "evidence_ids": [
+    "E2",
+    "E3",
+    "E5"
+   ],
+   "data": {
+    "label": "FRAUD",
+    "risk": 95,
+    "headline": "This ad uses a fake company name and a stolen registration number. Do not trust them.",
+    "headline_hi": "यह विज्ञापन झूठे नाम और चोरी किए गए पंजीकरण नंबर का उपयोग करता है। उन पर भरोसा न करें।",
+    "reasons": [
+     "The registration number belongs to another company, not Sunrise Pension Advisors.",
+     "The email address in the ad does not match the real registered business.",
+     "Promising high returns using fake details is a known scam trick."
+    ],
+    "reasons_hi": [
+     "पंजीकरण नंबर किसी अन्य कंपनी का है, Sunrise Pension Advisors का नहीं।",
+     "विज्ञापन में दिया गया ईमेल पता असली पंजीकृत व्यवसाय से मेल नहीं खाता है।",
+     "नकली विवरण का उपयोग करके उच्च रिटर्न का वादा करना एक ज्ञात घोटाला है।"
+    ],
+    "reason_evidence": [
+     [
+      "E2"
+     ],
+     [
+      "E3"
+     ],
+     [
+      "E5"
+     ]
+    ],
+    "what_to_do": [
+     "Do not pay any money. Do not share OTP, bank or KYC details.",
+     "Call 1930 (National Cyber Crime Helpline) or report at cybercrime.gov.in.",
+     "If money was already sent, call your bank right away to try to stop it."
+    ],
+    "what_to_do_hi": [
+     "कोई पैसा न भेजें। OTP, बैंक या KYC जानकारी किसी को न दें।",
+     "1930 (राष्ट्रीय साइबर अपराध हेल्पलाइन) पर कॉल करें या cybercrime.gov.in पर शिकायत करें।",
+     "अगर पैसे भेज चुके हैं, तो तुरंत अपने बैंक को फ़ोन करें।"
+    ],
+    "converged": true,
+    "deciding_factor": "The defender accepted that the SEBI registration number and email domain belong to a completely different company, proving the ad is an impersonation.",
+    "guardrails": [],
+    "retiree_targeting": 90,
+    "retiree_hooks": [
+     "retirement portfolios for pensioners"
+    ],
+    "charges_summary": {
+     "ACCEPTED": 2,
+     "WITHDRAWN": 0,
+     "UPHELD": 0,
+     "DISMISSED": 0,
+     "UNRESOLVED": 0
+    }
+   }
+  }
+ ],
+ "verdict": {
+  "label": "FRAUD",
+  "risk": 95,
+  "headline": "This ad uses a fake company name and a stolen registration number. Do not trust them.",
+  "headline_hi": "यह विज्ञापन झूठे नाम और चोरी किए गए पंजीकरण नंबर का उपयोग करता है। उन पर भरोसा न करें।",
+  "reasons": [
+   "The registration number belongs to another company, not Sunrise Pension Advisors.",
+   "The email address in the ad does not match the real registered business.",
+   "Promising high returns using fake details is a known scam trick."
+  ],
+  "reasons_hi": [
+   "पंजीकरण नंबर किसी अन्य कंपनी का है, Sunrise Pension Advisors का नहीं।",
+   "विज्ञापन में दिया गया ईमेल पता असली पंजीकृत व्यवसाय से मेल नहीं खाता है।",
+   "नकली विवरण का उपयोग करके उच्च रिटर्न का वादा करना एक ज्ञात घोटाला है।"
+  ],
+  "reason_evidence": [
+   [
+    "E2"
+   ],
+   [
+    "E3"
+   ],
+   [
+    "E5"
+   ]
+  ],
+  "what_to_do": [
+   "Do not pay any money. Do not share OTP, bank or KYC details.",
+   "Call 1930 (National Cyber Crime Helpline) or report at cybercrime.gov.in.",
+   "If money was already sent, call your bank right away to try to stop it."
+  ],
+  "what_to_do_hi": [
+   "कोई पैसा न भेजें। OTP, बैंक या KYC जानकारी किसी को न दें।",
+   "1930 (राष्ट्रीय साइबर अपराध हेल्पलाइन) पर कॉल करें या cybercrime.gov.in पर शिकायत करें।",
+   "अगर पैसे भेज चुके हैं, तो तुरंत अपने बैंक को फ़ोन करें।"
+  ],
+  "converged": true,
+  "deciding_factor": "The defender accepted that the SEBI registration number and email domain belong to a completely different company, proving the ad is an impersonation.",
+  "guardrails": [],
+  "retiree_targeting": 90,
+  "retiree_hooks": [
+   "retirement portfolios for pensioners"
+  ],
+  "charges_summary": {
+   "ACCEPTED": 2,
+   "WITHDRAWN": 0,
+   "UPHELD": 0,
+   "DISMISSED": 0,
+   "UNRESOLVED": 0
+  }
+ },
+ "plan": [
+  {
+   "agent": "registry",
+   "why": "Checks the SEBI registration number INA000017231 and the advertiser name 'Sunrise Pension Advisors'."
+  },
+  {
+   "agent": "web",
+   "why": "Checks the email domain 'sunrisepensionadvisors.in' for legitimacy and domain age."
+  },
+  {
+   "agent": "pattern",
+   "why": "Compares the retirement portfolio promises and retiree hooks against known scam patterns."
+  }
+ ],
+ "converged": true,
+ "agent_runs": [
+  "registry",
+  "web",
+  "pattern",
+  "web"
+ ],
+ "duration_s": 4.3
+}

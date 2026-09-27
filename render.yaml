@@ -1,0 +1,22 @@
+# RAKSHA on Render: dashboard → New → Blueprint → pick this GitHub repo → paste your Gemini key → Apply.
+# One web service serves everything: the website (/), the practice feed (/demo), the extension API (/v2/*)
+# and the ready-to-install extension zip (/download/raksha-extension.zip).
+services:
+  - type: web
+    name: raksha
+    runtime: python
+    plan: free                     # sleeps after 15 idle minutes; open the site a few minutes before a demo
+    region: singapore              # closest Render region to India
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && python server.py
+    healthCheckPath: /v2/health
+    autoDeploy: true               # every push to main redeploys
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9              # the version RAKSHA is tested on
+      - key: HOST
+        value: 0.0.0.0             # listen on the public network interface
+      - key: FORWARDED_ALLOW_IPS
+        value: "*"                 # trust Render's proxy so rate limits see each visitor's own IP
+      - key: GEMINI_API_KEY
+        sync: false                # Render asks you for this when you create the service; never commit keys

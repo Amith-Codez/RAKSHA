@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chaupal · demo feed</title>
+<link rel="stylesheet" href="/fonts.css">
+<style>
+  :root { --bg: #EEF0F4; --card: #fff; --ink: #1C1E21; --muted: #65676B; --line: #E4E6EB; --blue: #3B5BDB; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .top { position: sticky; top: 0; z-index: 5; background: #fff; border-bottom: 1px solid var(--line); }
+  .top .in { max-width: 640px; margin: auto; padding: 10px 16px; display: flex; align-items: center; gap: 12px; }
+  .logo { font-weight: 800; font-size: 24px; color: var(--blue); letter-spacing: -.5px; }
+  .search { flex: 1; background: var(--bg); border-radius: 99px; padding: 8px 14px; color: var(--muted); font-size: 15px; }
+  .note { max-width: 640px; margin: 14px auto 0; padding: 10px 16px; font-size: 14px; color: #5c4400; background: #FFF4D6;
+          border: 1px solid #F5DC9A; border-radius: 12px; }
+  .note b { color: #3d2d00; }
+  main { max-width: 640px; margin: 0 auto; padding: 14px 16px 80px; display: grid; gap: 14px; }
+  .post { background: var(--card); border-radius: 14px; box-shadow: 0 1px 2px rgba(0,0,0,.08); padding: 16px 18px; }
+  .post header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .post header b { display: block; line-height: 1.2; }
+  .post header small { color: var(--muted); font-size: 13px; }
+  .avatar { width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-weight: 700; flex: none; }
+  .a0 { background: #C92A2A; } .a1 { background: #B8860B; } .a2 { background: #E8590C; } .a3 { background: #2B8A3E; }
+  .a4 { background: #1864AB; } .a5 { background: #862E9C; }
+  .f0 { background: #D6336C; } .f1 { background: #5C940D; } .f2 { background: #1098AD; }
+  .post p { margin: 0 0 12px; white-space: pre-line; }
+  .ad { border-top: 4px solid #FFD43B; }
+  .ad p { font-size: 18px; }
+  .ad img { display: block; width: 100%; height: auto; border-radius: 10px; margin-bottom: 12px; }
+  .cta { display: block; text-align: center; background: var(--blue); color: #fff; text-decoration: none; font-weight: 700;
+         padding: 11px 16px; border-radius: 10px; }
+  .cta:hover { filter: brightness(1.08); }
+  .actions { display: flex; gap: 6px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); margin-top: 12px; padding-top: 8px; }
+  .actions span { flex: 1; text-align: center; }
+  @media (max-width: 480px) { .search { display: none; } }
+</style>
+</head>
+<body>
+  <div class="top"><div class="in"><span class="logo">chaupal</span><span class="search">Search Chaupal</span></div></div>
+  <div class="note"><b>Demo feed for trying RAKSHA.</b> “Chaupal” is not a real site. The sponsored posts are recreations of
+    real scam patterns and real genuine schemes, for testing only. Buttons never leave this demo.
+    Try it: click the RAKSHA icon (or press <b>Alt+Shift+R</b>) and draw a box around any sponsored post.</div>
+  <main>
+<!--ADS-->
+  </main>
+</body>
+</html>

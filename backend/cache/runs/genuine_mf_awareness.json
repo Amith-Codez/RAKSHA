@@ -1,0 +1,708 @@
+{
+ "ad_text": "Planning for retirement? A Systematic Withdrawal Plan in mutual funds can give you a regular income. Talk to a SEBI-registered investment adviser or an AMFI-registered mutual fund distributor before you invest. An investor education initiative. Mutual fund investments are subject to market risks, read all scheme related documents carefully. Visit www.mutualfundssahihai.com",
+ "claims": {
+  "advertiser": "Mutual Funds Sahi Hai",
+  "product": "Systematic Withdrawal Plan (SWP) in mutual funds",
+  "promised_return": "regular income",
+  "guaranteed": false,
+  "people_shown": [
+   "SEBI",
+   "AMFI"
+  ],
+  "authority_claims": [
+   "An investor education initiative"
+  ],
+  "reg_numbers": [],
+  "links": [
+   "www.mutualfundssahihai.com"
+  ],
+  "phones": [],
+  "emails": [],
+  "payment_asks": [],
+  "retiree_hooks": [
+   "Planning for retirement?",
+   "regular income"
+  ],
+  "urgency": [],
+  "channel_shift": [],
+  "disclaimers": [
+   "Mutual fund investments are subject to market risks, read all scheme related documents carefully."
+  ],
+  "upi_ids": [],
+  "retiree_targeting": 70
+ },
+ "evidence": [
+  {
+   "id": "E1",
+   "agent": "pattern",
+   "finding": "Standard statutory disclaimer included: 'Mutual fund investments are subject to market risks, read all scheme related documents carefully.'",
+   "supports": "LEGIT",
+   "strength": 2,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E2",
+   "agent": "pattern",
+   "finding": "Directs users to consult SEBI-registered advisers or AMFI-registered distributors without promising guaranteed returns.",
+   "supports": "LEGIT",
+   "strength": 2,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E3",
+   "agent": "pattern",
+   "finding": "Links to 'www.mutualfundssahihai.com', the well-known official AMFI investor education initiative portal.",
+   "supports": "LEGIT",
+   "strength": 3,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E4",
+   "agent": "pattern",
+   "finding": "Promotes standard Systematic Withdrawal Plans (SWP) for retirement cash flow rather than unrealistically high or guaranteed yields.",
+   "supports": "LEGIT",
+   "strength": 2,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E5",
+   "agent": "web",
+   "finding": "mutualfundssahihai.com is an official website of AMFI",
+   "supports": "LEGIT",
+   "strength": 2,
+   "source": "domain check"
+  },
+  {
+   "id": "E6",
+   "agent": "registry",
+   "finding": "'Mutual Funds Sahi Hai' is not in SEBI's registers of investment advisers or research analysts, yet the ad promises investment returns",
+   "supports": "FRAUD",
+   "strength": 1,
+   "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+  },
+  {
+   "id": "E7",
+   "agent": "registry",
+   "finding": "'Mutual Funds Sahi Hai AMFI registration' is not in SEBI's registers of investment advisers or research analysts, yet the ad promises investment returns",
+   "supports": "FRAUD",
+   "strength": 1,
+   "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+  }
+ ],
+ "turns": [
+  {
+   "agent": "prosecutor",
+   "stage": "OPEN",
+   "round": 1,
+   "fraud_probability": 5,
+   "message": "Even though this ad promotes a legitimate investor education campaign, we must verify if the entity 'Mutual Funds Sahi Hai' appears correctly in regulatory registers as an adviser. Let's file a minor charge regarding its specific registration details to ensure complete safety for retirees."
+  },
+  {
+   "agent": "defender",
+   "stage": "RESPOND",
+   "round": 1,
+   "fraud_probability": 0,
+   "message": "This ad is completely legitimate, as it promotes standard Systematic Withdrawal Plans through the official AMFI initiative portal www.mutualfundssahihai.com with proper statutory disclaimers. The entity 'Mutual Funds Sahi Hai' is an investor education initiative, not an investment adviser itself, so it does not need to appear in SEBI's adviser registry."
+  },
+  {
+   "agent": "prosecutor",
+   "stage": "REBUT",
+   "round": 2,
+   "fraud_probability": 0,
+   "message": "The defender makes a completely valid point that 'Mutual Funds Sahi Hai' is an educational initiative rather than a commercial adviser, which fully accounts for its absence from the SEBI adviser register while it correctly guides users to registered professionals."
+  }
+ ],
+ "charges": [
+  {
+   "id": "C1",
+   "charge": "The advertiser 'Mutual Funds Sahi Hai' is an educational initiative but its specific entity name does not appear directly in the SEBI investment adviser register [E6].",
+   "severity": 1,
+   "evidence_ids": [
+    "E6"
+   ],
+   "status": "WITHDRAWN",
+   "history": [
+    [
+     "Defender",
+     "disputed: 'Mutual Funds Sahi Hai' is an official AMFI investor education initiative portal, not a commercial investment adviser, which explains why it is not listed in the SEBI investment adviser register while correctly directing users to consult registered professionals."
+    ],
+    [
+     "Prosecutor",
+     "withdrawn: The defender correctly explains that Mutual Funds Sahi Hai is an educational portal by AMFI and not an investment adviser, making its absence from the adviser register expected and benign."
+    ]
+   ],
+   "ruling": null
+  }
+ ],
+ "trace": [
+  {
+   "step": 1,
+   "t": 0.0,
+   "from": "orchestrator",
+   "to": "extractor",
+   "type": "handoff",
+   "text": "New ad received. Extractor: read it and list every checkable claim.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 2,
+   "t": 0.0,
+   "from": "extractor",
+   "to": "blackboard",
+   "type": "claims",
+   "text": "Found advertiser 'Mutual Funds Sahi Hai'; promise 'regular income'; endorsed by SEBI, AMFI; 1 link(s); aimed at retirees: 'Planning for retirement?'.",
+   "evidence_ids": [],
+   "data": {
+    "advertiser": "Mutual Funds Sahi Hai",
+    "product": "Systematic Withdrawal Plan (SWP) in mutual funds",
+    "promised_return": "regular income",
+    "guaranteed": false,
+    "people_shown": [
+     "SEBI",
+     "AMFI"
+    ],
+    "authority_claims": [
+     "An investor education initiative"
+    ],
+    "reg_numbers": [],
+    "links": [
+     "www.mutualfundssahihai.com"
+    ],
+    "phones": [],
+    "emails": [],
+    "payment_asks": [],
+    "retiree_hooks": [
+     "Planning for retirement?",
+     "regular income"
+    ],
+    "urgency": [],
+    "channel_shift": [],
+    "disclaimers": [
+     "Mutual fund investments are subject to market risks, read all scheme related documents carefully."
+    ],
+    "upi_ids": [],
+    "retiree_targeting": 70
+   }
+  },
+  {
+   "step": 3,
+   "t": 0.0,
+   "from": "router",
+   "to": "orchestrator",
+   "type": "plan",
+   "text": "Plan: Scam-pattern → Web & contact → Registry",
+   "evidence_ids": [],
+   "data": [
+    {
+     "agent": "pattern",
+     "why": "Compare the claims of SWP and retirement income against standard AMFI investor education patterns and disclaimers."
+    },
+    {
+     "agent": "web",
+     "why": "Verify the authenticity of the domain www.mutualfundssahihai.com."
+    },
+    {
+     "agent": "registry",
+     "why": "Verify if the advertiser is associated with recognized industry bodies like AMFI."
+    }
+   ]
+  },
+  {
+   "step": 4,
+   "t": 0.0,
+   "from": "router",
+   "to": "pattern",
+   "type": "handoff",
+   "text": "Compare the claims of SWP and retirement income against standard AMFI investor education patterns and disclaimers.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 5,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Standard statutory disclaimer included: 'Mutual fund investments are subject to market risks, read all scheme related documents carefully.'",
+   "evidence_ids": [
+    "E1"
+   ],
+   "data": {
+    "id": "E1",
+    "agent": "pattern",
+    "finding": "Standard statutory disclaimer included: 'Mutual fund investments are subject to market risks, read all scheme related documents carefully.'",
+    "supports": "LEGIT",
+    "strength": 2,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 6,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Directs users to consult SEBI-registered advisers or AMFI-registered distributors without promising guaranteed returns.",
+   "evidence_ids": [
+    "E2"
+   ],
+   "data": {
+    "id": "E2",
+    "agent": "pattern",
+    "finding": "Directs users to consult SEBI-registered advisers or AMFI-registered distributors without promising guaranteed returns.",
+    "supports": "LEGIT",
+    "strength": 2,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 7,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Links to 'www.mutualfundssahihai.com', the well-known official AMFI investor education initiative portal.",
+   "evidence_ids": [
+    "E3"
+   ],
+   "data": {
+    "id": "E3",
+    "agent": "pattern",
+    "finding": "Links to 'www.mutualfundssahihai.com', the well-known official AMFI investor education initiative portal.",
+    "supports": "LEGIT",
+    "strength": 3,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 8,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Promotes standard Systematic Withdrawal Plans (SWP) for retirement cash flow rather than unrealistically high or guaranteed yields.",
+   "evidence_ids": [
+    "E4"
+   ],
+   "data": {
+    "id": "E4",
+    "agent": "pattern",
+    "finding": "Promotes standard Systematic Withdrawal Plans (SWP) for retirement cash flow rather than unrealistically high or guaranteed yields.",
+    "supports": "LEGIT",
+    "strength": 2,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 9,
+   "t": 0.0,
+   "from": "router",
+   "to": "web",
+   "type": "handoff",
+   "text": "Verify the authenticity of the domain www.mutualfundssahihai.com.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 10,
+   "t": 0.0,
+   "from": "web",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "mutualfundssahihai.com is an official website of AMFI",
+   "evidence_ids": [
+    "E5"
+   ],
+   "data": {
+    "id": "E5",
+    "agent": "web",
+    "finding": "mutualfundssahihai.com is an official website of AMFI",
+    "supports": "LEGIT",
+    "strength": 2,
+    "source": "domain check"
+   }
+  },
+  {
+   "step": 11,
+   "t": 0.0,
+   "from": "router",
+   "to": "registry",
+   "type": "handoff",
+   "text": "Verify if the advertiser is associated with recognized industry bodies like AMFI.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 12,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "'Mutual Funds Sahi Hai' is not in SEBI's registers of investment advisers or research analysts, yet the ad promises investment returns",
+   "evidence_ids": [
+    "E6"
+   ],
+   "data": {
+    "id": "E6",
+    "agent": "registry",
+    "finding": "'Mutual Funds Sahi Hai' is not in SEBI's registers of investment advisers or research analysts, yet the ad promises investment returns",
+    "supports": "FRAUD",
+    "strength": 1,
+    "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+   }
+  },
+  {
+   "step": 13,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Checked 1 number(s)/name(s) against 3,251 SEBI records and 95 RBI alert entries.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 14,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "web",
+   "type": "handoff",
+   "text": "Confirm domain legitimacy as AMFI's official investor education website. — checking \"www.mutualfundssahihai.com\"",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 15,
+   "t": 0.0,
+   "from": "web",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Re-checked: confirms E5 (mutualfundssahihai.com is an official website of AMFI)",
+   "evidence_ids": [
+    "E5"
+   ],
+   "data": null
+  },
+  {
+   "step": 16,
+   "t": 0.0,
+   "from": "orchestrator",
+   "to": "prosecutor",
+   "type": "handoff",
+   "text": "6 pieces of evidence collected. Prosecutor: file your charges. Defender: answer each one.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 17,
+   "t": 1.4,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "argument",
+   "text": "Even though this ad promotes a legitimate investor education campaign, we must verify if the entity 'Mutual Funds Sahi Hai' appears correctly in regulatory registers as an adviser. Let's file a minor charge regarding its specific registration details to ensure complete safety for retirees.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 5,
+    "stage": "OPEN",
+    "round": 1
+   }
+  },
+  {
+   "step": 18,
+   "t": 1.4,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "The advertiser 'Mutual Funds Sahi Hai' is an educational initiative but its specific entity name does not appear directly in the SEBI investment adviser register [E6].",
+   "evidence_ids": [
+    "E6"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "severity": 1
+   }
+  },
+  {
+   "step": 19,
+   "t": 1.4,
+   "from": "prosecutor",
+   "to": "registry",
+   "type": "handoff",
+   "text": "Confirm official AMFI association for the campaign name. — checking \"Mutual Funds Sahi Hai AMFI registration\"",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 20,
+   "t": 1.4,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "'Mutual Funds Sahi Hai AMFI registration' is not in SEBI's registers of investment advisers or research analysts, yet the ad promises investment returns",
+   "evidence_ids": [
+    "E7"
+   ],
+   "data": {
+    "id": "E7",
+    "agent": "registry",
+    "finding": "'Mutual Funds Sahi Hai AMFI registration' is not in SEBI's registers of investment advisers or research analysts, yet the ad promises investment returns",
+    "supports": "FRAUD",
+    "strength": 1,
+    "source": "SEBI registers on sebi.gov.in: 1042 Investment Advisers, 2209 Research Analysts (snapshot 2026-09-26)"
+   }
+  },
+  {
+   "step": 21,
+   "t": 1.4,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Checked 1 number(s)/name(s) against 3,251 SEBI records and 95 RBI alert entries.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 22,
+   "t": 3.2,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "argument",
+   "text": "This ad is completely legitimate, as it promotes standard Systematic Withdrawal Plans through the official AMFI initiative portal www.mutualfundssahihai.com with proper statutory disclaimers. The entity 'Mutual Funds Sahi Hai' is an investor education initiative, not an investment adviser itself, so it does not need to appear in SEBI's adviser registry.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 0,
+    "stage": "RESPOND",
+    "round": 1
+   }
+  },
+  {
+   "step": 23,
+   "t": 3.2,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "'Mutual Funds Sahi Hai' is an official AMFI investor education initiative portal, not a commercial investment adviser, which explains why it is not listed in the SEBI investment adviser register while correctly directing users to consult registered professionals.",
+   "evidence_ids": [
+    "E2",
+    "E3",
+    "E5"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "stance": "DISPUTED"
+   }
+  },
+  {
+   "step": 24,
+   "t": 3.2,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "round",
+   "text": "Round 1: Prosecutor 5% vs Defender 0% — 5 points apart",
+   "evidence_ids": [],
+   "data": {
+    "round": 1,
+    "prosecutor": 5,
+    "defender": 0,
+    "gap": 5
+   }
+  },
+  {
+   "step": 25,
+   "t": 4.3,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "argument",
+   "text": "The defender makes a completely valid point that 'Mutual Funds Sahi Hai' is an educational initiative rather than a commercial adviser, which fully accounts for its absence from the SEBI adviser register while it correctly guides users to registered professionals.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 0,
+    "stage": "REBUT",
+    "round": 2
+   }
+  },
+  {
+   "step": 26,
+   "t": 4.3,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "ruling",
+   "text": "The defender correctly explains that Mutual Funds Sahi Hai is an educational portal by AMFI and not an investment adviser, making its absence from the adviser register expected and benign.",
+   "evidence_ids": [
+    "E2",
+    "E3",
+    "E5"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "stance": "WITHDRAWN"
+   }
+  },
+  {
+   "step": 27,
+   "t": 4.3,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "round",
+   "text": "Round 2: Prosecutor 0% vs Defender 0% — 0 points apart",
+   "evidence_ids": [],
+   "data": {
+    "round": 2,
+    "prosecutor": 0,
+    "defender": 0,
+    "gap": 0
+   }
+  },
+  {
+   "step": 28,
+   "t": 4.3,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "note",
+   "text": "Agreed on 1 of 1 charges. Arbiter confirms the verdict.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 29,
+   "t": 5.5,
+   "from": "arbiter",
+   "to": "user",
+   "type": "verdict",
+   "text": "LIKELY SAFE (risk 5/100): This ad is real and safe. You can follow its advice.",
+   "evidence_ids": [
+    "E2",
+    "E3",
+    "E4"
+   ],
+   "data": {
+    "label": "LIKELY_SAFE",
+    "risk": 5,
+    "headline": "This ad is real and safe. You can follow its advice.",
+    "headline_hi": "यह विज्ञापन असली और सुरक्षित है। आप इसकी सलाह मान सकते हैं।",
+    "reasons": [
+     "It comes from the official AMFI mutual fund education campaign.",
+     "It uses standard withdrawal plans instead of fake high profits.",
+     "It tells you to talk to registered experts before investing."
+    ],
+    "reasons_hi": [
+     "यह आधिकारिक एएमएफआई म्यूचुअल फंड शिक्षा अभियान से है।",
+     "यह नकली उच्च मुनाफे के बजाय मानक निकासी योजनाओं का उपयोग करता है।",
+     "यह आपको निवेश करने से पहले पंजीकृत विशेषज्ञों से बात करने के लिए कहता है।"
+    ],
+    "reason_evidence": [
+     [
+      "E3"
+     ],
+     [
+      "E4"
+     ],
+     [
+      "E2"
+     ]
+    ],
+    "what_to_do": [
+     "Invest only through the official channel: the post office, your bank branch, or the company's own registered app or website.",
+     "Check the interest rate and name on the official website before paying.",
+     "If anyone later asks for OTP or an extra fee, stop — that is a scam."
+    ],
+    "what_to_do_hi": [
+     "केवल आधिकारिक रास्ते से निवेश करें: डाकघर, अपनी बैंक शाखा, या कंपनी का पंजीकृत ऐप/वेबसाइट।",
+     "भुगतान से पहले आधिकारिक वेबसाइट पर ब्याज दर और नाम जाँच लें।",
+     "अगर बाद में कोई OTP या अतिरिक्त फ़ीस माँगे, तो रुक जाएँ — वह धोखा है।"
+    ],
+    "converged": true,
+    "deciding_factor": "All charges were withdrawn because the ad correctly links to the official AMFI education portal and promotes standard mutual fund practices without any fraud signals.",
+    "guardrails": [],
+    "retiree_targeting": 70,
+    "retiree_hooks": [
+     "Planning for retirement?",
+     "regular income"
+    ],
+    "charges_summary": {
+     "ACCEPTED": 0,
+     "WITHDRAWN": 1,
+     "UPHELD": 0,
+     "DISMISSED": 0,
+     "UNRESOLVED": 0
+    }
+   }
+  }
+ ],
+ "verdict": {
+  "label": "LIKELY_SAFE",
+  "risk": 5,
+  "headline": "This ad is real and safe. You can follow its advice.",
+  "headline_hi": "यह विज्ञापन असली और सुरक्षित है। आप इसकी सलाह मान सकते हैं।",
+  "reasons": [
+   "It comes from the official AMFI mutual fund education campaign.",
+   "It uses standard withdrawal plans instead of fake high profits.",
+   "It tells you to talk to registered experts before investing."
+  ],
+  "reasons_hi": [
+   "यह आधिकारिक एएमएफआई म्यूचुअल फंड शिक्षा अभियान से है।",
+   "यह नकली उच्च मुनाफे के बजाय मानक निकासी योजनाओं का उपयोग करता है।",
+   "यह आपको निवेश करने से पहले पंजीकृत विशेषज्ञों से बात करने के लिए कहता है।"
+  ],
+  "reason_evidence": [
+   [
+    "E3"
+   ],
+   [
+    "E4"
+   ],
+   [
+    "E2"
+   ]
+  ],
+  "what_to_do": [
+   "Invest only through the official channel: the post office, your bank branch, or the company's own registered app or website.",
+   "Check the interest rate and name on the official website before paying.",
+   "If anyone later asks for OTP or an extra fee, stop — that is a scam."
+  ],
+  "what_to_do_hi": [
+   "केवल आधिकारिक रास्ते से निवेश करें: डाकघर, अपनी बैंक शाखा, या कंपनी का पंजीकृत ऐप/वेबसाइट।",
+   "भुगतान से पहले आधिकारिक वेबसाइट पर ब्याज दर और नाम जाँच लें।",
+   "अगर बाद में कोई OTP या अतिरिक्त फ़ीस माँगे, तो रुक जाएँ — वह धोखा है।"
+  ],
+  "converged": true,
+  "deciding_factor": "All charges were withdrawn because the ad correctly links to the official AMFI education portal and promotes standard mutual fund practices without any fraud signals.",
+  "guardrails": [],
+  "retiree_targeting": 70,
+  "retiree_hooks": [
+   "Planning for retirement?",
+   "regular income"
+  ],
+  "charges_summary": {
+   "ACCEPTED": 0,
+   "WITHDRAWN": 1,
+   "UPHELD": 0,
+   "DISMISSED": 0,
+   "UNRESOLVED": 0
+  }
+ },
+ "plan": [
+  {
+   "agent": "pattern",
+   "why": "Compare the claims of SWP and retirement income against standard AMFI investor education patterns and disclaimers."
+  },
+  {
+   "agent": "web",
+   "why": "Verify the authenticity of the domain www.mutualfundssahihai.com."
+  },
+  {
+   "agent": "registry",
+   "why": "Verify if the advertiser is associated with recognized industry bodies like AMFI."
+  }
+ ],
+ "converged": true,
+ "agent_runs": [
+  "pattern",
+  "web",
+  "registry",
+  "web",
+  "registry"
+ ],
+ "duration_s": 5.5
+}

@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+/* ───────────────────────────── RAKSHA design system ─────────────────────────────
+   Why these colours (colour psychology, tested against how people actually read a warning):
+   • Indigo ink + violet  → trust, calm, authority (the colours of banks and government), with a Gen-Z electric edge.
+   • Marigold             → warm Indian optimism; the ONE colour that means "press me" (primary action only).
+   • Warm paper background → less glare than pure white for older eyes; feels human, not clinical.
+   • Verdicts use the traffic-light model everyone already knows: rose = stop, amber = pause, emerald = go,
+     slate = nothing here. Every verdict colour is paired with an icon and a word, never colour alone.
+   Type: Bricolage Grotesque (expressive display) · Figtree (friendly, very legible body) ·
+         Instrument Serif italic (one emotional word per screen) · Mukta (हिंदी) · Noto Sans Telugu (తెలుగు). */
+
+@font-face { font-family: "Bricolage Grotesque"; font-weight: 400 800; font-display: swap; src: url("/fonts/bricolage-var.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20B9, U+2122, U+2191, U+2193, U+2212, U+2215; }
+@font-face { font-family: "Figtree"; font-weight: 400 800; font-display: swap; src: url("/fonts/figtree-var.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20B9, U+2122, U+2191, U+2193, U+2212, U+2215; }
+@font-face { font-family: "Instrument Serif"; font-style: italic; font-weight: 400; font-display: swap; src: url("/fonts/instrument-serif-italic.woff2") format("woff2"); }
+@font-face { font-family: "Mukta"; font-weight: 400; font-display: swap; src: url("/fonts/mukta-400-devanagari.woff2") format("woff2"); unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+A830-A839, U+A8E0-A8FF; }
+@font-face { font-family: "Mukta"; font-weight: 600; font-display: swap; src: url("/fonts/mukta-600-devanagari.woff2") format("woff2"); unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+A830-A839, U+A8E0-A8FF; }
+@font-face { font-family: "Mukta"; font-weight: 700 800; font-display: swap; src: url("/fonts/mukta-700-devanagari.woff2") format("woff2"); unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+A830-A839, U+A8E0-A8FF; }
+@font-face { font-family: "Noto Sans Telugu"; font-weight: 100 900; font-display: swap; src: url("/fonts/noto-sans-telugu-var.woff2") format("woff2"); unicode-range: U+0951-0952, U+0964-0965, U+0C00-0C7F, U+1CDA, U+1CF2, U+200C-200D, U+25CC; }
+
+@theme {
+  --color-ink: #17152B;
+  --color-ink-2: #2B2750;
+  --color-muted: #6B6883;
+  --color-paper: #FBF8F3;
+  --color-card: #FFFFFF;
+  --color-line: #ECE7F5;
+  --color-night: #141131;
+  --color-violet: #6D4AFF;
+  --color-violet-soft: #EFEAFF;
+  --color-marigold: #FFB224;
+  --color-marigold-soft: #FFF4DC;
+  /* verdicts: strong (text on white ≥ 4.5:1) + soft background */
+  --color-scam: #E11D48;
+  --color-scam-soft: #FFEEF1;
+  --color-care: #B45309;
+  --color-care-bright: #F59E0B;
+  --color-care-soft: #FFF6E5;
+  --color-safe: #047857;
+  --color-safe-bright: #10B981;
+  --color-safe-soft: #E7FAF1;
+  --color-none: #475569;
+  --color-none-soft: #F1F5F9;
+  --font-display: "Bricolage Grotesque", "Mukta", "Noto Sans Telugu", system-ui, sans-serif;
+  --font-body: "Figtree", "Mukta", "Noto Sans Telugu", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --shadow-card: 0 1px 2px rgba(23, 21, 43, .04), 0 12px 32px -18px rgba(45, 30, 120, .28);
+  --shadow-pop: 0 18px 40px -16px rgba(109, 74, 255, .45);
+  --animate-scan: scan 1.8s ease-in-out infinite;
+  --animate-float: float 5s ease-in-out infinite;
+  --animate-breathe: breathe 2.4s ease-in-out infinite;
+  @keyframes scan { 0%, 100% { transform: translateY(-10%); } 50% { transform: translateY(900%); } }
+  @keyframes float { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-5px) } }
+  @keyframes breathe { 0%, 100% { opacity: .55 } 50% { opacity: 1 } }
+}
+
+html { font-size: 17px; }
+html[data-size="md"] { font-size: 15px; }
+html[data-size="xl"] { font-size: 20px; }
+body {
+  margin: 0; color: var(--color-ink); font-family: var(--font-body); line-height: 1.5; -webkit-font-smoothing: antialiased;
+  background:
+    radial-gradient(120% 60% at 100% 0%, #F1ECFF 0%, transparent 55%),
+    radial-gradient(90% 50% at 0% 100%, #FFF1DC 0%, transparent 60%),
+    var(--color-paper);
+  background-attachment: fixed;
+}
+::selection { background: #E3DAFF; }
+:focus-visible { outline: 3px solid var(--color-violet); outline-offset: 2px; border-radius: 12px; }
+[hidden] { display: none !important; }
+kbd { font: 700 .7rem/1 ui-monospace, SFMono-Regular, Menlo, monospace; background: #fff; border: 1px solid var(--color-line);
+      border-bottom-width: 3px; border-radius: 7px; padding: 3px 6px; color: var(--color-ink); }
+.serif { font-family: var(--font-serif); font-style: italic; font-weight: 400; letter-spacing: -.01em; }
+.grain::after { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .06; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence baseFrequency='.9' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"); }
+.scroll-thin { scrollbar-width: thin; scrollbar-color: #D6CCFF transparent; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }

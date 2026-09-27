@@ -1,0 +1,747 @@
+{
+ "ad_text": "Narayana Murthy reveals the secret that banks don't want you to know: retired people across India are earning ₹3,00,000 every month with the new QuantumAI Trade app. Deposit just ₹21,000 and the AI trades for you. No experience needed, zero risk. Offer valid only today for senior citizens. Download now: bit.ly/quantum-ai-retire  Our advisor will call you on WhatsApp.",
+ "claims": {
+  "advertiser": null,
+  "product": "QuantumAI Trade app",
+  "promised_return": "₹3,00,000 every month",
+  "guaranteed": true,
+  "people_shown": [
+   "Narayana Murthy"
+  ],
+  "authority_claims": [],
+  "reg_numbers": [],
+  "links": [
+   "bit.ly/quantum-ai-retire"
+  ],
+  "phones": [],
+  "emails": [],
+  "payment_asks": [
+   "Deposit just ₹21,000"
+  ],
+  "retiree_hooks": [
+   "retired people across India",
+   "senior citizens"
+  ],
+  "urgency": [
+   "Offer valid only today"
+  ],
+  "channel_shift": [
+   "Our advisor will call you on WhatsApp"
+  ],
+  "disclaimers": [],
+  "upi_ids": [],
+  "retiree_targeting": 95
+ },
+ "evidence": [
+  {
+   "id": "E1",
+   "agent": "web",
+   "finding": "bit.ly is a link shortener that hides the real destination",
+   "supports": "FRAUD",
+   "strength": 1,
+   "source": "domain check"
+  },
+  {
+   "id": "E2",
+   "agent": "pattern",
+   "finding": "It promises to turn ₹21,000 into ₹3,00,000 within 1 month — no real investment multiplies money like that",
+   "supports": "FRAUD",
+   "strength": 3,
+   "source": "returns compared with SCSS 8.2% (Jul–Sep 2026)"
+  },
+  {
+   "id": "E3",
+   "agent": "pattern",
+   "finding": "Uses Narayana Murthy to endorse an automated trading scheme, matching the known deepfake/impersonation scam pattern targeting retirees.",
+   "supports": "FRAUD",
+   "strength": 3,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E4",
+   "agent": "pattern",
+   "finding": "Claims 'zero risk' on a high-return AI trading app, which violates all norms of financial products and reality.",
+   "supports": "FRAUD",
+   "strength": 3,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E5",
+   "agent": "pattern",
+   "finding": "Applies intense urgency ('Offer valid only today') and targets seniors specifically to force impulsive action.",
+   "supports": "FRAUD",
+   "strength": 2,
+   "source": "known scam patterns + published govt rates"
+  },
+  {
+   "id": "E6",
+   "agent": "pattern",
+   "finding": "Shifts communication to WhatsApp for advisor contact, bypassing regulated institutional support channels.",
+   "supports": "FRAUD",
+   "strength": 2,
+   "source": "known scam patterns + published govt rates"
+  }
+ ],
+ "turns": [
+  {
+   "agent": "prosecutor",
+   "stage": "OPEN",
+   "round": 1,
+   "fraud_probability": 99,
+   "message": "This ad uses a celebrity endorsement from Narayana Murthy and promises impossible returns of three lakh rupees monthly with zero risk, which strongly matches known retiree scam patterns. It also uses suspicious urgency and hides the destination URL behind a shortener."
+  },
+  {
+   "agent": "defender",
+   "stage": "RESPOND",
+   "round": 1,
+   "fraud_probability": 99,
+   "message": "We cannot defend this ad as the evidence clearly shows a deepfake celebrity endorsement, impossible zero-risk return claims, and deceptive link shortening targeting retirees."
+  }
+ ],
+ "charges": [
+  {
+   "id": "C1",
+   "charge": "The ad uses Narayana Murthy to falsely endorse an automated trading scheme.",
+   "severity": 3,
+   "evidence_ids": [
+    "E3"
+   ],
+   "status": "ACCEPTED",
+   "history": [
+    [
+     "Defender",
+     "accepted: The evidence confirms the use of Narayana Murthy to falsely endorse an automated trading scheme."
+    ]
+   ],
+   "ruling": null
+  },
+  {
+   "id": "C2",
+   "charge": "It promises an unrealistic return of ₹3,00,000 monthly from a ₹21,000 deposit with zero risk.",
+   "severity": 3,
+   "evidence_ids": [
+    "E2",
+    "E4"
+   ],
+   "status": "ACCEPTED",
+   "history": [
+    [
+     "Defender",
+     "accepted: Promising ₹3,00,000 monthly on a small deposit with zero risk contradicts all real investment returns."
+    ]
+   ],
+   "ruling": null
+  },
+  {
+   "id": "C3",
+   "charge": "It employs high-pressure tactics with fake urgency and forces communication via WhatsApp.",
+   "severity": 2,
+   "evidence_ids": [
+    "E5",
+    "E6"
+   ],
+   "status": "ACCEPTED",
+   "history": [
+    [
+     "Defender",
+     "accepted: The ad uses extreme urgency and shifts communication to WhatsApp, typical of fraudulent setups."
+    ]
+   ],
+   "ruling": null
+  },
+  {
+   "id": "C4",
+   "charge": "It uses a link shortener to conceal the actual destination website.",
+   "severity": 1,
+   "evidence_ids": [
+    "E1"
+   ],
+   "status": "ACCEPTED",
+   "history": [
+    [
+     "Defender",
+     "accepted: The use of a bit.ly link shortener conceals the true destination URL."
+    ]
+   ],
+   "ruling": null
+  }
+ ],
+ "trace": [
+  {
+   "step": 1,
+   "t": 0.0,
+   "from": "orchestrator",
+   "to": "extractor",
+   "type": "handoff",
+   "text": "New ad received. Extractor: read it and list every checkable claim.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 2,
+   "t": 0.0,
+   "from": "extractor",
+   "to": "blackboard",
+   "type": "claims",
+   "text": "Found promise '₹3,00,000 every month' (guaranteed); endorsed by Narayana Murthy; 1 link(s); aimed at retirees: 'retired people across India'; pressure: 'Offer valid only today'.",
+   "evidence_ids": [],
+   "data": {
+    "advertiser": null,
+    "product": "QuantumAI Trade app",
+    "promised_return": "₹3,00,000 every month",
+    "guaranteed": true,
+    "people_shown": [
+     "Narayana Murthy"
+    ],
+    "authority_claims": [],
+    "reg_numbers": [],
+    "links": [
+     "bit.ly/quantum-ai-retire"
+    ],
+    "phones": [],
+    "emails": [],
+    "payment_asks": [
+     "Deposit just ₹21,000"
+    ],
+    "retiree_hooks": [
+     "retired people across India",
+     "senior citizens"
+    ],
+    "urgency": [
+     "Offer valid only today"
+    ],
+    "channel_shift": [
+     "Our advisor will call you on WhatsApp"
+    ],
+    "disclaimers": [],
+    "upi_ids": [],
+    "retiree_targeting": 95
+   }
+  },
+  {
+   "step": 3,
+   "t": 0.0,
+   "from": "router",
+   "to": "orchestrator",
+   "type": "plan",
+   "text": "Plan: Web & contact → Scam-pattern → Registry",
+   "evidence_ids": [],
+   "data": [
+    {
+     "agent": "web",
+     "why": "Checks the bit.ly link and WhatsApp channel shift."
+    },
+    {
+     "agent": "pattern",
+     "why": "Compares guaranteed returns and celebrity endorsement against retiree scam patterns."
+    },
+    {
+     "agent": "registry",
+     "why": "Checks if QuantumAI Trade app is an authorized investment platform."
+    }
+   ]
+  },
+  {
+   "step": 4,
+   "t": 0.0,
+   "from": "router",
+   "to": "web",
+   "type": "handoff",
+   "text": "Checks the bit.ly link and WhatsApp channel shift.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 5,
+   "t": 0.0,
+   "from": "web",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "bit.ly is a link shortener that hides the real destination",
+   "evidence_ids": [
+    "E1"
+   ],
+   "data": {
+    "id": "E1",
+    "agent": "web",
+    "finding": "bit.ly is a link shortener that hides the real destination",
+    "supports": "FRAUD",
+    "strength": 1,
+    "source": "domain check"
+   }
+  },
+  {
+   "step": 6,
+   "t": 0.0,
+   "from": "router",
+   "to": "pattern",
+   "type": "handoff",
+   "text": "Compares guaranteed returns and celebrity endorsement against retiree scam patterns.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 7,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "It promises to turn ₹21,000 into ₹3,00,000 within 1 month — no real investment multiplies money like that",
+   "evidence_ids": [
+    "E2"
+   ],
+   "data": {
+    "id": "E2",
+    "agent": "pattern",
+    "finding": "It promises to turn ₹21,000 into ₹3,00,000 within 1 month — no real investment multiplies money like that",
+    "supports": "FRAUD",
+    "strength": 3,
+    "source": "returns compared with SCSS 8.2% (Jul–Sep 2026)"
+   }
+  },
+  {
+   "step": 8,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Uses Narayana Murthy to endorse an automated trading scheme, matching the known deepfake/impersonation scam pattern targeting retirees.",
+   "evidence_ids": [
+    "E3"
+   ],
+   "data": {
+    "id": "E3",
+    "agent": "pattern",
+    "finding": "Uses Narayana Murthy to endorse an automated trading scheme, matching the known deepfake/impersonation scam pattern targeting retirees.",
+    "supports": "FRAUD",
+    "strength": 3,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 9,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Claims 'zero risk' on a high-return AI trading app, which violates all norms of financial products and reality.",
+   "evidence_ids": [
+    "E4"
+   ],
+   "data": {
+    "id": "E4",
+    "agent": "pattern",
+    "finding": "Claims 'zero risk' on a high-return AI trading app, which violates all norms of financial products and reality.",
+    "supports": "FRAUD",
+    "strength": 3,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 10,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Applies intense urgency ('Offer valid only today') and targets seniors specifically to force impulsive action.",
+   "evidence_ids": [
+    "E5"
+   ],
+   "data": {
+    "id": "E5",
+    "agent": "pattern",
+    "finding": "Applies intense urgency ('Offer valid only today') and targets seniors specifically to force impulsive action.",
+    "supports": "FRAUD",
+    "strength": 2,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 11,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "blackboard",
+   "type": "evidence",
+   "text": "Shifts communication to WhatsApp for advisor contact, bypassing regulated institutional support channels.",
+   "evidence_ids": [
+    "E6"
+   ],
+   "data": {
+    "id": "E6",
+    "agent": "pattern",
+    "finding": "Shifts communication to WhatsApp for advisor contact, bypassing regulated institutional support channels.",
+    "supports": "FRAUD",
+    "strength": 2,
+    "source": "known scam patterns + published govt rates"
+   }
+  },
+  {
+   "step": 12,
+   "t": 0.0,
+   "from": "router",
+   "to": "registry",
+   "type": "handoff",
+   "text": "Checks if QuantumAI Trade app is an authorized investment platform.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 13,
+   "t": 0.0,
+   "from": "registry",
+   "to": "blackboard",
+   "type": "note",
+   "text": "No registration number or company name to check; screened against 95 RBI alert entries.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 14,
+   "t": 0.0,
+   "from": "pattern",
+   "to": "web",
+   "type": "handoff",
+   "text": "Uncover the underlying destination URL of the shortened link to identify the scam landing page domain. — checking \"bit.ly/quantum-ai-retire\"",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 15,
+   "t": 0.0,
+   "from": "web",
+   "to": "blackboard",
+   "type": "note",
+   "text": "Re-checked: confirms E1 (bit.ly is a link shortener that hides the real destination)",
+   "evidence_ids": [
+    "E1"
+   ],
+   "data": null
+  },
+  {
+   "step": 16,
+   "t": 0.0,
+   "from": "orchestrator",
+   "to": "prosecutor",
+   "type": "handoff",
+   "text": "6 pieces of evidence collected. Prosecutor: file your charges. Defender: answer each one.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 17,
+   "t": 7.8,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "argument",
+   "text": "This ad uses a celebrity endorsement from Narayana Murthy and promises impossible returns of three lakh rupees monthly with zero risk, which strongly matches known retiree scam patterns. It also uses suspicious urgency and hides the destination URL behind a shortener.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 99,
+    "stage": "OPEN",
+    "round": 1
+   }
+  },
+  {
+   "step": 18,
+   "t": 7.8,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "The ad uses Narayana Murthy to falsely endorse an automated trading scheme.",
+   "evidence_ids": [
+    "E3"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "severity": 3
+   }
+  },
+  {
+   "step": 19,
+   "t": 7.8,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "It promises an unrealistic return of ₹3,00,000 monthly from a ₹21,000 deposit with zero risk.",
+   "evidence_ids": [
+    "E2",
+    "E4"
+   ],
+   "data": {
+    "charge_id": "C2",
+    "severity": 3
+   }
+  },
+  {
+   "step": 20,
+   "t": 7.8,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "It employs high-pressure tactics with fake urgency and forces communication via WhatsApp.",
+   "evidence_ids": [
+    "E5",
+    "E6"
+   ],
+   "data": {
+    "charge_id": "C3",
+    "severity": 2
+   }
+  },
+  {
+   "step": 21,
+   "t": 7.8,
+   "from": "prosecutor",
+   "to": "defender",
+   "type": "charge",
+   "text": "It uses a link shortener to conceal the actual destination website.",
+   "evidence_ids": [
+    "E1"
+   ],
+   "data": {
+    "charge_id": "C4",
+    "severity": 1
+   }
+  },
+  {
+   "step": 22,
+   "t": 9.8,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "argument",
+   "text": "We cannot defend this ad as the evidence clearly shows a deepfake celebrity endorsement, impossible zero-risk return claims, and deceptive link shortening targeting retirees.",
+   "evidence_ids": [],
+   "data": {
+    "fraud_probability": 99,
+    "stage": "RESPOND",
+    "round": 1
+   }
+  },
+  {
+   "step": 23,
+   "t": 9.8,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "The evidence confirms the use of Narayana Murthy to falsely endorse an automated trading scheme.",
+   "evidence_ids": [
+    "E3"
+   ],
+   "data": {
+    "charge_id": "C1",
+    "stance": "ACCEPTED"
+   }
+  },
+  {
+   "step": 24,
+   "t": 9.8,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "Promising ₹3,00,000 monthly on a small deposit with zero risk contradicts all real investment returns.",
+   "evidence_ids": [
+    "E2",
+    "E4"
+   ],
+   "data": {
+    "charge_id": "C2",
+    "stance": "ACCEPTED"
+   }
+  },
+  {
+   "step": 25,
+   "t": 9.8,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "The ad uses extreme urgency and shifts communication to WhatsApp, typical of fraudulent setups.",
+   "evidence_ids": [
+    "E5",
+    "E6"
+   ],
+   "data": {
+    "charge_id": "C3",
+    "stance": "ACCEPTED"
+   }
+  },
+  {
+   "step": 26,
+   "t": 9.8,
+   "from": "defender",
+   "to": "prosecutor",
+   "type": "response",
+   "text": "The use of a bit.ly link shortener conceals the true destination URL.",
+   "evidence_ids": [
+    "E1"
+   ],
+   "data": {
+    "charge_id": "C4",
+    "stance": "ACCEPTED"
+   }
+  },
+  {
+   "step": 27,
+   "t": 9.8,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "round",
+   "text": "Round 1: Prosecutor 99% vs Defender 99% — 0 points apart",
+   "evidence_ids": [],
+   "data": {
+    "round": 1,
+    "prosecutor": 99,
+    "defender": 99,
+    "gap": 0
+   }
+  },
+  {
+   "step": 28,
+   "t": 9.8,
+   "from": "orchestrator",
+   "to": "arbiter",
+   "type": "note",
+   "text": "Agreed on 4 of 4 charges. Arbiter confirms the verdict.",
+   "evidence_ids": [],
+   "data": null
+  },
+  {
+   "step": 29,
+   "t": 11.6,
+   "from": "arbiter",
+   "to": "user",
+   "type": "verdict",
+   "text": "FRAUD (risk 100/100): This looks like a fake investment scheme. Do not pay.",
+   "evidence_ids": [
+    "E2",
+    "E3",
+    "E4"
+   ],
+   "data": {
+    "label": "FRAUD",
+    "risk": 100,
+    "headline": "This looks like a fake investment scheme. Do not pay.",
+    "headline_hi": "यह एक धोखा है। अपने पैसे न दें।",
+    "reasons": [
+     "It promises to turn ₹21,000 into ₹3,00,000 within 1 month — no real investment multiplies money like that",
+     "Uses Narayana Murthy to endorse an automated trading scheme, matching the known deepfake/impersonation scam pattern targeting retirees.",
+     "Claims 'zero risk' on a high-return AI trading app, which violates all norms of financial products and reality."
+    ],
+    "reasons_hi": [
+     "नारायण मूर्ति जैसे प्रसिद्ध लोगों का उपयोग करके झूठे निवेश का प्रचार किया जा रहा है।",
+     "यह विज्ञापन बिना किसी जोखिम के बहुत अधिक और असंभव रिटर्न का वादा करता है।",
+     "यह आपको जल्दबाजी में पैसे देने के लिए दबाव डालता है और व्हाट्सएप पर ले जाता है।"
+    ],
+    "reason_evidence": [
+     [
+      "E2"
+     ],
+     [
+      "E3"
+     ],
+     [
+      "E4"
+     ]
+    ],
+    "what_to_do": [
+     "Do not pay any money. Do not share OTP, bank or KYC details.",
+     "Call 1930 (National Cyber Crime Helpline) or report at cybercrime.gov.in.",
+     "If money was already sent, call your bank right away to try to stop it."
+    ],
+    "what_to_do_hi": [
+     "कोई पैसा न भेजें। OTP, बैंक या KYC जानकारी किसी को न दें।",
+     "1930 (राष्ट्रीय साइबर अपराध हेल्पलाइन) पर कॉल करें या cybercrime.gov.in पर शिकायत करें।",
+     "अगर पैसे भेज चुके हैं, तो तुरंत अपने बैंक को फ़ोन करें।"
+    ],
+    "converged": true,
+    "deciding_factor": "चूंकि प्रतिवादी ने सभी आरोपों को स्वीकार कर लिया है और सबूत दिखाते हैं कि यह एक फर्जी विज्ञापन है जो असंभव रिटर्न का वादा करता है और मशहूर हस्तियों के नाम का दुरुपयोग करता है, इसलिए यह पूरी तरह से एक घोटाला है।",
+    "guardrails": [],
+    "retiree_targeting": 95,
+    "retiree_hooks": [
+     "retired people across India",
+     "senior citizens"
+    ],
+    "charges_summary": {
+     "ACCEPTED": 4,
+     "WITHDRAWN": 0,
+     "UPHELD": 0,
+     "DISMISSED": 0,
+     "UNRESOLVED": 0
+    }
+   }
+  }
+ ],
+ "verdict": {
+  "label": "FRAUD",
+  "risk": 100,
+  "headline": "This looks like a fake investment scheme. Do not pay.",
+  "headline_hi": "यह एक धोखा है। अपने पैसे न दें।",
+  "reasons": [
+   "It promises to turn ₹21,000 into ₹3,00,000 within 1 month — no real investment multiplies money like that",
+   "Uses Narayana Murthy to endorse an automated trading scheme, matching the known deepfake/impersonation scam pattern targeting retirees.",
+   "Claims 'zero risk' on a high-return AI trading app, which violates all norms of financial products and reality."
+  ],
+  "reasons_hi": [
+   "नारायण मूर्ति जैसे प्रसिद्ध लोगों का उपयोग करके झूठे निवेश का प्रचार किया जा रहा है।",
+   "यह विज्ञापन बिना किसी जोखिम के बहुत अधिक और असंभव रिटर्न का वादा करता है।",
+   "यह आपको जल्दबाजी में पैसे देने के लिए दबाव डालता है और व्हाट्सएप पर ले जाता है।"
+  ],
+  "reason_evidence": [
+   [
+    "E2"
+   ],
+   [
+    "E3"
+   ],
+   [
+    "E4"
+   ]
+  ],
+  "what_to_do": [
+   "Do not pay any money. Do not share OTP, bank or KYC details.",
+   "Call 1930 (National Cyber Crime Helpline) or report at cybercrime.gov.in.",
+   "If money was already sent, call your bank right away to try to stop it."
+  ],
+  "what_to_do_hi": [
+   "कोई पैसा न भेजें। OTP, बैंक या KYC जानकारी किसी को न दें।",
+   "1930 (राष्ट्रीय साइबर अपराध हेल्पलाइन) पर कॉल करें या cybercrime.gov.in पर शिकायत करें।",
+   "अगर पैसे भेज चुके हैं, तो तुरंत अपने बैंक को फ़ोन करें।"
+  ],
+  "converged": true,
+  "deciding_factor": "चूंकि प्रतिवादी ने सभी आरोपों को स्वीकार कर लिया है और सबूत दिखाते हैं कि यह एक फर्जी विज्ञापन है जो असंभव रिटर्न का वादा करता है और मशहूर हस्तियों के नाम का दुरुपयोग करता है, इसलिए यह पूरी तरह से एक घोटाला है।",
+  "guardrails": [],
+  "retiree_targeting": 95,
+  "retiree_hooks": [
+   "retired people across India",
+   "senior citizens"
+  ],
+  "charges_summary": {
+   "ACCEPTED": 4,
+   "WITHDRAWN": 0,
+   "UPHELD": 0,
+   "DISMISSED": 0,
+   "UNRESOLVED": 0
+  }
+ },
+ "plan": [
+  {
+   "agent": "web",
+   "why": "Checks the bit.ly link and WhatsApp channel shift."
+  },
+  {
+   "agent": "pattern",
+   "why": "Compares guaranteed returns and celebrity endorsement against retiree scam patterns."
+  },
+  {
+   "agent": "registry",
+   "why": "Checks if QuantumAI Trade app is an authorized investment platform."
+  }
+ ],
+ "converged": true,
+ "agent_runs": [
+  "web",
+  "pattern",
+  "registry",
+  "web"
+ ],
+ "duration_s": 11.6
+}

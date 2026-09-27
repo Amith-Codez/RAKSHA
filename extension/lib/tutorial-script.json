@@ -1,0 +1,57 @@
+{
+  "welcome": {
+    "en": "Namaste! Welcome to RAKSHA. Please choose your language.",
+    "hi": "नमस्ते! RAKSHA में आपका स्वागत है। कृपया अपनी भाषा चुनिए।",
+    "te": "నమస్కారం! RAKSHA కు స్వాగతం. దయచేసి మీ భాషను ఎంచుకోండి."
+  },
+  "what": {
+    "en": "RAKSHA protects your savings from fake investment ads. Scammers show ads on Facebook, YouTube and WhatsApp. They promise guaranteed high returns, use the names of the government or famous people, and ask you to pay by UPI. RAKSHA checks such an ad for you in about fifteen seconds, before you click.",
+    "hi": "RAKSHA आपकी जमा-पूँजी को नकली निवेश विज्ञापनों से बचाता है। धोखेबाज़ Facebook, YouTube और WhatsApp पर विज्ञापन दिखाते हैं। वे पक्का ज़्यादा मुनाफ़ा देने का वादा करते हैं, सरकार या मशहूर लोगों का नाम इस्तेमाल करते हैं, और UPI से पैसे माँगते हैं। RAKSHA ऐसे विज्ञापन को, क्लिक करने से पहले, लगभग पंद्रह सेकंड में आपके लिए जाँचता है।",
+    "te": "RAKSHA మీ పొదుపును నకిలీ పెట్టుబడి ప్రకటనల నుండి కాపాడుతుంది. మోసగాళ్ళు Facebook, YouTube, WhatsApp లో ప్రకటనలు చూపిస్తారు. ఖచ్చితమైన ఎక్కువ లాభం ఇస్తామని చెబుతారు, ప్రభుత్వం లేదా ప్రముఖుల పేర్లు వాడుతారు, UPI ద్వారా డబ్బు అడుగుతారు. మీరు క్లిక్ చేసే ముందే, RAKSHA అలాంటి ప్రకటనను సుమారు పదిహేను సెకన్లలో మీ కోసం తనిఖీ చేస్తుంది."
+  },
+  "pin": {
+    "en": "First, let us pin RAKSHA to the top of Chrome. Look at the top right corner. Click the puzzle piece. Then click the pin next to RAKSHA. The orange shield will always stay there.",
+    "hi": "पहले, RAKSHA को Chrome के ऊपर पिन करते हैं। ऊपर दाईं ओर देखिए। पज़ल वाले निशान पर क्लिक कीजिए। फिर RAKSHA के पास वाले पिन पर क्लिक कीजिए। नारंगी ढाल हमेशा वहीं दिखेगी।",
+    "te": "ముందుగా, RAKSHA ను Chrome పైభాగంలో పిన్ చేద్దాం. పై కుడి మూలలో చూడండి. పజిల్ గుర్తుపై క్లిక్ చేయండి. తర్వాత RAKSHA పక్కన ఉన్న పిన్‌పై క్లిక్ చేయండి. నారింజ రంగు షీల్డ్ ఎప్పుడూ అక్కడే ఉంటుంది."
+  },
+  "pinned": {
+    "en": "Well done! RAKSHA is pinned.",
+    "hi": "बहुत बढ़िया! RAKSHA पिन हो गया।",
+    "te": "చాలా బాగుంది! RAKSHA పిన్ అయింది."
+  },
+  "start": {
+    "en": "When you see an investment ad, do not click it yet. First click the orange RAKSHA shield, or press Alt, Shift and R together. Then simply click on the ad. RAKSHA does the rest.",
+    "hi": "जब भी कोई निवेश वाला विज्ञापन दिखे, उस पर अभी क्लिक मत कीजिए। पहले नारंगी RAKSHA ढाल पर क्लिक कीजिए, या Alt, Shift और R एक साथ दबाइए। फिर बस उस विज्ञापन पर क्लिक कीजिए। बाकी काम RAKSHA करेगा।",
+    "te": "పెట్టుబడి ప్రకటన కనిపించినప్పుడు, దానిపై వెంటనే క్లిక్ చేయకండి. ముందుగా నారింజ రంగు RAKSHA షీల్డ్‌పై క్లిక్ చేయండి, లేదా Alt, Shift, R ని కలిపి నొక్కండి. తర్వాత ఆ ప్రకటనపై క్లిక్ చేయండి. మిగతా పని RAKSHA చూసుకుంటుంది."
+  },
+  "practice": {
+    "en": "Now let us practise. Here is a sample ad. Click on it, just like you will on Facebook.",
+    "hi": "अब अभ्यास करते हैं। यह एक नमूना विज्ञापन है। इस पर क्लिक कीजिए, जैसे आप Facebook पर करेंगे।",
+    "te": "ఇప్పుడు సాధన చేద్దాం. ఇది ఒక నమూనా ప్రకటన. Facebook లో చేసినట్లే, దీనిపై క్లిక్ చేయండి."
+  },
+  "practice_ok": {
+    "en": "Perfect! That is exactly how you do it. RAKSHA would now say: Scam. Do not pay.",
+    "hi": "बिल्कुल सही! ऐसे ही करना है। अब RAKSHA बताएगा: धोखा। पैसे मत दीजिए।",
+    "te": "అద్భుతం! సరిగ్గా ఇలాగే చేయాలి. ఇప్పుడు RAKSHA చెబుతుంది: మోసం. డబ్బు కట్టకండి."
+  },
+  "practice_miss": {
+    "en": "Almost. Please click on the ad itself.",
+    "hi": "लगभग। कृपया सीधे विज्ञापन पर क्लिक कीजिए।",
+    "te": "దాదాపు. దయచేసి ప్రకటనపైనే క్లిక్ చేయండి."
+  },
+  "answer": {
+    "en": "RAKSHA gives you one clear answer, in colours you already know. Red means Scam: do not pay. Yellow means Be careful: ask your family or your bank first. Green means Looks genuine. Grey means it is not an ad. Tap Read aloud to hear the answer.",
+    "hi": "RAKSHA आपको जाने-पहचाने रंगों में एक साफ़ जवाब देता है। लाल मतलब धोखा: पैसे मत दीजिए। पीला मतलब सावधान: पहले परिवार या बैंक से पूछिए। हरा मतलब असली लगता है। स्लेटी मतलब यह विज्ञापन नहीं है। जवाब सुनने के लिए सुनें बटन दबाइए।",
+    "te": "RAKSHA మీకు తెలిసిన రంగులలో ఒక స్పష్టమైన సమాధానం ఇస్తుంది. ఎరుపు అంటే మోసం: డబ్బు కట్టకండి. పసుపు అంటే జాగ్రత్త: ముందుగా కుటుంబం లేదా బ్యాంకును అడగండి. ఆకుపచ్చ అంటే నిజమైనదిగా ఉంది. బూడిద రంగు అంటే ఇది ప్రకటన కాదు. సమాధానం వినడానికి వినండి బటన్ నొక్కండి."
+  },
+  "help": {
+    "en": "If you have already paid money to a scam, do not panic, and do not feel ashamed. Call 1930, the cyber crime helpline, right away. Then call your bank to stop the payment. You can also report it at cybercrime.gov.in.",
+    "hi": "अगर आप किसी धोखे में पैसे भेज चुके हैं, तो घबराइए मत, और शर्म मत कीजिए। तुरंत 1930 पर कॉल कीजिए, यह साइबर अपराध हेल्पलाइन है। फिर अपने बैंक को फ़ोन करके भुगतान रुकवाइए। आप cybercrime.gov.in पर भी शिकायत कर सकते हैं।",
+    "te": "మీరు ఇప్పటికే మోసానికి డబ్బు పంపి ఉంటే, కంగారు పడకండి, సిగ్గుపడకండి. వెంటనే 1930 కి కాల్ చేయండి, ఇది సైబర్ క్రైమ్ హెల్ప్‌లైన్. తర్వాత చెల్లింపును ఆపడానికి మీ బ్యాంకుకు కాల్ చేయండి. cybercrime.gov.in లో కూడా ఫిర్యాదు చేయవచ్చు."
+  },
+  "family": {
+    "en": "Last step. Add a family member's WhatsApp number, so you can send them any answer with one tap. That's it, you are ready! Remember: see an ad, click RAKSHA first.",
+    "hi": "आख़िरी कदम। परिवार के किसी सदस्य का WhatsApp नंबर जोड़िए, ताकि एक टैप में उन्हें कोई भी जवाब भेज सकें। बस, आप तैयार हैं! याद रखिए: विज्ञापन दिखे, तो पहले RAKSHA पर क्लिक कीजिए।",
+    "te": "చివరి అడుగు. ఒక్క ట్యాప్‌తో ఏ సమాధానమైనా పంపడానికి, ఒక కుటుంబ సభ్యుడి WhatsApp నంబర్‌ను జోడించండి. అంతే, మీరు సిద్ధంగా ఉన్నారు! గుర్తుంచుకోండి: ప్రకటన కనిపిస్తే, ముందుగా RAKSHA పై క్లిక్ చేయండి."
+  }
+}
